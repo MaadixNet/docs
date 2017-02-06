@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>VPN - MaadiX Documetnación</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VPN";
+    var mkdocs_page_input_path = "vpn.md";
+    var mkdocs_page_url = "/vpn/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MaadiX Documetnación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dominios/">Dominios</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../email/">Email</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">VPN</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#vpn">VPN</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#crear-cuentas">Crear cuentas</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#instalar-y-configurar-cliente">Instalar y configurar cliente</a></li>
+                
+                    <li><a class="toctree-l4" href="#windows">Windows</a></li>
+                
+                    <li><a class="toctree-l4" href="#linux">Linux</a></li>
+                
+                    <li><a class="toctree-l4" href="#android">Android</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../create-web/">Crear&nbsp;Web</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MaadiX Documetnación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>VPN</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="vpn">VPN</h1>
+<p>Una red privada virtual (Virtual Private Network en inglés), es una tecnología de red que permite una extensión segura de la red de área local (LAN) sobre una red pública o no controlada como internet. </p>
+<p>Esto permite conectarse a otro dispositivo, en este caso tu servidor en MaadiX, a través de una conexión cifrada y segura, además de poder visitar cualquier dirección de internet utilizando esta misma comexión.  </p>
+<p>Para saber más visita <a href="https://es.wikipedia.org/wiki/Red_privada_virtual">VPN - Wikipedia</a>  </p>
+<p>Para activar una conexión VPN con tu servidor necesitas crear el usuario en el Cpanel y tener instalado un programa  'cliente' en los dispositivo que se van a conectar.  </p>
+<h1 id="crear-cuentas">Crear cuentas</h1>
+<p>1- Desde el Cpanel entra en la pestaña 'Usuarios'. Puedes editar un usuario existente o crear uno nuevo.<br />
+2- Entre los atributos disponibles verás 'Cuenta VPN'. Activa la casilla.<br />
+3- Si quieres enviar indicaciones al usuario para configurar su conexión, activa la casilla 'Enviar email con instrucciones al usuario'  </p>
+<h1 id="instalar-y-configurar-cliente">Instalar y configurar cliente</h1>
+<h2 id="windows">Windows</h2>
+<p>1- Descargar e instalar la aplicación OpenVpn  </p>
+<p>https://openvpn.net/index.php/open-source/downloads.html  </p>
+<p><img alt="Screenshot" src="../img/windows-vpn/01-vpn-download.png" /></p>
+<p>2- Tomar nota de la ubicación de la aplicación y acabada la instalación copiar en la carpeta \config los dos archivos<br />
+a) vpn.ovpn  <br />
+b) ca.crt  </p>
+<p><img alt="Screenshot" src="../img/windows-vpn/02-vpn-location.png" /></p>
+<p>NOTA: La ubicación por defecto es C:\Program Files\OpenVPN, así que tendrás que copiar ambos archivos en C:\Program Files\OpenVPN\config a menos que durante la instalación hayas ubicado la aplicación en otra carpeta </p>
+<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que copiar. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control  </p>
+<p>3- Abre la aplicación OpenVPN GUI   </p>
+<p>4- Introduce el usuario y contraseña que te han proporcionado para la conexión  </p>
+<p><img alt="Screenshot" src="../img/windows-vpn/03-insert-user.png" /></p>
+<p>Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.</p>
+<h2 id="linux">Linux</h2>
+<p>1- Instala el cliente openVpn si no lo tienes instalado todavía (muchas distribuciones de linux lo incluyen por defecto)     </p>
+<p>Por consola:  </p>
+<pre><code>sudo apt-get install netwotk-manager-openvpn
+</code></pre>
+<p>Con Synaptic
+Aplicaciones &gt; Herramientas de Sistema &gt; Gestor de paquetes Synaptic busca y selecciona netwotk-manager-openvpn<br />
+Una vez seleccionado el paquete haz click en 'Aplicar', en la bandeja superir de la interfaz</p>
+<p><img alt="Screenshot" src="../img/linux-vpn/01-install.png" /></p>
+<p>2- Haz click en 'Configuración de Red' desde el panel de Network Manager  </p>
+<p><img alt="Screenshot" src="../img/linux-vpn/ubuntu-edit.conn.png" /></p>
+<p>3- Busca el botón 'Añadir' o '+' para  añadir la configuración y elige VPN  </p>
+<p><img alt="Screenshot" src="../img/linux-vpn/03-add-vpn.png" /></p>
+<p>4- Escoge la opción 'Importar desde un archivo'  </p>
+<p><img alt="Screenshot" src="../img/linux-vpn/03-import-profile.png" /></p>
+<p>5- Selecciona el archivo vpn.conf que te han proporcionado  </p>
+<p><img alt="Screenshot" src="../img/linux-vpn/04-select-file.png" /></p>
+<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar para una fácil configuración. Ambos archivos (vpn.conf y ca.crt) tienen que estar en la misma carpeta por lo que no los muevas. Simplemente importa el archio vpn.conf.   </p>
+<p>6- Inserta un nombre para tu conexión el usuario que recibiste .Por razones de seguridad la contraseña no se envia por email. El administrador de sistema se encargará de hacertela llegar por el medio que considere más seguro. Elije el método de gestión de la contraseña (es aconsejable la opción 'Preguntar siempre')    </p>
+<p><img alt="Screenshot" src="../img/linux-vpn/04-select-file.png" /> </p>
+<p>7- Vuelve al panel del Network Manager y activa la conexión recién creada
+<img alt="Screenshot" src="../img/linux-vpn/07-connected-vpn.png" /> </p>
+<p>En unos segundos se crea la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.  </p>
+<h2 id="android">Android</h2>
+<p>1- Descarga el cliente OpenVpn Connect para Android  </p>
+<p><a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn&amp;hl=es">Descargar OpenVpn Connect</a></p>
+<p>2- Lanza la aplicación y desde el menú escoge 'Import'  </p>
+<p><img alt="Screenshot" src="../img/android-vpn/01-import.png" /></p>
+<p>3- Selecciona 'Import profile from SD card'  </p>
+<p><img alt="Screenshot" src="../img/android-vpn/02-profile.jpeg" /></p>
+<p>4- Selecciona el archivo de configuración android-client.ovpn que  has previamente recibido y guardado en tu dispositivo    </p>
+<p><img alt="Screenshot" src="../img/android-vpn/03-choosefile.jpeg" /></p>
+<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar. Ambos archivos (android-client.ovpn y ca.crt) tienen que estar en la misma carpeta. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control</p>
+<p>5- Inserta el nombre de usuario y la contraseña  </p>
+<p><img alt="Screenshot" src="../img/android-vpn/04-user-password.jpeg" /></p>
+<p>6- Espera unos segundos hasta que se establezca la conexión  </p>
+<p><img alt="Screenshot" src="../img/android-vpn/05-connect.jpeg" /></p>
+<p>Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../create-web/" class="btn btn-neutral float-right" title="Crear&nbsp;Web">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../email/" class="btn btn-neutral" title="Email"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../email/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../create-web/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

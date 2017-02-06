@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Crear&nbsp;Web - MaadiX Documetnación</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Crear&nbsp;Web";
+    var mkdocs_page_input_path = "create-web.md";
+    var mkdocs_page_url = "/create-web/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MaadiX Documetnación</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dominios/">Dominios</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../email/">Email</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../vpn/">VPN</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Crear&nbsp;Web</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#activar-dominio">Activar dominio</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#subir-contenidos">Subir contenidos</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#usuario-de-sistema">Usuario de Sistema</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#usuario-webmaster">Usuario Webmaster</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MaadiX Documetnación</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Crear&nbsp;Web</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="activar-dominio">Activar dominio</h1>
+<p>El primer paso para poder crear un sito web accesible dedsde cualquier navegador, es activar un dominio o subdominio para él.<br />
+Si todavía no has completado este paso, puedes encontrar instrucciones sobre como proceder aquí: <a href="../dominios/">Activar Dominio</a></p>
+<h1 id="subir-contenidos">Subir contenidos</h1>
+<p>Una vez tengas activado el dominio para tu nuevo sito web, tendrás que subir los archivos de tu aplicación a la carpeta correspondiente.<br />
+Esta carpeta se encuentra en /var/www/html/midominio.com   </p>
+<p>Puedes acceder a esta ubicación y subir los archivos utilizando  un cliente sftp. Hay varias soluciones para ello. Si no tienes ningún cliente sftp instalado y no sabes cual escojer te aconsejamos <a href="https://filezilla-project.org/">Filezilla</a>.  </p>
+<p>Tendrás que establecer una conexión con tu servidor para poder proceder. El cliente sftp te pedirá una serie de credenciales para llevar a cabo dicha conexión:  </p>
+<ul>
+<li>Servidor: el nombre de tu espacio en MaadiX (myservername.maadix.org)  </li>
+<li>Protocolo: SFT/SSH  </li>
+<li>Modo de acceso: Normal  </li>
+<li>Usuario: El nombre de usuario que has establecido como webmaster para el dominio  </li>
+<li>Contraseña: La contraseña que has establecido para este usuario</li>
+</ul>
+<p>Según el tipo de usuario que estés utilizando para la conexión tendrás acceso a diferentes contenidos en el servidor.  </p>
+<h1 id="usuario-de-sistema">Usuario de Sistema</h1>
+<p>Si no has creado ningún usuario webmaster para tu nuevo dominio, estás accediendo con el usuario de sistema que es el propietario de la carpeta web en /var/www/html/midominio.com  </p>
+<p>Este es un usuario con altos privilegios y que tiene acceso a todo el sistema. Cuando estableces la conexión al servidor utilizando este usuario, la ubiciación el la que te encuentras nada más empezar la sesión es la carpeta personal, o sea /home/nombrei_ de_usuario.<br />
+Desde esta ubicación no puedes ver todavía la carpeta /var/www/html/midominio.com que es donde tienes que subir los archivo.  </p>
+<p><img alt="Screenshot" src="../img/sftp-home.png" /></p>
+<p>Para acceder a ella puedes insertar la ruta /var/www/html/midominio.com en el campo "Sitio remoto"  (Por supuesto tendrás que sustituir midominio.com por tu dominio real).</p>
+<p><img alt="Screenshot" src="../img/sftp-midominio.png" /></p>
+<p>En esta carpeta hay dos elementos: Una carpeta con nombre .well-known y un archivo index.html.<br />
+La carpeta .well-known es necesaria para la conexión segura a la web (https) y no debes tocarla. El punto delante del nombre de carpeta significa que es un archivo oculto, por lo que si no se muestra no te preocupes. Está ahí pero tu cliente sftp está configurado para no mostrar los archivos ocultos.  </p>
+<p>El archivo index.html es un archivo que se crea en el proceso de activación del dominio y no tiene otra finalidad que la de comprobar que la activación se ha completado con éxito. </p>
+<p>Si vistas con un navegador tu doiminio antes de subir tus propios archivos, encontrarás una página de bienvenida que es el contenido de este archivo index.html.<br />
+Puedes ahora borrar (o sobrescribir) este archivo index.html existente y  subir los de tu aplicación.  </p>
+<h1 id="usuario-webmaster">Usuario Webmaster</h1>
+<p>Si has asignado un usuario webmaster específico para tu nuevo dominio tendrás que utilizar sus credenciales para la conexión ya que éste será el propietario de la carpeta del dominio y solo él podrá escribir en ella.
+Los usuarios webmaster no tienen acceso a todos los archivos como tiene el usuario de sistema. Cuando un usuario webmaster establece la conexión verá una carpeta con su propio nombre.  </p>
+<p>En ella encontrará todas las carpetas de los dominios por los que ha asignado como webmaster.  </p>
+<p><img alt="Screenshot" src="../img/sftp-anna.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../vpn/" class="btn btn-neutral" title="VPN"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../vpn/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>

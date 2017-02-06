@@ -1,0 +1,9 @@
+site_name: MaadiX Documetnación
+site_description: Tutoriales y Gúias 
+pages:
+    - Home: index.md
+    - Dominios: dominios.md
+    - Email: email.md
+    - VPN: vpn.md
+    - Crear&nbsp;Web: create-web.md
+theme: readthedocs
