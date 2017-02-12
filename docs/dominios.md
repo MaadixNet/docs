@@ -1,4 +1,6 @@
-# Consigue tu dominio
+# Configuración de dominios en MaadiX
+
+## Consigue tu dominio
 
 Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones además del *subdominio.maadix.org* que hayas elegido para tu servidor.
 
