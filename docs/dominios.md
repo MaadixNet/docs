@@ -2,7 +2,7 @@
 
 Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones además del *subdominio.maadix.org* que hayas elegido para tu servidor.
 
-Si aún no dispones de dominio propio, aquí te dejamos un par de proveedores de ejemplo donde puedes registrarlo (hay muchísimos más\*):
+Si aún no dispones de dominio propio, aquí te dejamos un par de proveedores de ejemplo donde puedes registrarlo (hay muchísimos más [1]):
 
 * [gandi.net](https://www.gandi.net/)
 * [namecheap.com](https://www.namecheap.com/domains/registration.aspx)
@@ -63,4 +63,4 @@ Una vez introducidos los cambios, refresca la sección **Ver Dominios** en Maadi
 
 ----
 
-\* Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
+[1] Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
