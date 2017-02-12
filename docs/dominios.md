@@ -1,56 +1,66 @@
-# Copmrar dominio
+# Registra tu dominio
 
-De momento Maadix no ofrece el servicio de registro de dominios. Esto no es un problema, ya que puedes adquirir fácilmente  tu dominio a cualquier proveedor. Si no sabes con cual proveedor registrarlo, aquí te dejamos un pequeño listado con algunas opciones (hay muchísimos más):
+Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones además del *subdominio.maadix.org* que hayas elegido para tu servidor.
+
+Si aún no dispones de dominio propio, aquí te dejamos un par de proveedores de ejemplo donde puedes registrarlo (hay muchísimos más\*):
 
 * [gandi.net](https://www.gandi.net/)
-* [Namecheap.com](https://www.namecheap.com/domains/registration.aspx)
-* [dinahosting.com](https://dinahosting.com/dominios)
+* [namecheap.com](https://www.namecheap.com/domains/registration.aspx)
 
-Y aquí tienes un listado completo de las empresas acreditadas por el ICANN:   
-[Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
+Elegir un buen nombre no siempre es fácil. Mientras decides cual va a ser tu domino, puedes seguir usando MaadiX y la mayora de sus aplicaciones a través de tu *subdomio.maadix.org*. No obstante, necesitarás tener un dominio propio para poder configurar y usar el servidor de correo electrónico y las listas de correo.
 
-Una vez tengas un dominio registrado tendrás que aplicar un par de configuraciones tanto en el Cpanel de tu servidor como en el panel del proveedor donde compraste el dominio.
+Si ya dispones de dominio propio sigue las instrucciones a continuación para activarlo en MaadiX.
 
-## Activar dominio
-El primer paso para que el dominio funcione y muestre tus aplicaciones es activarlo en el Cpanel.  
-Desde el Cpanel Entra en la pestaña 'Dominios' y haz click en  'Añadir dominios'. 
+## Activa tu dominio en MaadiX
+
+Desde tu Cpanel entra en la pestaña '**Dominios**' y haz click en '**Añadir dominios**'. 
+
 Se desplegará un formulario con los siguientes campos:
 
-* Nombre de dominio:  inserta el nombre de dominio completo , o un subdominio (por ejemplo example.com o docs.example.com)
+* **Nombre de dominio**:  introduce el nombre de tu dominio (o subdominio) completo (por ejemplo: example.com o docs.example.com)
 
-* Contraseña: esta contraseña se puede utilizar para acceder al panel de control como administrador del dominio identificándose con  
-* User: Nombre Dominio 
-* Contraseña: La que insertes en este campo
+Para cada dominio o subdominio que actives en MaadiX se creará una carpeta */var/www/html/example.com/*. Debes subir tu web o aplicación a esta carpeta para que sea accesible desde el navegador visitando *example.com*
 
- El administrador de dominio tiene privilegios limitados y sólo podrá crear, editar y borrar las cuentas de cooreo electrónico asociadas a su dominio. No podrá en ningún caso acceder a ninguna otra función y no podrá eliminar el dominio.  
-
-* Webmaster (Administrador sito web): por cada dominio que actives en el panel de Control se creará una carpeta en /var/www/html/ en la que puedes subir tu aplicación web que será así accesible desde el navegador.  
+* **Webmaster** (Administrador sito Web): A cada dominio o subdominio que actives en MaadiX puedes asignarle un Administrador Web (Webmaster).  
   
+El Administrador Web tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta */var/www/html/example.com/*, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP o SSH a esta carpeta, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
 
-Para cada dominio o subdominio que añadas a tu sistema, puedes asignar un administrador web (Webmaster).  
-El administrador web tendrá permisos para crer, borrar o modificar archivos dentro de esta carpetas y poder así crear la aplicación web.  Puedes elegir un usuario ya creado o crear uno nuevo.  
- Si no asignas ningún usuario se establecerá como webmaster al usuario de sistema ( el primero que encuentras en el listado de la página 'Usuarios').
+Si no asignas ningún usuario como Administrador Web, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
 
-Si creas un unevo usuario tendrás que asignarle un nombre y una contrasesña, que utilizará para acceder a la carpeta recién creadae en el servidor. Podrá acceder por sftp o por ssh.  
+Si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, te recomendamos encarecidamente que crees un usuario Webmaster para ello y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores y resulta peligroso.
 
+### Subir o migrar tu web o applicación al dominio propio
 
-![Screenshot](img/activar-dominio.png) 
+Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
-El sistema puede tardar hasta 5 minutos en completar la nueva configuración. Para saber si el proceso ha terminado refresca la página 'Dominios' y averigua que  la columna 'Status' tenga el check verde
-
-![Screenshot](img/statusok.png)  
-
-Ahora ya puedes subir los archivos de tu aplicación web a la carpeta para mostrar tus contenidos.  
+**Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor */var/www/html/subdominio.maadix.org/*, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio reción activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva */var/www/html/example.com/*. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
 
 Puedes econtrar más indicaciones aquí:  
 [Crear Web](create-web)
- 
-## DNS
 
- Cuando registramos un dominio hay un apartado en su configuración llamado DNS. Los DNS son los que pemiten transfomar nombres de dominio entendibles por humanos, en números que corresponden a las diferentes máquinas conectadas y accesibles públicamente en internet.
+======
+Necesitamos screenshots nuevos!
 
-Para que tu dominio funcione correctamente para tus servicios tendrás que aplicar las configuraciones correspondientes.
+![Screenshot](img/activar-dominio.png) 
 
-Entra en tu panel de control en la sección Dominios.
-Ahí encontrarás el listado de los dominios y para cada uno puedes averiguar que la configuración de los DNS sea correctaa.  
-Si se detecta una configuración erronea tendrás que aplicar los cambios desdeel àrea cliente de tu provedor de dominio.
+El sistema puede tardar hasta 5 minutos en completar la nueva configuración. Para saber si el proceso ha terminado refresca la página 'Dominios' y averigua que la columna 'Status' tenga el check verde
+
+![Screenshot](img/statusok.png)  
+======
+
+
+## Configura los DNS de tu dominio para que apunten a tu servidor en MaadiX
+
+Ya has configurado tu servidor MaadiX para que trabaje con tu dominio propio *example.com*. Sin embargo, para que todo funcione necesitas, por otro lado, decirle a tu dominio propio que apunte a tu servidor en MaadiX :) 
+
+Para ello debes modificar los DNS de tu dominio. Los DNS (Domain Name Servers) son los que transfomarman los nombres de dominio, amigables para comprensión huma, en números que corresponden a las direcciones IP de las diferentes máquinas conectadas y accesibles públicamente en internet.
+
+Para configurar los DNS de tu dominio debes entrar en la sección correspondiente dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de MaadiX).
+
+Una vez dentro introduce las configuraciones requeridas que encontrarás en tu Cpanel de Maadix dentro de la pestaña **Ver Dominios**.
+
+Una vez introducidos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe otra vea que la configuración de los DNS de tu dominio es correctaa.
+
+----
+
+\* Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
