@@ -29,7 +29,7 @@ Si no asignas ningún usuario como Administrador Web, se establecerá por defect
 
 Si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, te recomendamos encarecidamente que crees un usuario Webmaster para ello y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores y resulta peligroso.
 
-### Subir o migrar tu web o applicación al dominio propio
+### Subir tu web o applicación al dominio propio
 
 Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
