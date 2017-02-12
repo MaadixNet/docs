@@ -32,13 +32,10 @@ Si no asignas ningún usuario como Webmaster, se establecerá por defecto como W
 Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores.
 
 ======
-Necesitamos screenshots nuevos!
+Screenshot de formulario nuevo
 
 ![Screenshot](img/activar-dominio.png) 
 
-El sistema puede tardar hasta 5 minutos en completar la nueva configuración. Para saber si el proceso ha terminado refresca la página 'Dominios' y averigua que la columna 'Status' tenga el check verde
-
-![Screenshot](img/statusok.png)  
 ======
 
 
@@ -54,6 +51,12 @@ Una vez dentro introduce las configuraciones requeridas que encontrarás en tu C
 
 Una vez introducidos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe otra vea que la configuración de los DNS de tu dominio es correcta.
 
+======
+Screenshot de configuracin requerida
+
+![Screenshot](img/statusok.png)  
+
+======
 
 
 ### Subir tu web o applicación al dominio propio
