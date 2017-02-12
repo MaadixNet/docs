@@ -23,22 +23,13 @@ Se desplegará un formulario con los siguientes campos:
 
 Para cada dominio o subdominio que actives en MaadiX se creará una carpeta */var/www/html/example.com/*. Debes subir tu web o aplicación a esta carpeta para que sea accesible desde el navegador visitando *example.com*
 
-* **Webmaster** (Administrador sito Web): A cada dominio o subdominio que actives en MaadiX puedes asignarle un Administrador Web (Webmaster).  
+* **Webmaster**: A cada dominio o subdominio que actives en MaadiX puedes asignarle un (Webmaster) (Administrador Web).  
   
-El Administrador Web tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta */var/www/html/example.com/*, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP o SSH a esta carpeta, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
+El Webmaster tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta */var/www/html/example.com/*, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP o SSH a esta carpeta y a su home, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
 
-Si no asignas ningún usuario como Administrador Web, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
+Si no asignas ningún usuario como Webmaster, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
 
-Si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, te recomendamos encarecidamente que crees un usuario Webmaster para ello y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores y resulta peligroso.
-
-### Subir tu web o applicación al dominio propio
-
-Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
-
-**Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor */var/www/html/subdominio.maadix.org/*, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio reción activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva */var/www/html/example.com/*. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
-
-Puedes econtrar más indicaciones aquí:  
-[Crear Web](create-web)
+Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores.
 
 ======
 Necesitamos screenshots nuevos!
@@ -61,7 +52,19 @@ Para configurar los DNS de tu dominio debes entrar en la sección correspondient
 
 Una vez dentro introduce las configuraciones requeridas que encontrarás en tu Cpanel de Maadix dentro de la pestaña **Ver Dominios**.
 
-Una vez introducidos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe otra vea que la configuración de los DNS de tu dominio es correctaa.
+Una vez introducidos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe otra vea que la configuración de los DNS de tu dominio es correcta.
+
+
+
+### Subir tu web o applicación al dominio propio
+
+Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
+
+**Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor */var/www/html/subdominio.maadix.org/*, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio reción activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva */var/www/html/example.com/*. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
+
+Puedes econtrar más indicaciones aquí:  
+[Crear Web](create-web)
+
 
 ----
 
