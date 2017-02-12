@@ -1,4 +1,4 @@
-# Registra tu dominio
+# Consigue tu dominio
 
 Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones además del *subdominio.maadix.org* que hayas elegido para tu servidor.
 
@@ -49,7 +49,7 @@ El sistema puede tardar hasta 5 minutos en completar la nueva configuración. Pa
 ======
 
 
-## Configura los DNS de tu dominio para que apunten a tu servidor en MaadiX
+## Configura los DNS de tu dominio para que apunten a tu servidor MaadiX
 
 Ya has configurado tu servidor MaadiX para que trabaje con tu dominio propio *example.com*. Sin embargo, para que todo funcione necesitas, por otro lado, decirle a tu dominio propio que apunte a tu servidor en MaadiX :) 
 
