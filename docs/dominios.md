@@ -2,14 +2,14 @@
 
 ## Consigue tu dominio
 
-Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones además del *subdominio.maadix.org* que hayas elegido para tu servidor.
+Toda web o aplicación necesita un buen dominio. Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tus aplicaciones.
 
 Si aún no dispones de dominio propio, aquí te dejamos un par de proveedores de ejemplo donde puedes registrarlo (hay muchísimos más [1]):
 
 * [gandi.net](https://www.gandi.net/)
 * [namecheap.com](https://www.namecheap.com/domains/registration.aspx)
 
-Elegir un buen nombre no siempre es fácil. Mientras decides cual va a ser tu domino, puedes seguir usando MaadiX y la mayora de sus aplicaciones a través de tu *subdomio.maadix.org*. No obstante, necesitarás tener un dominio propio para poder configurar y usar el servidor de correo electrónico y las listas de correo.
+Elegir un buen nombre no siempre es fácil. Mientras decides cual va a ser tu domino, puedes seguir usando MaadiX y la mayora de sus aplicaciones usando tu *subdominio.maadix.org*, donde 'subdominio' coincide con el nombre que que elegiste al adquirir tu servidor MaadiX (*no obstante, solo podrás configurar y usar el servidor de correo electrónico y las listas de correo si dispones de dominio propio activado*).
 
 Si ya dispones de dominio propio sigue las instrucciones a continuación para activarlo en MaadiX.
 
