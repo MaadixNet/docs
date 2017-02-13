@@ -1,14 +1,14 @@
 # Cómo crear y editar usuarios de sistema
 
-MaadiX te permite crear fácilmente a través de tu Cpanel usuarios de sistema con acceso SFTP/SSH a tu servidor. Estos usuarios de sistema tendrán su propio espacio en tu servidor dentro de */home/usuario/*.
+MaadiX permite crear fácilmente, a través de tu Cpanel, usuarios de sistema con acceso SFTP/SSH a tu servidor. Estos usuarios de sistema tienen su propio espacio en tu servidor con ruta */home/usuario/*. Dentro de este espacio podrán crear y modificar archivos y carpteas. También ahí encontrarán el acceso directo a las carpetas de los dominios de los que sean Webmaster.
 
-Dentro de esta carpeta podrán crear y modificar archivos y carpteas. También aquí, si los has asignado como Webmaster de alguno de tus dominios, encontrarán los accesos directos a las carpetas de dichos dominios, donde también podrán crar y modificar archivos.
-
-A diferencia del Superusuario, este tipo de usuario nunca podrá ver, acceder ni modificar el resto de carpetas y archivos del servidor más allá de su carpeta personal */home/usuario/* y de los dominios de los que sea Webmaster.
+A diferencia del Superusuario, este tipo de usuario nunca podrá ver, acceder ni modificar el resto de carpetas y archivos del servidor más allá de su carpeta personal */home/usuario/* y de las carpetas de dominio de las que sea Webmaster.
 
 ## Crear un usuario nuevo
 
-En el menú, haz click en **Usuarios de sistema**. 
+En el menú, haz click en **Usuarios de sistema**. En este apartado podrás ver listados los usuarios de sistema actuales. El primero de esta lista es siempre el Superusuario de sistema.
+
+
 
 te permite creación varios tipos de usario con diferentes accesos y privilegios.
 
