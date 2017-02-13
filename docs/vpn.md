@@ -1,11 +1,8 @@
 # VPN
 
-Una red privada virtual (Virtual Private Network en inglés), es una tecnología de red que permite una extensión segura de la red de área local (LAN) sobre una red pública o no controlada como internet. 
+Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual) ), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a travs de una red pública sobre la que no tienes control como Internet. 
 
-Esto permite conectarse a otro dispositivo, en este caso tu servidor en MaadiX, a través de una conexión cifrada y segura, además de poder visitar cualquier dirección de internet utilizando esta misma comexión.  
-
-
-Para saber más visita [VPN - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual)  
+La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite una connexión segura si, por ejemplo, estás navegando a través de una red WiFi pública. 
   
 Para activar una conexión VPN con tu servidor necesitas crear el usuario en el Cpanel y tener instalado un programa  'cliente' en los dispositivo que se van a conectar.  
 
