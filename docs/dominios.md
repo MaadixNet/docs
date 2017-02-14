@@ -48,14 +48,14 @@ Para apuntar tu dominio hacia tu servidor MaadiX debes modificar sus DNS. Los DN
 
 Haciendo click en "Ver" en la columna DNS de tu dominio (ver captura de pantalla anterior), encontrarás las configuraciones requeridas para que tu dominio funcione con tu web o aplicación y servidor de correo en MaadiX (en esta sección encotrarás también, si las necesitas, instrucciones más detalladas de como editar tu Registro A de DNS para que tu web o aplicación en MaadiX funcione con tu dominio y tu Registro MX de DNS para que tu servidor de correo en MaadiX funcione con tu dominio). 
 
-![Screenshot](img/dominio-configuracion-requerida.png) 
+![Screenshot](img/configuracion-requerida-dominio.png) 
 
 Debes introducier estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* ó *Editar registros DNS*.
 
 Una vez hechos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe nuevamente que la configuración de los DNS de tu dominio es correcta.
 
 
-### Subir tu web o aplicación al dominio propio
+## Subir tu web o aplicación al dominio propio
 
 Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
@@ -64,7 +64,7 @@ Ahora ya puedes subir los archivos de tu web o aplicación web a la recién crea
 Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web)
 
 
-### Utiliza tu dominio propio para tu servidor de correo
+## Utiliza tu dominio propio para tu servidor de correo
 
 Ahora que ya tienes activado y configurado tu dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor en MaadiX), ya puedes empezar a usar tu servidor de correo electrónico en MaadiX. En el apartado *Email -> Cuentas mail* puedes abrir nuevas cuentas de correo *usuaioejemplo@ejemplo.com* para tu dominio.
 
