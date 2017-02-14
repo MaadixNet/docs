@@ -64,9 +64,9 @@ Ahora ya puedes subir los archivos de tu web o aplicación web a la recién crea
 Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web)
 
 
-## Utiliza tu dominio propio para tu servidor de correo
+## Empieza a usar tu servidor de correo
 
-Ahora que ya tienes activado y configurado tu dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor en MaadiX), ya puedes empezar a usar tu servidor de correo electrónico en MaadiX. En el apartado *Email -> Cuentas mail* puedes abrir nuevas cuentas de correo *usuaioejemplo@ejemplo.com* para tu dominio.
+Ahora que ya tienes activado y configurado un dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor en MaadiX), ya puedes empezar a usar tu servidor de correo electrónico en MaadiX. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo *usuarioejemplo@ejemplo.com*.
 
 
 Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email)
