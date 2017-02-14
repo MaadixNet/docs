@@ -31,12 +31,9 @@ Si no asignas ningún usuario como Webmaster, se establecerá por defecto como W
 
 Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta */var/www/html/example.com/*, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores.
 
-======
-Screenshot de formulario nuevo
 
 ![Screenshot](img/activar-dominio.png) 
 
-======
 
 
 ## Configura los DNS de tu dominio para que apunten a tu servidor MaadiX
