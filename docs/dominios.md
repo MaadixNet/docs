@@ -40,20 +40,19 @@ Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quiere
 
 Ya has configurado tu servidor MaadiX para que trabaje con tu dominio propio *example.com*. Sin embargo, para que todo funcione necesitas, por otro lado, decirle a tu dominio propio que apunte a tu servidor en MaadiX :) 
 
-Para ello debes modificar los DNS de tu dominio. Los DNS (Domain Name Servers) son los que transforman los nombres de dominio, amigables para comprensión huma, en números que corresponden a las direcciones IP de las diferentes máquinas conectadas y accesibles públicamente en Internet.
+MaadiX comprueba automáticamente si tu dominio está apuntando a tu servidor en Maadix. Si no es así, en la sección **Ver Dominios** verás que tu dominio está aún pendiente. 
 
-Para configurar los DNS de tu dominio debes entrar en la sección correspondiente dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de MaadiX).
+![Screenshot](img/dominio-pendiente.png) 
 
-Una vez dentro introduce las configuraciones requeridas que encontrarás en tu Cpanel de Maadix dentro de la pestaña **Ver Dominios**.
+Para apuntar tu dominio hacia tu servidor MaadiX debes modificar sus DNS. Los DNS (Domain Name Servers) son los que transforman los nombres de dominio, amigables para comprensión huma, en números que corresponden a las direcciones IP de las diferentes máquinas conectadas y accesibles públicamente en Internet.
 
-Una vez introducidos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe otra vea que la configuración de los DNS de tu dominio es correcta.
+Haciendo click en "Ver" en la columna DNS de tu dominio (ver captura de pantalla anterior), encontrarás las configuraciones requeridas para que tu dominio funcione con tu web o aplicación y servidor de correo en MaadiX (en esta sección encotrarás también, si las necesitas, instrucciones más detalladas de como editar tu Registro A de DNS para que tu web o aplicación en MaadiX funcione con tu dominio y tu Registro MX de DNS para que tu servidor de correo en MaadiX funcione con tu dominio). 
 
-======
-Screenshot de configuración requerida
+![Screenshot](img/dominio-configuracion-requerida.png) 
 
-![Screenshot](img/statusok.png)  
+Debes introducier estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* ó *Editar registros DNS*.
 
-======
+Una vez hechos los cambios, refresca la sección **Ver Dominios** en MaadiX para que compruebe nuevamente que la configuración de los DNS de tu dominio es correcta.
 
 
 ### Subir tu web o aplicación al dominio propio
@@ -63,6 +62,14 @@ Ahora ya puedes subir los archivos de tu web o aplicación web a la recién crea
 **Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor */var/www/html/subdominio.maadix.org/*, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio recién activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva */var/www/html/example.com/*. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
 
 Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web)
+
+
+### Utiliza tu dominio propio para tu servidor de correo
+
+Ahora que ya tienes activado y configurado tu dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor en MaadiX), ya puedes empezar a usar tu servidor de correo electrónico en MaadiX. En el apartado *Email -> Cuentas mail* puedes abrir nuevas cuentas de correo *usuaioejemplo@ejemplo.com* para tu dominio.
+
+
+Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email)
 
 
 ----
