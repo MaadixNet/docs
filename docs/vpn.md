@@ -1,13 +1,17 @@
 # VPN
 
-Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual) ), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a travs de una red pública sobre la que no tienes control como Internet. 
+Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual) ), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a través de una red pública sobre la que no tienes control como Internet.
 
-La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite una connexión segura si, por ejemplo, estás navegando a través de una red WiFi pública. 
+La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite navergar de manera más segura si, por ejemplo, ests conectado a una red WiFi pública. 
   
-Para activar una conexión VPN con tu servidor necesitas crear el usuario en el Cpanel y tener instalado un programa  'cliente' en los dispositivo que se van a conectar.  
+Para empezar a usar la VPN de tu servidor MaadiX debes llevar a cabo dos procesos:
+* Crear o editar un usuario en el Cpanel de MaadiX para darle acceso a la VPN
+* Instalar un programa  'cliente' en el dispositivo que quieres conectar a través de la VPN
 
-# Crear cuentas 
 
+# Crear o editar un usuario en el Cpanel de MaadiX para darle acceso a la VPN
+
+Accede a la sección 
 1- Desde el Cpanel entra en la pestaña 'Usuarios'. Puedes editar un usuario existente o crear uno nuevo.  
 2- Entre los atributos disponibles verás 'Cuenta VPN'. Activa la casilla.  
 3- Si quieres enviar indicaciones al usuario para configurar su conexión, activa la casilla 'Enviar email con instrucciones al usuario'  
