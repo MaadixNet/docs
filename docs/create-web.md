@@ -25,9 +25,9 @@ Si al activar tu dominio le has asignado un usuario Webmaster específico (lo cu
 Las credenciales para la conexión con el usuario Webmaster son:
 
 * **Servidor**: tu *subdomino.maadix.org*
-* **Protocolo**: SFT/SSH  
+* **Protocolo**: SFTP  
 * **Modo de acceso**: Normal  
-* **Usuario**: El nombre del usuario Webmaster
+* **Usuario**: El nombre del usuario Webmaster (sensible a mayúsculas/minúsculas)
 * **Contraseña**: La contraseña que has establecido para este usuario
 
 ![Screenshot](img/sftp-anna.png)
@@ -58,9 +58,9 @@ Si no has creado ningún usuario webmaster para tu nuevo dominio, el propietario
 Puedes establecer connexión por SFTP como tu Superusuario con las credenciales:
 
 * **Servidor**: tu *subdomino.maadix.org*
-* **Protocolo**: SFT/SSH  
+* **Protocolo**: SFTP 
 * **Modo de acceso**: Normal  
-* **Usuario**: El nombre del Superusuario
+* **Usuario**: El nombre del Superusuario (sensible a mayúsculas/minúsculas)
 * **Contraseña**: La contraseña del Superusuario
 
 Si no recuerdas tus datos de Superusuario, puedes consultarlos en la pestaña **usuarios** de tu Cpanel. Es el primero que aparece en la lista. También puedes ahí restablecer su contraseña en caso de que la hayas olvidado.
