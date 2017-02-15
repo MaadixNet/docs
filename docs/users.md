@@ -6,7 +6,7 @@ A diferencia del Superusuario, este tipo de usuario nunca podrá ver, acceder ni
 
 ## Crear un usuario nuevo
 
-En el menú, haz click en **Usuarios de sistema**. En este apartado podrás ver listados los usuarios de sistema actuales. El primero de esta lista es siempre el Superusuario de sistema.
+Haz click en la pestaña **Usuarios** de tu Cpanel. En este apartado puedes ver listados los usuarios de sistema actuales. Puedes también ver cuales de ellos tienen acceso El primero de esta lista es siempre el Superusuario de sistema.
 
 
 
