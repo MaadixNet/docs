@@ -25,7 +25,7 @@ Para cada dominio o subdominio que actives en MaadiX se creará una carpeta */va
 
 * **Webmaster**: A cada dominio o subdominio que actives en MaadiX puedes asignarle un (Webmaster) (Administrador Web).  
   
-El Webmaster tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta */var/www/html/example.com/*, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP o SSH a esta carpeta y a su home, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
+El Webmaster tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta */var/www/html/example.com/*, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP a esta carpeta y a su home, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
 
 Si no asignas ningún usuario como Webmaster, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
 
@@ -57,7 +57,7 @@ Una vez hechos los cambios, refresca la sección **Ver Dominios** en MaadiX para
 
 ## Subir tu web o aplicación al dominio propio
 
-Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)) o por SSH. Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
+Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta */var/www/html/example.com/*. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
 **Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor */var/www/html/subdominio.maadix.org/*, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio recién activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva */var/www/html/example.com/*. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
 
