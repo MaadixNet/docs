@@ -30,7 +30,7 @@ Las credenciales para la conexión con el usuario Webmaster son:
 * **Usuario**: El nombre del usuario Webmaster (sensible a mayúsculas/minúsculas)
 * **Contraseña**: La contraseña que has establecido para este usuario
 
-![Screenshot](img/sftp-anna.png)
+![Screenshot](img/sftp-user.png)
 
 Cuando se establezca la conexión el usuario Webmaster verá na carpeta con su nombre. En ella encontrará una carpeta que le da acceso a */var/www/html/midominio.com*, o varias si es Webmaster de otros dominios a parte de este.
 
