@@ -4,12 +4,12 @@ Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.
 
 La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite navergar de manera más segura si, por ejemplo, ests conectado a una red WiFi pública. 
   
-Para empezar a usar la VPN de tu servidor MaadiX debes llevar a cabo dos procesos:
-* Crear o editar un usuario en el Cpanel de MaadiX para darle acceso a la VPN
+Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
+* Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
 * Instalar un programa  'cliente' en el dispositivo que quieres conectar a través de la VPN
 
 
-# Crear o editar un usuario en el Cpanel de MaadiX para darle acceso a la VPN
+# Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
 
 Accede a la sección 
 1- Desde el Cpanel entra en la pestaña 'Usuarios'. Puedes editar un usuario existente o crear uno nuevo.  
