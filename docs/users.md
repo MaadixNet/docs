@@ -1,12 +1,12 @@
 # Cómo crear y editar usuarios de sistema
 
-MaadiX permite crear fácilmente, a través de tu Cpanel, usuarios de sistema con acceso SFTP/SSH a tu servidor. Estos usuarios de sistema tienen su propio espacio en tu servidor con ruta */home/sftpusers/usuario/*. Dentro de este espacio podrán crear y modificar archivos y carpteas. También ahí encontrarán el acceso directo a las carpetas de los dominios de los que sean Webmaster.
+MaadiX permite crear fácilmente, a través de tu Cpanel, usuarios de sistema con acceso SFTP/SSH a tu servidor. Estos usuarios de sistema tienen su propio espacio en tu servidor con ruta `/home/sftpusers/usuario/`. Dentro de este espacio podrán crear y modificar archivos y carpteas. También ahí encontrarán el acceso directo a las carpetas de los dominios de los que sean Webmaster.
 
-A diferencia del Superusuario, este tipo de usuario nunca podrá ver, acceder ni modificar el resto de carpetas y archivos del servidor más allá de su carpeta personal */home/usuario/* y de las carpetas de dominio de las que sea Webmaster.
+A diferencia del Superusuario, este tipo de usuario nunca podrá ver, acceder ni modificar el resto de carpetas y archivos del servidor más allá de su carpeta personal `/home/usuario/` y de las carpetas de dominio de las que sea Webmaster.
 
 ## Crear un usuario nuevo
 
-Haz click en la pestaña **Usuarios** de tu Cpanel. En este apartado puedes ver listados todos los usuarios de sistema actuales. Puedes ver cuales de ellos tienen acceso SFTP a su */home/sftpusers/usuario/* en tu servidor, si tienen activado el servicio VPN y tus dominios propios de los que son Webmaster. El primer usuario de esta lista es siempre el SuperUsuario de sistema.
+Haz click en la pestaña **Usuarios** de tu Cpanel. En este apartado puedes ver listados todos los usuarios de sistema actuales. Puedes ver cuales de ellos tienen acceso SFTP a su `/home/sftpusers/usuario/` en tu servidor, si tienen activado el servicio VPN y tus dominios propios de los que son Webmaster. El primer usuario de esta lista es siempre el SuperUsuario de sistema.
 
 ![Screenshot](img/lista-usuarios.png)
 
@@ -14,7 +14,7 @@ Haz click en le botón **Añadir Usuario** encima de la lista para desplegar el 
 
 ### Acceso SFTP
 
-Marcando la casilla **Acceso SFTP** se creará una carpeta para el nuevo usuario dentro de tu servidor en la ruta */home/sftpusers/usuario/* a la cual tendrá acceso por SFTP con los creedenciales:
+Marcando la casilla **Acceso SFTP** se creará una carpeta para el nuevo usuario dentro de tu servidor en la ruta `/home/sftpusers/usuario/` a la cual tendrá acceso por SFTP con los creedenciales:
 
 * **Servidor**: tu *subdomino.maadix.org*
 * **Protocolo**: SFTP  
@@ -39,7 +39,7 @@ Por defecto al crear la cuenta VPN para el nuevo usuario se le enviará un mail 
 
 Puedes ver y editar tus usuarios entrando en la sección **Usuarios** del menú y dentro de la lista de usuarios haciendo click en el botón *editar* del usuario que quieras modificar.
 
-En la pantalla de edición puedes, en cualquier momento, activar o desactivar el acceso SFTP del usuario. Ahí está también apuntada la ruta a su directorio personal que siempre es    /home/sftpusers/usuario    .
+En la pantalla de edición puedes, en cualquier momento, activar o desactivar el acceso SFTP del usuario. Ahí está también apuntada la ruta a su directorio personal que siempre es `/home/sftpusers/usuario`.
 
 Puedes crear o borrar la cuenta VPN del usuario desde aquí, además de mandarle nuevamente las instrucciones para uso y archivos de configuración
 
@@ -50,4 +50,6 @@ Puedes también aquí modificar la contraseña del usuario de sistema. Esta es l
 
 ## Eliminar usuario
 
-Los usuarios de sistema se eliminan también desde la sección **Usuarios** de tu Cpanel.
+Desde la sección **Usuarios** de tu Cpanel también se eliminan los usuarios de sistema. Al eliminarlos perderán el acceso SFTP a tu servidor y se borrará su directorio home. Los archivos que había en ese directorio no se perderán si no que pasarán a `/home/superusuario/sftp-deleted/usuario/`. Ahí puedes conservarlos o eliminarlos manualmente.
+
+![Screenshot](img/delete-user.png)
