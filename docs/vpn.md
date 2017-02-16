@@ -1,4 +1,4 @@
-# VPN
+# VPN: activar cuentas y configurar el cliente
 
 Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual) ), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a través de una red pública sobre la que no tienes control como Internet.
 
@@ -17,7 +17,7 @@ Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
 
 3- Marca la casilla '*Enviar instrucciones*' para enviar al usuario un email con los archivos de configuración y las instrucciones para configurar el cliente VPN (nota: las instrucciones incluyen todos los datos necesarios menos la contraseña. Por razones de seguridad, proporciona al usuario la contraseña por otro canal).
 
-![Screenshot](img/activar-cuente-vpn.png)
+![Screenshot](img/activar-cuenta-vpn.png)
 
 
 # Instalar y configurar cliente OpenVPN 
