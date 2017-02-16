@@ -6,62 +6,67 @@ La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando un
   
 Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
 * Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
-* Instalar un programa  'cliente' en el dispositivo que quieres conectar a través de la VPN
+* Instalar un programa 'cliente' en el dispositivo que quieres conectar a través de la VPN
 
 
 # Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
 
-Accede a la sección 
-1- Desde el Cpanel entra en la pestaña 'Usuarios'. Puedes editar un usuario existente o crear uno nuevo.  
-2- Entre los atributos disponibles verás 'Cuenta VPN'. Activa la casilla.  
-3- Si quieres enviar indicaciones al usuario para configurar su conexión, activa la casilla 'Enviar email con instrucciones al usuario'  
+1- Desde el Cpanel entra en la pestaña '**Usuarios**'. Puedes editar un usuario existente o crear uno nuevo.  
+
+2- Entre los atributos disponibles verás '*Cuenta VPN*'. Marca esa casilla para activar la cuenta VPN para este usuario.  
+
+3- Marca la casilla '*Enviar instrucciones*' para enviar al usuario un email con los archivos de configuración y las instrucciones para configurar el cliente VPN (nota: las instrucciones incluyen todos los datos necesarios menos la contraseña. Por razones de seguridad, proporciona al usuario la contraseña por otro canal).
+
+![Screenshot](img/activar-cuente-vpn.png)
 
 
-# Instalar y configurar cliente  
+# Instalar y configurar cliente OpenVPN 
+
+La VPN de MaddiX funciona con OpenVPN. Es necesario instalar en los dispositivos que vayan a utilizarla el software de OpenVPN y añadir ciertas configuraciones. A continuación puedes encontrar un tutorial sencillo para diferentes sistemas operativos (Linux / MacOX / Windows) y para PC o móvil:
 
 ## Windows
 
-1- Descargar e instalar la aplicación OpenVpn  
+1- Descarga e instalar la aplicación OpenVpn.
 
 https://openvpn.net/index.php/open-source/downloads.html  
 
 ![Screenshot](img/windows-vpn/01-vpn-download.png)
 
 
-2- Tomar nota de la ubicación de la aplicación y acabada la instalación copiar en la carpeta \config los dos archivos  
-a) vpn.ovpn    
-b) ca.crt  
+2- Toma nota de la ubicación de la aplicación. Una vez acabada la instalación, copia en la carpeta \config los dos archivos dentro de la carpeta `/windows/` que deben haberte llegado por correo cuando se activó tu cuenta de VPN. 
+a) `vpn.ovpn`    
+b) `ca.crt`  
 
 ![Screenshot](img/windows-vpn/02-vpn-location.png)
 
-NOTA: La ubicación por defecto es C:\Program Files\OpenVPN, así que tendrás que copiar ambos archivos en C:\Program Files\OpenVPN\config a menos que durante la instalación hayas ubicado la aplicación en otra carpeta 
+NOTA: La ubicación por defecto es `C:\Program Files\OpenVPN`, así que tendrás que copiar ambos archivos en `C:\Program Files\OpenVPN\config\` a menos que durante la instalación hayas ubicado la aplicación en otra carpeta.
 
-Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que copiar. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control  
+Si no has recibido ningún mail con instrucciones para instalar el cliente VPN y los archivos de configuración, solicita estos datos al administrador para que te lo reenvíe desde el Cpanel. 
 
-3- Abre la aplicación OpenVPN GUI   
+3- Abre la aplicación OpenVPN GUI. Posiblemente se haya creado un acceso directo en tu escritorio.
 
-4- Introduce el usuario y contraseña que te han proporcionado para la conexión  
+4- Introduce el usuario y contraseña que debe haber proporcionado el administrador para la conexión.
 
 ![Screenshot](img/windows-vpn/03-insert-user.png)
 
- Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.
-
+Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.
 
 ## Linux
 
-1- Instala el cliente openVpn si no lo tienes instalado todavía (muchas distribuciones de linux lo incluyen por defecto)     
+1- Instala el cliente OpenVpn si no lo tienes instalado todavía (muchas distribuciones de linux lo incluyen por defecto).   
 
 Por consola:  
 
     sudo apt-get install netwotk-manager-openvpn
+    sudo restart network-manager
 
 Con Synaptic
 Aplicaciones > Herramientas de Sistema > Gestor de paquetes Synaptic busca y selecciona netwotk-manager-openvpn  
-Una vez seleccionado el paquete haz click en 'Aplicar', en la bandeja superir de la interfaz
+Una vez seleccionado el paquete haz click en 'Aplicar', en la bandeja superior de la interfaz.
 
 ![Screenshot](img/linux-vpn/01-install.png)
 
-2- Haz click en 'Configuración de Red' desde el panel de Network Manager  
+2- Haz click en 'Configuración de Red' desde el panel de Network Manager.  
 
 ![Screenshot](img/linux-vpn/ubuntu-edit.conn.png)
 
