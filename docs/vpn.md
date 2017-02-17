@@ -1,8 +1,8 @@
 # VPN: activar cuentas y configurar el cliente
 
-Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual) ), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a través de una red pública sobre la que no tienes control como Internet.
+Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual)), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a través de una red pública sobre la que no tienes control como Internet.
 
-La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite navergar de manera más segura si, por ejemplo, ests conectado a una red WiFi pública. 
+La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite navegar de manera más segura si, por ejemplo, estás conectado a una red WiFi pública. 
   
 Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
 * Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
@@ -34,6 +34,7 @@ https://openvpn.net/index.php/open-source/downloads.html
 
 
 2- Toma nota de la ubicación de la aplicación. Una vez acabada la instalación, copia en la carpeta \config los dos archivos dentro de la carpeta `/windows/` que deben haberte llegado por correo cuando se activó tu cuenta de VPN (\*). 
+
 a) `vpn.ovpn`    
 b) `ca.crt`  
 
@@ -100,7 +101,7 @@ En unos segundos se crea la conexión. Para comprobar que la conexión se ha efe
 
 [Descargar OpenVpn Connect](https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=es)
 
-3- Lanza la aplicación. En el manú el menú escoge la opción 'Import'.  
+3- Lanza la aplicación. En el menú el menú escoge la opción 'Import'.  
 
 ![Screenshot](img/android-vpn/01-import.png)
 
@@ -108,7 +109,7 @@ En unos segundos se crea la conexión. Para comprobar que la conexión se ha efe
 
 ![Screenshot](img/android-vpn/02-profile.jpeg)
 
-4- Localiza y selecciona en tu tarjeta SD el archivo de configuración descargado anteriormente y con ruta `/VPN-(direcciónIP)/android/android-client.ovpn`. En esta misma carpeta tiene que haber un archivo ca.crt necesario tambin para configurar el cliente VPN.
+4- Localiza y selecciona en tu tarjeta SD el archivo de configuración descargado anteriormente y con ruta `/VPN-(direcciónIP)/android/android-client.ovpn`. En esta carpeta encontrarás también un archivo ca.crt que debe estar ahí para que se configure correctamente el cliente VPN.
 
 ![Screenshot](img/android-vpn/03-choosefile.jpeg)
 
@@ -125,4 +126,4 @@ la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](h
 
 -----
 
-(\*) Cuando el administrador activa una cuenta VPN desde el Cpanel puede enviar un mail con instrucciones para instalar el cliente VPN y los archivos de configuración de configuración necesarios para diferentes sistemas operativos. Si por alguna razón el usuario de la cuenta VPN no ha recibido este mail con estas instrucciones y archivos, debe solicitarlo de nuevo al administrador. El administrador puede reenviarlo en cualquier momento desde el panel de edicin del usuario en concreto.
+(\*) Cuando el administrador activa una cuenta VPN desde el Cpanel puede enviar un mail con instrucciones para instalar el cliente VPN y los archivos de configuración de configuración necesarios para diferentes sistemas operativos. Si por alguna razón el usuario de la cuenta VPN no ha recibido este mail con estas instrucciones y archivos, debe solicitarlo de nuevo al administrador. El administrador puede reenviarlo en cualquier momento desde el panel de edición del usuario en concreto.
