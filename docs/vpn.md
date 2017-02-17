@@ -22,7 +22,7 @@ Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
 
 # Instalar y configurar cliente OpenVPN 
 
-La VPN de MaddiX funciona con OpenVPN. Es necesario instalar en los dispositivos que vayan a utilizarla el software de OpenVPN y añadir ciertas configuraciones. A continuación puedes encontrar un tutorial sencillo para diferentes sistemas operativos (Linux / MacOX / Windows) y para PC o móvil:
+La VPN de MaddiX funciona con OpenVPN. Es necesario instalar en los dispositivos que vayan a utilizarla el software de OpenVPN y añadir ciertas configuraciones. A continuación puedes encontrar un tutorial sencillo para PCs con sistema operativo Linux  y Windows y para móviles Android:
 
 ## Windows
 
@@ -33,15 +33,13 @@ https://openvpn.net/index.php/open-source/downloads.html
 ![Screenshot](img/windows-vpn/01-vpn-download.png)
 
 
-2- Toma nota de la ubicación de la aplicación. Una vez acabada la instalación, copia en la carpeta \config los dos archivos dentro de la carpeta `/windows/` que deben haberte llegado por correo cuando se activó tu cuenta de VPN. 
+2- Toma nota de la ubicación de la aplicación. Una vez acabada la instalación, copia en la carpeta \config los dos archivos dentro de la carpeta `/windows/` que deben haberte llegado por correo cuando se activó tu cuenta de VPN (\*). 
 a) `vpn.ovpn`    
 b) `ca.crt`  
 
 ![Screenshot](img/windows-vpn/02-vpn-location.png)
 
 NOTA: La ubicación por defecto es `C:\Program Files\OpenVPN`, así que tendrás que copiar ambos archivos en `C:\Program Files\OpenVPN\config\` a menos que durante la instalación hayas ubicado la aplicación en otra carpeta.
-
-Si no has recibido ningún mail con instrucciones para instalar el cliente VPN y los archivos de configuración, solicita estos datos al administrador para que te lo reenvíe desde el Cpanel. 
 
 3- Abre la aplicación OpenVPN GUI. Posiblemente se haya creado un acceso directo en tu escritorio.
 
@@ -60,67 +58,71 @@ Por consola:
     sudo apt-get install netwotk-manager-openvpn
     sudo restart network-manager
 
-Con Synaptic
-Aplicaciones > Herramientas de Sistema > Gestor de paquetes Synaptic busca y selecciona netwotk-manager-openvpn  
-Una vez seleccionado el paquete haz click en 'Aplicar', en la bandeja superior de la interfaz.
+Con Synaptic:
+
+Aplicaciones > Herramientas de Sistema > Gestor de paquetes Synaptic
+
+Busca y selecciona netwotk-manager-openvpn  e instalalo.
 
 ![Screenshot](img/linux-vpn/01-install.png)
 
-2- Haz click en 'Configuración de Red' desde el panel de Network Manager.  
+2- Haz click en 'Configuración de Red' desde el panel de Network Manager (el nombre puede ser tambié 'Preferencias de Red', 'Conexiones de Red' y otro según la distribución de linux).
 
 ![Screenshot](img/linux-vpn/ubuntu-edit.conn.png)
 
-3- Busca el botón 'Añadir' o '+' para  añadir la configuración y elige VPN  
+3- Busca el botón 'Añadir' o '+' para  añadir la configuración y elige la opción VPN/OpenVPN.
 
 ![Screenshot](img/linux-vpn/03-add-vpn.png)
 
-4- Escoge la opción 'Importar desde un archivo'  
+4- Escoge la opción 'Importar desde un archivo'.
 
 ![Screenshot](img/linux-vpn/03-import-profile.png)
 
-5- Selecciona el archivo vpn.conf que te han proporcionado  
+5- Importa el archivo vpn.conf dentro de la carpeta `/linux/` que debe haberte llegado por correo cuando se activó tu cuenta de VPN (\*).
 
 ![Screenshot](img/linux-vpn/04-select-file.png)
 
-Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar para una fácil configuración. Ambos archivos (vpn.conf y ca.crt) tienen que estar en la misma carpeta por lo que no los muevas. Simplemente importa el archio vpn.conf.   
-
-
-6- Inserta un nombre para tu conexión el usuario que recibiste .Por razones de seguridad la contraseña no se envia por email. El administrador de sistema se encargará de hacertela llegar por el medio que considere más seguro. Elije el método de gestión de la contraseña (es aconsejable la opción 'Preguntar siempre')    
+6- Introduce el usuario y contraseña para tu conexión que el administrador debe haberte comunicado por un canal seguro. Por razones de seguridad la contraseña no se envía junto al mail de instrucciones. Elije el método de gestión de la contraseña (es aconsejable la opción 'Preguntar siempre').
 
 ![Screenshot](img/linux-vpn/04-select-file.png) 
 
-7- Vuelve al panel del Network Manager y activa la conexión recién creada
+7- Vuelve al panel del Network Manager y activa la conexión recién creada.
+
 ![Screenshot](img/linux-vpn/07-connected-vpn.png) 
 
 En unos segundos se crea la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.  
 
 ## Android
 
-1- Descarga el cliente OpenVpn Connect para Android  
+1- Extrae y guarda en tu tarjeta SD los archivos de configuración que se te habrán enviado por correo al crearte la cuenta VPN (\*). 
+
+2- Descarga la App **OpenVpn Connect** para Android. 
 
 [Descargar OpenVpn Connect](https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=es)
 
-2- Lanza la aplicación y desde el menú escoge 'Import'  
+3- Lanza la aplicación. En el manú el menú escoge la opción 'Import'.  
 
 ![Screenshot](img/android-vpn/01-import.png)
 
-3- Selecciona 'Import profile from SD card'  
+4- Selecciona 'Import profile from SD card'.  
 
 ![Screenshot](img/android-vpn/02-profile.jpeg)
 
-4- Selecciona el archivo de configuración android-client.ovpn que  has previamente recibido y guardado en tu dispositivo    
+4- Localiza y selecciona en tu tarjeta SD el archivo de configuración descargado anteriormente y con ruta `/VPN-(direcciónIP)/android/android-client.ovpn`. En esta misma carpeta tiene que haber un archivo ca.crt necesario tambin para configurar el cliente VPN.
 
 ![Screenshot](img/android-vpn/03-choosefile.jpeg)
 
-Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar. Ambos archivos (android-client.ovpn y ca.crt) tienen que estar en la misma carpeta. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control
-
-5- Inserta el nombre de usuario y la contraseña  
+5- Introduce el usuario y contraseña para tu conexión que el administrador debe haberte comunicado por un canal seguro. Por razones de seguridad la contraseña no se envía junto al mail de instrucciones
 
 ![Screenshot](img/android-vpn/04-user-password.jpeg)
 
-6- Espera unos segundos hasta que se establezca la conexión  
+6- Espera unos segundos hasta que se establezca la conexión.
 
 ![Screenshot](img/android-vpn/05-connect.jpeg)
 
- Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.
+la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.
 
+
+-----
+
+(\*) Cuando el administrador activa una cuenta VPN desde el Cpanel puede enviar un mail con instrucciones para instalar el cliente VPN y los archivos de configuración de configuración necesarios para diferentes sistemas operativos. Si por alguna razón el usuario de la cuenta VPN no ha recibido este mail con estas instrucciones y archivos, debe solicitarlo de nuevo al administrador. El administrador puede reenviarlo en cualquier momento desde el panel de edicin del usuario en concreto.
