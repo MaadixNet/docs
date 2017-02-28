@@ -4,7 +4,15 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2017-02-01</lastmod>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/users/</loc>
+     <lastmod>2017-02-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +20,7 @@
     
     <url>
      <loc>None/dominios/</loc>
-     <lastmod>2017-02-01</lastmod>
+     <lastmod>2017-02-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +28,7 @@
     
     <url>
      <loc>None/email/</loc>
-     <lastmod>2017-02-01</lastmod>
+     <lastmod>2017-02-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
      <loc>None/vpn/</loc>
-     <lastmod>2017-02-01</lastmod>
+     <lastmod>2017-02-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +44,7 @@
     
     <url>
      <loc>None/create-web/</loc>
-     <lastmod>2017-02-01</lastmod>
+     <lastmod>2017-02-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

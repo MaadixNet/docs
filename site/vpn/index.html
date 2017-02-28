@@ -63,6 +63,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../users/">Usuarios</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../dominios/">Dominios</a>
         
     </li>
@@ -81,13 +88,13 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#vpn">VPN</a></li>
+                <li class="toctree-l3"><a href="#vpn-activar-cuentas-y-configurar-el-cliente">VPN: activar cuentas y configurar el cliente</a></li>
                 
             
-                <li class="toctree-l3"><a href="#crear-cuentas">Crear cuentas</a></li>
+                <li class="toctree-l3"><a href="#crear-o-editar-un-usuario-desde-tu-cpanel-para-darle-acceso-a-la-vpn">Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN</a></li>
                 
             
-                <li class="toctree-l3"><a href="#instalar-y-configurar-cliente">Instalar y configurar cliente</a></li>
+                <li class="toctree-l3"><a href="#instalar-y-configurar-cliente-openvpn">Instalar y configurar cliente OpenVPN</a></li>
                 
                     <li><a class="toctree-l4" href="#windows">Windows</a></li>
                 
@@ -140,68 +147,72 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="vpn">VPN</h1>
-<p>Una red privada virtual (Virtual Private Network en inglés), es una tecnología de red que permite una extensión segura de la red de área local (LAN) sobre una red pública o no controlada como internet. </p>
-<p>Esto permite conectarse a otro dispositivo, en este caso tu servidor en MaadiX, a través de una conexión cifrada y segura, además de poder visitar cualquier dirección de internet utilizando esta misma comexión.  </p>
-<p>Para saber más visita <a href="https://es.wikipedia.org/wiki/Red_privada_virtual">VPN - Wikipedia</a>  </p>
-<p>Para activar una conexión VPN con tu servidor necesitas crear el usuario en el Cpanel y tener instalado un programa  'cliente' en los dispositivo que se van a conectar.  </p>
-<h1 id="crear-cuentas">Crear cuentas</h1>
-<p>1- Desde el Cpanel entra en la pestaña 'Usuarios'. Puedes editar un usuario existente o crear uno nuevo.<br />
-2- Entre los atributos disponibles verás 'Cuenta VPN'. Activa la casilla.<br />
-3- Si quieres enviar indicaciones al usuario para configurar su conexión, activa la casilla 'Enviar email con instrucciones al usuario'  </p>
-<h1 id="instalar-y-configurar-cliente">Instalar y configurar cliente</h1>
+                <h1 id="vpn-activar-cuentas-y-configurar-el-cliente">VPN: activar cuentas y configurar el cliente</h1>
+<p>Una red privada virtual o VPN (<a href="https://es.wikipedia.org/wiki/Red_privada_virtual">Virtual Private Network - Wikipedia</a>), es una tecnología de red que permite una extensión segura de tu red privada de área local (LAN) a través de una red pública sobre la que no tienes control como Internet.</p>
+<p>La VPN de MaadiX te permite conectarte a tu servidor y gestionarlo utilizando una conexión cifrada y segura. Además de ello, puedes visitar cualquier dirección de Internet pasando primero a través de tu VPN. Esto te permite navegar de manera más segura si, por ejemplo, estás conectado a una red WiFi pública. </p>
+<p>Para empezar a usar la VPN de tu servidor debes llevar a cabo dos procesos:
+<em> Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN
+</em> Instalar un programa 'cliente' en el dispositivo que quieres conectar a través de la VPN</p>
+<h1 id="crear-o-editar-un-usuario-desde-tu-cpanel-para-darle-acceso-a-la-vpn">Crear o editar un usuario desde tu Cpanel para darle acceso a la VPN</h1>
+<p>1- Desde el Cpanel entra en la pestaña '<strong>Usuarios</strong>'. Puedes editar un usuario existente o crear uno nuevo.  </p>
+<p>2- Entre los atributos disponibles verás '<em>Cuenta VPN</em>'. Marca esa casilla para activar la cuenta VPN para este usuario.  </p>
+<p>3- Marca la casilla '<em>Enviar instrucciones</em>' para enviar al usuario un email con los archivos de configuración y las instrucciones para configurar el cliente VPN (nota: las instrucciones incluyen todos los datos necesarios menos la contraseña. Por razones de seguridad, proporciona al usuario la contraseña por otro canal).</p>
+<p><img alt="Screenshot" src="../img/activar-cuenta-vpn.png" /></p>
+<h1 id="instalar-y-configurar-cliente-openvpn">Instalar y configurar cliente OpenVPN</h1>
+<p>La VPN de MaddiX funciona con OpenVPN. Es necesario instalar en los dispositivos que vayan a utilizarla el software de OpenVPN y añadir ciertas configuraciones. A continuación puedes encontrar un tutorial sencillo para PCs con sistema operativo Linux  y Windows y para móviles Android:</p>
 <h2 id="windows">Windows</h2>
-<p>1- Descargar e instalar la aplicación OpenVpn  </p>
+<p>1- Descarga e instalar la aplicación OpenVpn.</p>
 <p>https://openvpn.net/index.php/open-source/downloads.html  </p>
 <p><img alt="Screenshot" src="../img/windows-vpn/01-vpn-download.png" /></p>
-<p>2- Tomar nota de la ubicación de la aplicación y acabada la instalación copiar en la carpeta \config los dos archivos<br />
-a) vpn.ovpn  <br />
-b) ca.crt  </p>
+<p>2- Toma nota de la ubicación de la aplicación. Una vez acabada la instalación, copia en la carpeta \config los dos archivos dentro de la carpeta <code>/windows/</code> que deben haberte llegado por correo cuando se activó tu cuenta de VPN (*). </p>
+<p>a) <code>vpn.ovpn</code>  <br />
+b) <code>ca.crt</code>  </p>
 <p><img alt="Screenshot" src="../img/windows-vpn/02-vpn-location.png" /></p>
-<p>NOTA: La ubicación por defecto es C:\Program Files\OpenVPN, así que tendrás que copiar ambos archivos en C:\Program Files\OpenVPN\config a menos que durante la instalación hayas ubicado la aplicación en otra carpeta </p>
-<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que copiar. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control  </p>
-<p>3- Abre la aplicación OpenVPN GUI   </p>
-<p>4- Introduce el usuario y contraseña que te han proporcionado para la conexión  </p>
+<p>NOTA: La ubicación por defecto es <code>C:\Program Files\OpenVPN</code>, así que tendrás que copiar ambos archivos en <code>C:\Program Files\OpenVPN\config\</code> a menos que durante la instalación hayas ubicado la aplicación en otra carpeta.</p>
+<p>3- Abre la aplicación OpenVPN GUI. Posiblemente se haya creado un acceso directo en tu escritorio.</p>
+<p>4- Introduce el usuario y contraseña que debe haber proporcionado el administrador para la conexión.</p>
 <p><img alt="Screenshot" src="../img/windows-vpn/03-insert-user.png" /></p>
 <p>Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.</p>
 <h2 id="linux">Linux</h2>
-<p>1- Instala el cliente openVpn si no lo tienes instalado todavía (muchas distribuciones de linux lo incluyen por defecto)     </p>
+<p>1- Instala el cliente OpenVpn si no lo tienes instalado todavía (muchas distribuciones de linux lo incluyen por defecto).   </p>
 <p>Por consola:  </p>
 <pre><code>sudo apt-get install netwotk-manager-openvpn
+sudo restart network-manager
 </code></pre>
-<p>Con Synaptic
-Aplicaciones &gt; Herramientas de Sistema &gt; Gestor de paquetes Synaptic busca y selecciona netwotk-manager-openvpn<br />
-Una vez seleccionado el paquete haz click en 'Aplicar', en la bandeja superir de la interfaz</p>
+<p>Con Synaptic:</p>
+<p>Aplicaciones &gt; Herramientas de Sistema &gt; Gestor de paquetes Synaptic</p>
+<p>Busca y selecciona netwotk-manager-openvpn  e instalalo.</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/01-install.png" /></p>
-<p>2- Haz click en 'Configuración de Red' desde el panel de Network Manager  </p>
+<p>2- Haz click en 'Configuración de Red' desde el panel de Network Manager (el nombre puede ser tambié 'Preferencias de Red', 'Conexiones de Red' y otro según la distribución de linux).</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/ubuntu-edit.conn.png" /></p>
-<p>3- Busca el botón 'Añadir' o '+' para  añadir la configuración y elige VPN  </p>
+<p>3- Busca el botón 'Añadir' o '+' para  añadir la configuración y elige la opción VPN/OpenVPN.</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/03-add-vpn.png" /></p>
-<p>4- Escoge la opción 'Importar desde un archivo'  </p>
+<p>4- Escoge la opción 'Importar desde un archivo'.</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/03-import-profile.png" /></p>
-<p>5- Selecciona el archivo vpn.conf que te han proporcionado  </p>
+<p>5- Importa el archivo vpn.conf dentro de la carpeta <code>/linux/</code> que debe haberte llegado por correo cuando se activó tu cuenta de VPN (*).</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/04-select-file.png" /></p>
-<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar para una fácil configuración. Ambos archivos (vpn.conf y ca.crt) tienen que estar en la misma carpeta por lo que no los muevas. Simplemente importa el archio vpn.conf.   </p>
-<p>6- Inserta un nombre para tu conexión el usuario que recibiste .Por razones de seguridad la contraseña no se envia por email. El administrador de sistema se encargará de hacertela llegar por el medio que considere más seguro. Elije el método de gestión de la contraseña (es aconsejable la opción 'Preguntar siempre')    </p>
+<p>6- Introduce el usuario y contraseña para tu conexión que el administrador debe haberte comunicado por un canal seguro. Por razones de seguridad la contraseña no se envía junto al mail de instrucciones. Elije el método de gestión de la contraseña (es aconsejable la opción 'Preguntar siempre').</p>
 <p><img alt="Screenshot" src="../img/linux-vpn/04-select-file.png" /> </p>
-<p>7- Vuelve al panel del Network Manager y activa la conexión recién creada
-<img alt="Screenshot" src="../img/linux-vpn/07-connected-vpn.png" /> </p>
+<p>7- Vuelve al panel del Network Manager y activa la conexión recién creada.</p>
+<p><img alt="Screenshot" src="../img/linux-vpn/07-connected-vpn.png" /> </p>
 <p>En unos segundos se crea la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.  </p>
 <h2 id="android">Android</h2>
-<p>1- Descarga el cliente OpenVpn Connect para Android  </p>
+<p>1- Extrae y guarda en tu tarjeta SD los archivos de configuración que se te habrán enviado por correo al crearte la cuenta VPN (*). </p>
+<p>2- Descarga la App <strong>OpenVpn Connect</strong> para Android. </p>
 <p><a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn&amp;hl=es">Descargar OpenVpn Connect</a></p>
-<p>2- Lanza la aplicación y desde el menú escoge 'Import'  </p>
+<p>3- Lanza la aplicación. En el menú el menú escoge la opción 'Import'.  </p>
 <p><img alt="Screenshot" src="../img/android-vpn/01-import.png" /></p>
-<p>3- Selecciona 'Import profile from SD card'  </p>
+<p>4- Selecciona 'Import profile from SD card'.  </p>
 <p><img alt="Screenshot" src="../img/android-vpn/02-profile.jpeg" /></p>
-<p>4- Selecciona el archivo de configuración android-client.ovpn que  has previamente recibido y guardado en tu dispositivo    </p>
+<p>4- Localiza y selecciona en tu tarjeta SD el archivo de configuración descargado anteriormente y con ruta <code>/VPN-(direcciónIP)/android/android-client.ovpn</code>. En esta carpeta encontrarás también un archivo ca.crt que debe estar ahí para que se configure correctamente el cliente VPN.</p>
 <p><img alt="Screenshot" src="../img/android-vpn/03-choosefile.jpeg" /></p>
-<p>Cuando se activa una cuenta VPN desde el Cpanel, hay la opción de enviar un email al nuevo usuario con  las instrucciones para configurar el cliente. En este mismo mail están adjuntos los archivos que tienes que guardar. Ambos archivos (android-client.ovpn y ca.crt) tienen que estar en la misma carpeta. Si no has recibido ningún mail solicita estos datos a la persona que tenga acceso de administrador al panel de control</p>
-<p>5- Inserta el nombre de usuario y la contraseña  </p>
+<p>5- Introduce el usuario y contraseña para tu conexión que el administrador debe haberte comunicado por un canal seguro. Por razones de seguridad la contraseña no se envía junto al mail de instrucciones</p>
 <p><img alt="Screenshot" src="../img/android-vpn/04-user-password.jpeg" /></p>
-<p>6- Espera unos segundos hasta que se establezca la conexión  </p>
+<p>6- Espera unos segundos hasta que se establezca la conexión.</p>
 <p><img alt="Screenshot" src="../img/android-vpn/05-connect.jpeg" /></p>
-<p>Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.</p>
+<p>la conexión se ha efectuado con éxito visita la web <a href="http://cualesmiip.com/">http://cualesmiip.com/</a> activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.</p>
+<hr />
+<p>(*) Cuando el administrador activa una cuenta VPN desde el Cpanel puede enviar un mail con instrucciones para instalar el cliente VPN y los archivos de configuración de configuración necesarios para diferentes sistemas operativos. Si por alguna razón el usuario de la cuenta VPN no ha recibido este mail con estas instrucciones y archivos, debe solicitarlo de nuevo al administrador. El administrador puede reenviarlo en cualquier momento desde el panel de edición del usuario en concreto.</p>
               
             </div>
           </div>

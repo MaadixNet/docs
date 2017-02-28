@@ -29,7 +29,7 @@ El Webmaster tendrá permisos para crear, borrar o modificar archivos dentro de 
 
 Si no asignas ningún usuario como Webmaster, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
 
-Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta `/var/www/html/example.com/`, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son mucho mayores.
+Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta `/var/www/html/example.com/`, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son .
 
 
 ![Screenshot](img/activar-dominio.png) 
@@ -40,24 +40,35 @@ Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quiere
 
 Ya has configurado tu servidor para que trabaje con tu dominio propio *example.com*. Sin embargo, para que todo funcione necesitas, por otro lado, decirle a tu dominio propio que apunte a tu servidor en MaadiX :) 
 
-MaadiX comprueba automáticamente si tu dominio está apuntando a tu servidor. Si no es así, en la sección **Ver Dominios** verás que tu dominio está aún pendiente. 
-
+Tu servidor incluye un sistema que comprueba automáticamente si tu dominio está apuntando correctamente a tu servidor. En caso afirmativo el mismo stema procederá con la creación de todas las configuraciones necesarias. En caso contrario volverá periódicamente a hacer la misma comprobación hasta conseguir una respuesta afirmativa. Para saber si el proceso de activación y configuración del dominio ha terminado con éxito consulta en la sección **Ver Dominios** la columna "Activado". 
 ![Screenshot](img/dominio-pendiente.png) 
 
-Para apuntar tu dominio hacia tu servidor debes modificar sus DNS. Los DNS (Domain Name Servers) son los que transforman los nombres de dominio, amigables para comprensión huma, en números que corresponden a las direcciones IP de las diferentes máquinas conectadas y accesibles públicamente en Internet.
+Para apuntar tu dominio hacia tu servidor debes modificar sus DNS. Los servidores DNS (Systema de Nombre de Dominios) son los que transforman los nombres de dominio, amigables para comprensión huma, en números que corresponden a las direcciones IP de las diferentes máquinas conectadas y accesibles públicamente en Internet.
 
-Haciendo click en "Ver" en la columna DNS de tu dominio (ver captura de pantalla anterior), encontrarás las configuraciones requeridas para que tu dominio funcione con tu web o aplicación y servidor de correo (en esta sección encotrarás también, si las necesitas, instrucciones más detalladas de como editar tu Registro A de DNS para que tu web o aplicación en MaadiX funcione con tu dominio y tu Registro MX de DNS para que tu servidor de correo en MaadiX funcione con tu dominio). 
+Haciendo click en "Ver" en la columna DNS de tu dominio (ver captura de pantalla anterior), encontrarás las configuraciones requeridas para que tu dominio funcione tanto para tu aplicación web (Registro A) como para tu servidor de correo (Registro MX). 
 
 ![Screenshot](img/configuracion-requerida-dominio.png) 
 
-Debes introducier estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* ó *Editar registros DNS*.
+Debes introducir estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* , *Editar registros DNS* o *Editar zona DNS*.
 
-Una vez hechos los cambios, refresca la sección **Ver Dominios** en tu Cpanel de MaadiX para que compruebe nuevamente que la configuración de los DNS de tu dominio es correcta.
+Una vez hechos los cambios, vuelve a consultar la ṕagina de configuración de DNS en el Panel de Control de tu servidor Maadix (Haciendo click en "Ver" en la columna DNS).  
+Recuerda que el proceso de propagación de los nuevos DNS puede tardar hasta 48 horas , por lo que es normal que durante un tiempo la configuración siga resultando incorrecta.  
+
+## HTTPS
+
+Todos los dominios que actives a través del panel de control tendrán activado un certificado SSL y serán accesibles a través de la dirección  
+
+https://tudominio.com
+
+La creación y configuración de los certifcados está automatizada y se completa junto con todo el proceso de activación y configuración de dominios en tu sistema utilizando [Let`s Encrypt](https://letsencrypt.org).  
+
+No  necesitas aplicar ninguna configuración adicional para activar https para tu dominio.  
+
 
 
 ## Subir tu web o aplicación al dominio propio
 
-Ahora ya puedes subir los archivos de tu web o aplicación web a la recién creada carpeta `/var/www/html/example.com/`. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
+Una vez aparezca el check verde en la columna "Activado" ya puedes subir los archivos de tu aplicación web a la recién creada carpeta `/var/www/html/example.com/`. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
 **Nota**: Si has estado trabajando en una web o aplicación dentro de la carpeta en tu servidor `/var/www/html/subdominio.maadix.org/`, que visitas a través de tu *subdominio.maadix.org* y ahora te gustaría trasladarla a tu dominio propio recién activado, debes mover el contenido de esta carpeta a la nueva carpeta nueva `/var/www/html/example.com/`. Hecho esto, podrás visitar tu web o aplicación desde el navegador a través de tu dominio propio *example.com* (es posible que haya que cambiar también alguna configuración de tu web o app).
 
@@ -66,7 +77,7 @@ Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web
 
 ## Empieza a usar tu servidor de correo
 
-Ahora que ya tienes activado y configurado un dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor en MaadiX), ya puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo *usuario@ejemplo.com*.
+Ahora que ya tienes activado y configurado un dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor), ya puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo *usuario@ejemplo.com*.
 
 
 Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email)

@@ -63,6 +63,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../users/">Usuarios</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../dominios/">Dominios</a>
         
     </li>
@@ -88,16 +95,14 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#activar-dominio">Activar dominio</a></li>
+                <li class="toctree-l3"><a href="#crea-tu-web-o-aplicacion">Crea tu web o aplicación</a></li>
+                
+                    <li><a class="toctree-l4" href="#elige-tu-dominio">Elige tu dominio</a></li>
+                
+                    <li><a class="toctree-l4" href="#subir-contenidos">Subir contenidos</a></li>
                 
             
-                <li class="toctree-l3"><a href="#subir-contenidos">Subir contenidos</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#usuario-de-sistema">Usuario de Sistema</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#usuario-webmaster">Usuario Webmaster</a></li>
+                <li class="toctree-l3"><a href="#como-superusuario-de-sistema">Como Superusuario de sistema</a></li>
                 
             
             </ul>
@@ -137,39 +142,52 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="activar-dominio">Activar dominio</h1>
-<p>El primer paso para poder crear un sito web accesible dedsde cualquier navegador, es activar un dominio o subdominio para él.<br />
-Si todavía no has completado este paso, puedes encontrar instrucciones sobre como proceder aquí: <a href="../dominios/">Activar Dominio</a></p>
-<h1 id="subir-contenidos">Subir contenidos</h1>
-<p>Una vez tengas activado el dominio para tu nuevo sito web, tendrás que subir los archivos de tu aplicación a la carpeta correspondiente.<br />
-Esta carpeta se encuentra en /var/www/html/midominio.com   </p>
-<p>Puedes acceder a esta ubicación y subir los archivos utilizando  un cliente sftp. Hay varias soluciones para ello. Si no tienes ningún cliente sftp instalado y no sabes cual escojer te aconsejamos <a href="https://filezilla-project.org/">Filezilla</a>.  </p>
-<p>Tendrás que establecer una conexión con tu servidor para poder proceder. El cliente sftp te pedirá una serie de credenciales para llevar a cabo dicha conexión:  </p>
+                <h1 id="crea-tu-web-o-aplicacion">Crea tu web o aplicación</h1>
+<h2 id="elige-tu-dominio">Elige tu dominio</h2>
+<p>Para poder crear un sito web accesible desde cualquier navegador necesitarás un dominio o subdominio. </p>
+<p>Si tienes un dominio propio, MaadiX te permite fácilmente activarlo y configurarlo para usarlo en tu página web y aplicaciones. Si todavía no has activado tu dominio en MaadiX, puedes encontrar las instrucciones sobre como proceder aquí: <a href="../dominios/">Activar mi dominio</a></p>
+<p>Alternativamente, si no dispones de dominio propio, puedes usar tu <em>subdominio.maadix.org</em>, donde 'subdominio' coincide con el nombre que elegiste al adquirir tu servidor MaadiX. Deberás crear tu web o aplicación dentro de la carpeta <code>/var/www/html/subdominio.maadix.org</code> y podrás visitarlo desde el navegador en tu <em>subdominio.maadix.org</em>.</p>
+<p>En el siguiente tutorial se describe el proceso en caso de utilizar un dominio propio. Sin embargo, el proceso es el mismo para usando tu <em>subdominio.maadix.org</em> si se tiene en cuenta el párrafo anterior.</p>
+<h2 id="subir-contenidos">Subir contenidos</h2>
+<p>Una vez tengas <a href="../dominios/">activado el dominio</a> para tu nuevo sito web, tendrás que subir los archivos de tu aplicación a la carpeta que se encuentra en <code>/var/www/html/midominio.com</code>.   </p>
+<p>Puedes acceder a esta ubicación y subir los archivos fácilmente utilizando un cliente SFTP (Secure File Transfer Protocol). Si no tienes ningún cliente SFTP instalado y no sabes cual escoger, <a href="https://filezilla-project.org/">Filezilla</a> es uno de los más usados y sencillos.</p>
+<p>El cliente SFTP te pedirá una serie de credenciales para conectar con el servidor:</p>
+<h4 id="como-usuario-webmaster">Como usuario Webmaster</h4>
+<p>Si al activar tu dominio le has asignado un usuario Webmaster específico (lo cual recomendamos), éste será el propietario de la carpeta <code>/var/www/html/midominio.com</code> y solo él podrá modificar los archivos en ella.</p>
+<p>Las credenciales para la conexión con el usuario Webmaster son:</p>
 <ul>
-<li>Servidor: el nombre de tu espacio en MaadiX (myservername.maadix.org)  </li>
-<li>Protocolo: SFT/SSH  </li>
-<li>Modo de acceso: Normal  </li>
-<li>Usuario: El nombre de usuario que has establecido como webmaster para el dominio  </li>
-<li>Contraseña: La contraseña que has establecido para este usuario</li>
+<li><strong>Servidor</strong>: tu <em>subdomino.maadix.org</em></li>
+<li><strong>Protocolo</strong>: SFTP  </li>
+<li><strong>Modo de acceso</strong>: Normal  </li>
+<li><strong>Usuario</strong>: El nombre del usuario Webmaster (sensible a mayúsculas/minúsculas)</li>
+<li><strong>Contraseña</strong>: La contraseña que has establecido para este usuario</li>
 </ul>
-<p>Según el tipo de usuario que estés utilizando para la conexión tendrás acceso a diferentes contenidos en el servidor.  </p>
-<h1 id="usuario-de-sistema">Usuario de Sistema</h1>
-<p>Si no has creado ningún usuario webmaster para tu nuevo dominio, estás accediendo con el usuario de sistema que es el propietario de la carpeta web en /var/www/html/midominio.com  </p>
-<p>Este es un usuario con altos privilegios y que tiene acceso a todo el sistema. Cuando estableces la conexión al servidor utilizando este usuario, la ubiciación el la que te encuentras nada más empezar la sesión es la carpeta personal, o sea /home/nombrei_ de_usuario.<br />
-Desde esta ubicación no puedes ver todavía la carpeta /var/www/html/midominio.com que es donde tienes que subir los archivo.  </p>
-<p><img alt="Screenshot" src="../img/sftp-home.png" /></p>
-<p>Para acceder a ella puedes insertar la ruta /var/www/html/midominio.com en el campo "Sitio remoto"  (Por supuesto tendrás que sustituir midominio.com por tu dominio real).</p>
+<p><img alt="Screenshot" src="../img/sftp-user.png" /></p>
+<p>Cuando se establezca la conexión el usuario Webmaster verá na carpeta con su nombre. En ella encontrará una carpeta que le da acceso a <code>/var/www/html/midominio.com</code>, o varias si es Webmaster de otros dominios a parte de este.</p>
+<p>También puede tener ahí otros archivos propios que haya subido o creado anteriormente. Los usuarios Webmaster solo tienen acceso a esta zona y no a todos los archivos del sistema como tiene el Superusuario. </p>
+<p><a id="domain-folder"></a></p>
+<h4 id="dentro-de-la-carpeta-varwwwhtmlmidominiocom">Dentro de la carpeta <code>/var/www/html/midominio.com</code></h4>
+<p>Dentro de la carpeta <code>/var/www/html/midominio.com</code> hay dos elementos: Una carpeta con nombre .well-known y un archivo index.html.  </p>
+<p>La carpeta .well-known es necesaria para la conexión segura a la web (https) y no debes tocarla (<em>si no puedes ver la carpeta .well-known, no te preocupes. El punto delante del nombre significa que es un archivo oculto, está ahí pero Filezilla, o tu cliente SFTP, está configurado para no mostrar los archivos ocultos</em>).  </p>
 <p><img alt="Screenshot" src="../img/sftp-midominio.png" /></p>
-<p>En esta carpeta hay dos elementos: Una carpeta con nombre .well-known y un archivo index.html.<br />
-La carpeta .well-known es necesaria para la conexión segura a la web (https) y no debes tocarla. El punto delante del nombre de carpeta significa que es un archivo oculto, por lo que si no se muestra no te preocupes. Está ahí pero tu cliente sftp está configurado para no mostrar los archivos ocultos.  </p>
-<p>El archivo index.html es un archivo que se crea en el proceso de activación del dominio y no tiene otra finalidad que la de comprobar que la activación se ha completado con éxito. </p>
-<p>Si vistas con un navegador tu doiminio antes de subir tus propios archivos, encontrarás una página de bienvenida que es el contenido de este archivo index.html.<br />
-Puedes ahora borrar (o sobrescribir) este archivo index.html existente y  subir los de tu aplicación.  </p>
-<h1 id="usuario-webmaster">Usuario Webmaster</h1>
-<p>Si has asignado un usuario webmaster específico para tu nuevo dominio tendrás que utilizar sus credenciales para la conexión ya que éste será el propietario de la carpeta del dominio y solo él podrá escribir en ella.
-Los usuarios webmaster no tienen acceso a todos los archivos como tiene el usuario de sistema. Cuando un usuario webmaster establece la conexión verá una carpeta con su propio nombre.  </p>
-<p>En ella encontrará todas las carpetas de los dominios por los que ha asignado como webmaster.  </p>
-<p><img alt="Screenshot" src="../img/sftp-anna.png" /></p>
+<p>El archivo index.html es un archivo tipo <em>placeholder</em> que se crea en el proceso de activación del dominio y sirve para comprobar que la activación del dominio se ha completado con éxito. Si vistas desde un navegador tu dominio antes de haber subido tus propios archivos, encontrarás la página de bienvenida de este archivo index.html.  </p>
+<p>[Screenshot de la bienvenida]</p>
+<p>Así pues, puedes ahora borrar (o sobrescribir) este archivo index.html existente y <strong>subir aquí los archivos de tu web o aplicación</strong>. </p>
+<h1 id="como-superusuario-de-sistema">Como Superusuario de sistema</h1>
+<p>Si no has creado ningún usuario webmaster para tu nuevo dominio, el propietario de la carpeta web en <code>/var/www/html/midominio.com</code> será tu Superusuario de sistema.</p>
+<p>Puedes establecer connexión por SFTP como tu Superusuario con las credenciales:</p>
+<ul>
+<li><strong>Servidor</strong>: tu <em>subdomino.maadix.org</em></li>
+<li><strong>Protocolo</strong>: SFTP </li>
+<li><strong>Modo de acceso</strong>: Normal  </li>
+<li><strong>Usuario</strong>: El nombre del Superusuario (sensible a mayúsculas/minúsculas)</li>
+<li><strong>Contraseña</strong>: La contraseña del Superusuario</li>
+</ul>
+<p>Si no recuerdas tus datos de Superusuario, puedes consultarlos en la pestaña <strong>usuarios</strong> de tu Cpanel. Es el primero que aparece en la lista. También puedes ahí restablecer su contraseña en caso de que la hayas olvidado.</p>
+<p>El Superusuario tiene altos  privilegios y acceso a todo el sistema. Cuando estableces la conexión SFTP al servidor como Superusuario, la ubicación en la que te encuentras al inicio de sesión es la carpeta personal en <code>/home/superusuario/</code>.</p>
+<p>Deberás navegar a través de las carpetas hasta llegar a <code>/var/www/html/midominio.com/</code>, que es donde tendrás que subir o crear los archivos de tu nueva web o aplicación. Otra opción más rápida es escribir la ruta <code>/var/www/html/midominio.com/</code> en el campo "Sitio remoto".</p>
+<p>Una vez ahí puedes seguir los mismos pasos descritos para usuario <a href="#domain-folder">Webmaster</a></p>
+<p><img alt="Screenshot" src="../img/sftp-midominio.png" /></p>
               
             </div>
           </div>

@@ -63,6 +63,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../users/">Usuarios</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../dominios/">Dominios</a>
         
     </li>
@@ -78,6 +85,18 @@
                 
             
                 <li class="toctree-l3"><a href="#crear-cuenta">Crear cuenta</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#editar-cuenta">Editar cuenta</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#renvio-automatico">Renvío Automático</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#webmail-rainloop">Webmail - Rainloop</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cliente-de-correo">Cliente de correo</a></li>
                 
             
             </ul>
@@ -132,11 +151,37 @@
             <div class="section">
               
                 <h1 id="email">Email</h1>
-<p>Puedes añadir infinitas cuentas de email para todos los dominios que tengas configurados.
+<p>Puedes añadir infinitas cuentas de email para todos los dominios que tengas activados en tu servidor.<br />
 Antes de añadir cuentas de correo elcetrónico, asegurate de haber configurado correctamente el dominio correspondiente. Aquí encuentras una guía con todos los pasos necesarios: <a href="../dominios">Configuración de dominio</a></p>
 <h1 id="crear-cuenta">Crear cuenta</h1>
 <p>En al sección 'Email' haz click en el botón Añadir cuenta y rellena los campos del formulario que se despliega. Tendrás que elegir un dominio en el listado de dominios disponibles que habrás activado previamente en la sección 'Domminios'</p>
-<p><img alt="Screenshot" src="../img/Add-email.png" /></p>
+<p><img alt="Screenshot" src="../img/add-email.png" /></p>
+<h1 id="editar-cuenta">Editar cuenta</h1>
+<p>Puedes cambiar los parámetros de las cuentas de correos electrónico que tengas activadas visitado el apartado <strong>Email</strong> y haciendo click en el botón Ver|Editar.</p>
+<p><img alt="Edit email" src="../img/edit-email.png" /></p>
+<h1 id="renvio-automatico">Renvío Automático</h1>
+<p>En la misma página de edición de cada cuenta de correo electrónico puedes activar el renvío automático de todo el correo entrante a cualquier otra dirección de correo.  </p>
+<p>Para ello activa la casilla <strong>Activar reenvío automático a otra cuenta</strong> e inserta una dirección válida en el campo que se despliega (Cuenta de destino para reenvío automático).  </p>
+<p><img alt="Forward email" src="../img/forward-mail.png" /></p>
+<h1 id="webmail-rainloop">Webmail - Rainloop</h1>
+<p>Si has escogido instalar Rainloop en tu servidor, puedes utilizar esta herramienta webmail para consultar e enviar correo electrónico desde tu navegador.<br />
+Desde al panel de control tienes un acceso directo a la aplicación Webmail. Además de poder utilizar la dirección tusubdominio.maadix.org/rainloop puedes utilzar cualquier dominio propio que tengas funcionando en el servidor.<br />
+Si por ejemplo has configurado con éxito el dominio example.com para tu servidor, puedes visitar la interfaz webmail visitando https://example.com/rainloop     </p>
+<p>Todas las cuentas de correo electrónico activadas correctamente a través del panel de control pueden ser consultadas a través de la interfaz webmail.  <br />
+También puedes utilizar esta misma interfaz para consultar cuentas externas gestionadas por otros proveedores.   </p>
+<p>Por ejemplo podrías consultar tu cuenta gmail desde la aplicación webmail.<br />
+Para ello es necesario que añadas el dominio gmail.com en la sección <strong>Añadir Dominios</strong> del panel de control.  </p>
+<p><img alt="add gmail domain" src="../img/add-gmail-domain.png" /></p>
+<p>Evidentemente no tienes control sobre el dominio gmail.com y tu servidor nunca podrá crear la configuración necesaria para que la web gmail.com se muestre en tu servidor. Tampoco podrá funcionar como servidor de correo para tu cuenta gmail, así que el estado de este dominio nunca se pondrá en activo.    </p>
+<p><img alt="add gmail domain" src="../img/gmail-domain-loading.png" /></p>
+<p>De esta forma no podrás crear nuevas cuentas de gmail desde tu servidor, ni editar configuraciones relacionadas con tu correo gmail (contraseñas, renvíos automáticos etc).  Sin embargo sí que podrás recibir y enviar emails para cualquier cuenta gmail existente utilizando la interfaz web rainloop que tienes instalada. </p>
+<p><img alt="add gmail domain" src="../img/gmail-webmail.png" /></p>
+<p>El mismo proceso es válido para yahoo.com, outook.com y la mayoría de servicios de email.</p>
+<h1 id="cliente-de-correo">Cliente de correo</h1>
+<p>Puedes consultar y enviar tu correo electrónico utilizando un software cliente como Thunderbird, Outlook etc, que tengas instalado en tu ordenador.<br />
+Como para cluaquier otra cuenta que quieras configurar en el cliente, necesitarás los datos de conexión al servidor.<br />
+Estos datos los puedes encontrar en la página Ver|Editar de cuada cuenta de correo que tengas creadas.  </p>
+<p><img alt="Forward email" src="../img/forward-mail.png" /></p>
               
             </div>
           </div>

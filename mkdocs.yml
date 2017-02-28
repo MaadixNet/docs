@@ -2,6 +2,7 @@ site_name: MaadiX Documetnación
 site_description: Tutoriales y Gúias 
 pages:
     - Home: index.md
+    - Usuarios: users.md
     - Dominios: dominios.md
     - Email: email.md
     - VPN: vpn.md
