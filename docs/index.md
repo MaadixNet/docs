@@ -1,8 +1,8 @@
 # Tutoriales y documentación 
 
-Documentación completa sobre el uso de MaadiX:
+Documentación completa sobre el uso de MaadiX.
 
-Cada instalación incluye un panel de control  gráfico que permite gestioanr servidores virtuales (VPS), sus aplicaciones, confoguraciones, datos, usuarios.
+[Web Oficial](https://maadix.net/)  
 
 Aquí encontrarás indicaciones, tutoriales paso a paso  y soluciones  a problemas.
 
