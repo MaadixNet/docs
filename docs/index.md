@@ -2,13 +2,13 @@
 
 Documentación completa sobre el uso de MaadiX:
 
-Cada instalación incluye un panel de control  gráfico que te permite gestioanr  tu servidor , sus aplicaciones, onfoguraciones, datos, usuarios.
+Cada instalación incluye un panel de control  gráfico que permite gestioanr servidores virtuales (VPS), sus aplicaciones, confoguraciones, datos, usuarios.
 
 Aquí encontrarás indicaciones, tutoriales paso a paso  y soluciones  a problemas.
 
 # ¿Qué es MaadiX?
 
-Es una apuesta  por el software libre, la privacidad, la seguridad y la soberanía digital. Ofrece una solución técnica y práctica que permite a profesionales, empresas y organizaciones disponer de una avanzada infraestructura informática, propia e independiente, sin necesidad de conocimientos técnicos o grandes inversiones.
+Es una apuesta por el software libre, la privacidad, la seguridad y la soberanía digital. Ofrece una solución técnica y práctica que permite a profesionales, empresas y organizaciones disponer de una avanzada infraestructura informática, propia e independiente, sin necesidad de conocimientos técnicos o grandes inversiones.
 
 # ¿Cómo funciona?
 
