@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Tutoriales y documentaci\u00f3n\n\n\nDocumentaci\u00f3n completa sobre el uso de MaadiX:\n\n\nCada instalaci\u00f3n incluye un panel de control  gr\u00e1fico que te permite gestioanr  tu servidor , sus aplicaciones, onfoguraciones, datos, usuarios.\n\n\nAqu\u00ed encontrar\u00e1s indicaciones, tutoriales paso a paso  y soluciones  a problemas.", 
+            "text": "Tutoriales y documentaci\u00f3n\n\n\nDocumentaci\u00f3n completa sobre el uso de MaadiX:\n\n\nCada instalaci\u00f3n incluye un panel de control  gr\u00e1fico que te permite gestioanr  tu servidor , sus aplicaciones, onfoguraciones, datos, usuarios.\n\n\nAqu\u00ed encontrar\u00e1s indicaciones, tutoriales paso a paso  y soluciones  a problemas.\n\n\n\u00bfQu\u00e9 es MaadiX?\n\n\nEs una apuesta  por el software libre, la privacidad, la seguridad y la soberan\u00eda digital. Ofrece una soluci\u00f3n t\u00e9cnica y pr\u00e1ctica que permite a profesionales, empresas y organizaciones disponer de una avanzada infraestructura inform\u00e1tica, propia e independiente, sin necesidad de conocimientos t\u00e9cnicos o grandes inversiones.\n\n\n\u00bfC\u00f3mo funciona?\n\n\nSe trata de un conjunto de software libre y configuraciones de sistema estandardizadas que permite a los usuarios administrar servidores virtuales propios y sus aplicaciones desde una interfaz muy f\u00e1cil e intuitiva.  \n\n\nPermite instalar los servicios disponibles e administrarlos en un click: administraci\u00f3n de usuarios, configuraci\u00f3n de preferencias, contrase\u00f1as, encriptaci\u00f3n cuentas de correo electr\u00f3nico, usuarios VPN, dominios y otros par\u00e1metros.", 
             "title": "Home"
         }, 
         {
             "location": "/#tutoriales-y-documentacion", 
             "text": "Documentaci\u00f3n completa sobre el uso de MaadiX:  Cada instalaci\u00f3n incluye un panel de control  gr\u00e1fico que te permite gestioanr  tu servidor , sus aplicaciones, onfoguraciones, datos, usuarios.  Aqu\u00ed encontrar\u00e1s indicaciones, tutoriales paso a paso  y soluciones  a problemas.", 
             "title": "Tutoriales y documentaci\u00f3n"
+        }, 
+        {
+            "location": "/#que-es-maadix", 
+            "text": "Es una apuesta  por el software libre, la privacidad, la seguridad y la soberan\u00eda digital. Ofrece una soluci\u00f3n t\u00e9cnica y pr\u00e1ctica que permite a profesionales, empresas y organizaciones disponer de una avanzada infraestructura inform\u00e1tica, propia e independiente, sin necesidad de conocimientos t\u00e9cnicos o grandes inversiones.", 
+            "title": "\u00bfQu\u00e9 es MaadiX?"
+        }, 
+        {
+            "location": "/#como-funciona", 
+            "text": "Se trata de un conjunto de software libre y configuraciones de sistema estandardizadas que permite a los usuarios administrar servidores virtuales propios y sus aplicaciones desde una interfaz muy f\u00e1cil e intuitiva.    Permite instalar los servicios disponibles e administrarlos en un click: administraci\u00f3n de usuarios, configuraci\u00f3n de preferencias, contrase\u00f1as, encriptaci\u00f3n cuentas de correo electr\u00f3nico, usuarios VPN, dominios y otros par\u00e1metros.", 
+            "title": "\u00bfC\u00f3mo funciona?"
         }, 
         {
             "location": "/users/", 
