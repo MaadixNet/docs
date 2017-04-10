@@ -6,5 +6,7 @@ pages:
     - Dominios: dominios.md
     - Email: email.md
     - VPN: vpn.md
+    - Mysql: mysql.md
+    - Etherpad: etherpad.md
     - Crear&nbsp;Web: create-web.md
 theme: readthedocs
