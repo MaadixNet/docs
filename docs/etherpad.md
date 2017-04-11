@@ -1,25 +1,30 @@
 # Etherpad   
 
-Etherpad-lite es una aplicación externa al Panel de Control que permite la edición colaborativa de documentos online en tiempo real entre múltiples usuarios. 
+Etherpad-lite es una aplicación externa al Panel de Control que permite la edición colaborativa de documentos online (Pads) en tiempo real entre múltiples usuarios. 
 Por defecto, junto con esta aplicación, los servidores creados con MaadiX incluyen una extensión que permite habilitar áreas de trabajo privadas. De etsa manera se puede elegir si los documentos creado son accesibles al público en general o solo a los usuarios que tengan una cuenta activada.  
 
 
 # Etherpad admin
 
-La aplicación  Etherpad-lite incluye un panel de administración que permite efectuar alguna tarea:
+La aplicación  Etherpad-lite incluye un panel propio de administración que permite efectuar alguna tarea:
 
-** Editar preferencias
-** Instalar/desinstalar plugins
-** Reinicar la aplicación
+* Editar preferencias  
+* Instalar/desinstalar plugins  
+* Reinicar la aplicación  
 
-El area de administración de la aplicación está disponible en la dirección:
-    minombreenmaddix.maadix.org/etherpad/admin/
+El área de administración de la aplicación está disponible en la dirección:
+    https://minombreenmaddix.maadix.org/etherpad/admin/  
 
-o si tienes un dominio porpio activado en el servidor:
-    midominio.com/etherpad/admin/
+o si tienes un dominio porpio activado en el servidor:  
+    https//midominio.com/etherpad/admin/  
 
-Para poder acceder a esta área tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el mail de activación del servidor, junto con las otrtras contraseñas).  
-Una vez accedido, es recomendable que cambies la contraseña.  Para ello, haz click en la pestaña 'Setting' del menú de la izquiera.  
+Para poder acceder a esta área tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el mail de activación del servidor, junto con las otrtras contraseñas). 
+
+El usuario admin solo puede acceder a esta área en la que tiene accesso a todos los grupos y usuarios creados en el sistema.  Su contraseña no es válida para operar desde el front-end.     
+
+## Cambiar contraseña de administardor  
+
+Una vez accedido al área de administrador, es recomendable que cambies la contraseña.  Para ello, haz click en la pestaña 'Settings' del menú de la izquiera.  
  Se abrirá un archivo en texto plano  que contiene todos los parámetros de tu instalación.  
 Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parecidas a las siguientes:
 
@@ -40,33 +45,77 @@ Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parec
 # Etherpad Área Privada 
 
 MaadiX ha desarrollado un plugin de etherpad-lite que permite crear espacios privados de trabajo, y que por defecto se instala junto con la aplicación.  
-Desde el área de administración de etherpad-lite se  pueden establecer preferencias de configuración para la instalación.  
-Haciendo click en la pestaña 'Users and groups' aparecerán las siguientes opciones:  
+Desde el área de administración de etherpad-lite se pueden establecer preferencias de configuración para la instalación.  
+Haciendo click en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
 
 
-** Allow users to recover lost password - Activar esta opción permitirá a todos los usuarios recuperar su contraseña.  
-** Allow users to register - Si esta opción está activada cualquier persona podrá crear un usuario , crear su propio grupo e invitar otros colaboradores a su grupo.  
-** Allow public pads - Pemite crear documentos sin necesidad de tener un usuario activado, ni pertenecer a ningún grupo.
+* Allow users to recover lost password - Activar esta opción permitirá a todos los usuarios recuperar su contraseña. En general es aconsejable dejarla activada ya que esto permite a los usuario restablecer por sí mismos su contraseña  evitando tener que enviarla por email u otro canal.   
+
+* Allow users to register - Si esta opción está activada cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario solo los usuarios con una invitación válida podrán acceder a la aplicación.  
+  
+* Allow public pads - Pemite crear documentos sin necesidad de tener un usuario activado, ni pertenecer a ningún grupo. Si esta opción está activada los grupos y pads privados siguen estando disponibles. Si se quiere evitar que cualquier persona pueda crear nuevos documentos en la instalación se puede desactivar.    
 
 
 
-![Phpmyadmin private area](img/private-area-phpmyadmin.png)
+## Crear usuarios  
+ 
+Desde el área de administrador puedes crear grupos e invitar usuarios. Si has elegido no permitir que los usuarios se registren tendrás que crear almenos una cuenta. El susuario así creado podrá empezar a administrar grupos desde el front-end de la aplicación.  Recuerda que las credenciales del usuario administrador no son válidas para operar desde el front-end.   
 
-## Segunda contraseña  
-Una vez efectuada satisfactoriamente esta autentificación, se muestra la interfaz de la aplicación PhpMyAdmin, que solicitará un usuario Mysql. Por defecto exite un usuario Mysql cuyo nombre es root y cuya contraseña está incluida en el correo electrónico que se envia en el momento de activar el servidor, junto con las otras contraseñas y que puedes utilizar para acceder a la aplicación.  
+Para crear grupos e invitar usuarios desde el área de administrador haz click en las pestañas 'Manage Groups'/'Manage User' que encuentras en la cabecera de la página principal del plugin (pestaña 'Users and groups' de la columna izquierda del área ded administrador).  
 
-![Phpmyadmin](img/phpmyadmin.png)
+## Etherpad front-end
 
-Es muy recomendable cambiar la contraseña del usuario root. Puedes hacerlo desde la misma aplicación :
+Los usuarios que tengan una cuenta activada pueden administrar grupos, invitar otros usuarios, crear y editar documentos (pads) desde el front-end. 
 
-![Phpmyadmin change password ](img/phpmyadmin-chpswd.png)   
+El front-end de la aplicación está disponible en la dirección:
+    https://minombreenmaddix.maadix.org/etherpad/
 
+o si tienes un dominio porpio activado en el servidor:
+    https://midominio.com/etherpad/
 
-Además es buena práctica crear un usuario Mysql diferente por cada base de datos y otorgarle permisos solo sobre una y no todas las bases de datos que tengas creadas.
+Para acceder a el área privada hay que indentificarse haciendo click en 'Login' En la parte superior derecha de la página.
 
-Tanto las bases de datos como los usuarios mysql y sus contraseñas se pueden crear e administrar desde PhpMyadmin.  
-Por defecto solo el usuario root de Mysql tiene los privilegios necesarios para crear nuevas bases de datos, nuevos usuarios, y otorgar permisos a cada uno de ellos.  
+### Grupos  
 
-Puedes encontrar aquí la documentación oficial para el uso de la aplicación  
+Los pads privados y los usuarios deben estar asociados a un grupo.  
+Un mismo usuario puede pertenecer a uno o más grupos además de poder crear uno propio.  
+Si un usuario no pertenece a ningún grupo tendrá que crear uno antes de poder crear documentos o invitar nuevos usuarios.   
 
-[https://www.phpmyadmin.net/docs/](https://www.phpmyadmin.net/docs/)
+ Se pueden consultar los grupos a los que se tiene acceso o crear nuevos haciendo click en 'My groups', una vez entrados en la aplicación (Login).  
+
+#### ¿Cómo crear un grupo privado?  
+
+En "Create a new Private Group" (Crear un nuevo grupo privado) inserta un nombre de grupo (este nombre no debe existir aún en el sistema) y haz clic en el botón "Create" (Crear). El nuevo grupo aparecerá en la misma página. Puedes ahora empezar a invitar otros usuarioa o crear nuevos documentos.  
+
+### Invitar Usuarios  
+
+Para agregar / invitar  usuarios a un grupo, haz clic en "View /Add Users" (Ver / Agregar usuarios) desde la tabla de la página "My groups". En el campo "Invite user to this group" (Invitar usuario a este grupo) inserta una dirección de correo electrónico válida. Si  i dirección insertada no está registrada todavía en el sistema, se enviará un correo electrónico de confirmación al nuevo usuario con las instrucciones para para activar la cuenta. También deberás elegir el rol que deseas asignar al nuevo usuario para este grupo.  
+
+### Roles
+
+El rol asignado a un usuario sólo se aplica al grupo actual. Un usuario puede tener acceso a varios grupos con diferentes roles en cada uno de ellos. Si un usuario crea un nuevo grupo, su rol para dicho grupo será 'Admin'.
+
+Un usuario nunca puede asignar un rol más alto que su propio rol dentro del grupo actual.
+
+Los roles disponibles son:
+
+    **Usuario**: Puede crear y editar Pads
+    **Editor**: Puede crear / editar / borrar Pads e invitar / quitar Usuarios
+    **Admin**: Puede crear / editar / borrar Pads, invitar / eliminar Usuarios, borrar todo el grupo
+
+El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al usuario se puede modificar y editar más tarde.  
+
+### ¿Cómo crear un pad privado?  
+
+Los Pads se deben crear desde la página de la lista de Pads de un grupo específico, ya que cada pad solo puede pertenecer a un grupo determinado. Para crear un nuevo pad haz click en "View/Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups".  En la nueva página que se abre inserta el nombre del pad que quieres crear en el campo "Add a Private Pad to this Group" (Crear Pad Privado para este grupo) y haz clic en el botón "Create" (Crear). El nuevo pad aparecerá en la tabla de abajo.  
+
+El nombre del pad debe ser único para cada grupo.  
+
+### Visitar Pads existentes  
+
+Para abrir un pad ya creado haz click en "View/Add Pads" (Ver / Agregar Pads)  en la tabla de la página "My groups" en la línea correspondiente al grupo en el que el documento fue creado. Encontrarás un listado de todos los pads ordenados por fecha de última edición.  
+Puedes invertir este orden para que se muestren las ediciones más antiguas primero, o reordenar el listado por orden alfabético utilizando las flechitas de las columnas correspondientes.  
+
+Puedes encontrar aquí la documentación oficial de la aplicación Etherpad-Lite 
+
+[https://github.com/ether/etherpad-lite/wiki](https://github.com/ether/etherpad-lite/wiki)
