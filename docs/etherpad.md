@@ -10,21 +10,21 @@ La aplicación Etherpad-lite incluye un panel propio de administración que perm
 
 * Editar preferencias  
 * Instalar/desinstalar plugins  
-* Reinicar la aplicación  
+* Reiniciar la aplicación  
 
 El área de administración de la aplicación está disponible en la dirección:
     https://*minombreenmaddix*.maadix.org/etherpad/admin/
 
-o si tienes un dominio porpio activado en el servidor:  
+o si tienes un dominio propio activado en el servidor:  
     https//*midominio*.com/etherpad/admin/  
 
 Para poder acceder a esta área tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el mail de activación del servidor, junto con las otras contraseñas). 
 
-El usuario admin solo puede acceder a esta área en la que tiene accesso a todos los grupos y usuarios creados en el sistema.  Su contraseña no es válida para operar desde el front-end.
+El usuario admin solo puede acceder a esta área en la que tiene acceso a todos los grupos y usuarios creados en el sistema.  Su contraseña no es válida para operar desde el front-end.
 
-## Cambiar contraseña de administardor  
+## Cambiar contraseña de administrador  
 
-Una vez dentro del área de administrador, es recomendable que cambies la contraseña.  Para ello, haz click en la pestaña 'Settings' del menú de la izquiera.  
+Una vez dentro del área de administrador, es recomendable que cambies la contraseña.  Para ello, haz click en la pestaña 'Settings' del menú de la izquierda.  
 Se abrirá un archivo en texto plano que contiene todos los parámetros de tu instalación.  
 Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parecidas a las siguientes:
 
@@ -49,7 +49,7 @@ Desde el área de administración de etherpad-lite se pueden establecer preferen
 Haciendo click en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
 
 
-* Allow users to recover lost password - Activar esta opción permitirá a los usuarios recuperar su contraseña. En general es aconsejable dejarla activada, ya que esto permite a los usuario restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por email u otro canal.   
+* Allow users to recover lost password - Activar esta opción permitirá a los usuarios recuperar su contraseña. En general es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por email u otro canal.   
 
 * Allow users to register - Si esta opción está activada cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario solo los usuarios con una invitación válida podrán acceder a la aplicación.  
   
@@ -59,7 +59,7 @@ Haciendo click en la pestaña 'Users and groups' de la columna izquierda aparece
 
 ## Crear usuarios  
  
-Desde el área de administrador puedes crear grupos e invitar usuarios. Si has elegido no permitir que los usuarios se registren sin invitación tendrás que crear almenos una cuenta. El susuario así creado podrá empezar a administrar grupos desde el front-end de la aplicación.  Recuerda que las credenciales del usuario administrador no son válidas para operar desde el front-end.   
+Desde el área de administrador puedes crear grupos e invitar usuarios. Si has elegido no permitir que los usuarios se registren sin invitación tendrás que crear al menos una cuenta. El usuario así creado podrá empezar a administrar grupos desde el front-end de la aplicación.  Recuerda que las credenciales del usuario administrador no son válidas para operar desde el front-end.   
 
 Para crear grupos e invitar usuarios desde el área de administrador haz click en las pestañas 'Manage Groups' o 'Manage User' que encuentras en la cabecera de la sección 'Users and groups' de la columna izquierda (página principal del plugin).
 
@@ -70,7 +70,7 @@ Los usuarios que tengan una cuenta activada pueden administrar grupos, invitar o
 El front-end de la aplicación está disponible en la dirección:
     https://*minombreenmaddix*.maadix.org/etherpad/
 
-o si tienes un dominio porpio activado en el servidor:
+o si tienes un dominio propio activado en el servidor:
     https://*midominio*.com/etherpad/
 
 Para acceder a el área privada hay que indentificarse haciendo click en 'Login' En la parte superior derecha de la página.
@@ -93,7 +93,7 @@ Para agregar / invitar  usuarios a un grupo, haz clic en "View / Add Users" (Ver
 
 ### Roles
 
-El rol asignado a un usuario sólo se aplica al grupo actual. Un usuario puede tener acceso a varios grupos con diferentes roles en cada uno de ellos. Si un usuario crea un nuevo grupo, su rol para dicho grupo será 'Admin'.
+El rol asignado a un usuario solo se aplica al grupo actual. Un usuario puede tener acceso a varios grupos con diferentes roles en cada uno de ellos. Si un usuario crea un nuevo grupo, su rol para dicho grupo será 'Admin'.
 
 Un usuario nunca puede asignar un rol más alto que su propio rol dentro del grupo actual.
 
