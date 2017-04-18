@@ -12,12 +12,10 @@ La aplicación Etherpad-lite incluye un panel propio de administración que perm
 * Instalar/desinstalar plugins  
 * Reiniciar la aplicación  
 
-El área de administración de la aplicación está disponible en la dirección:
-
+El área de administración de la aplicación está disponible en la dirección:  
 https://*minombreenmaddix*.maadix.org/etherpad/admin/
 
 o si tienes un dominio propio activado en el servidor:  
-
 https//*midominio*.com/etherpad/admin/  
 
 Para poder acceder a esta área tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el mail de activación del servidor, junto con las otras contraseñas). 
@@ -69,13 +67,12 @@ Para crear grupos e invitar usuarios desde el área de administrador haz click e
 
 Los usuarios que tengan una cuenta activada pueden administrar grupos, invitar otros usuarios, crear y editar documentos (pads) desde el front-end. 
 
-El front-end de la aplicación está disponible en la dirección:
-
+El área de administración de la aplicación está disponible en la dirección:  
 https://*minombreenmaddix*.maadix.org/etherpad/
 
-o si tienes un dominio propio activado en el servidor:
+o si tienes un dominio propio activado en el servidor:  
+https//*midominio*.com/etherpad/
 
-https://*midominio*.com/etherpad/
 
 Para acceder a el área privada hay que indentificarse haciendo click en 'Login' En la parte superior derecha de la página.
 
@@ -108,7 +105,7 @@ Los roles disponibles son:
    **Editor**: Puede crear / editar / borrar Pads e invitar / quitar Usuarios
    
    **Admin**: Puede crear / editar / borrar Pads, invitar / eliminar Usuarios y borrar todo el grupo
-
+ 
 El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al usuario se puede modificar y editar más tarde.  
 
 ### ¿Cómo crear un pad privado?  
