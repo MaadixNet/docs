@@ -100,11 +100,11 @@ Un usuario nunca puede asignar un rol más alto que su propio rol dentro del gru
 
 Los roles disponibles son:
 
-   **Usuario**: Puede crear y editar Pads
+   **Group Author**: Puede crear y editar Pads
    
-   **Editor**: Puede crear / editar / borrar Pads e invitar / quitar Usuarios
+   **Group Manager**: Puede crear / editar / borrar Pads e invitar / quitar Usuarios
    
-   **Admin**: Puede crear / editar / borrar Pads, invitar / eliminar Usuarios y borrar todo el grupo
+   **Group Admin**: Puede crear / editar / borrar Pads, invitar / eliminar Usuarios y borrar todo el grupo
  
 El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al usuario se puede modificar y editar más tarde.  
 
