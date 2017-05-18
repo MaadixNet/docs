@@ -16,7 +16,7 @@ Puedes activar este acceso en el momento de crear nuevos usuarios, o editando el
 
 ## Primera contraseña  
 
-Cuando se accede a la aplicación PhpMyAdmin, se muestra la primera autentificación con una ventana emergente. En este primer formulario  se tienen que insertar las credenciales de un usuario que tenga activado el servicio 'Acceso Aplicación PhpMyAdmin'.  
+Cuando se accede a la aplicación PhpMyAdmin, se muestra la primera autentificación con una ventana emergente. En este primer formulario se tienen que insertar las credenciales user/password de un usuario que tenga activado el servicio 'Acceso Aplicación PhpMyAdmin' (ojo, no se trata del user/password de un usuario mysql para una base datos o el usuario root de mysql, ese es el siguiente paso).  
 
 ![Phpmyadmin private area](img/private-area-phpmyadmin.png)
 
