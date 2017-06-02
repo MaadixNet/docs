@@ -23,16 +23,19 @@ Se desplegará un formulario con los siguientes campos:
 
 Para cada dominio o subdominio que actives se creará una carpeta en tu servidor del tipo`/var/www/html/example.com/`. Debes subir tu web o aplicación a esta carpeta para que sea accesible desde el navegador visitando *example.com*
 
+* **Activar servidor de correo para este dominio**: Si quieres usar el servidor de correo interno para el dominio que estás creando esta opción tiene que estar activada. Si de lo contrario quieres que el correo electrónico sea gestionado por otro servidor esterno dejala desactivada. 
+Podrás cambiar esta opción en cualquier momento desde la página de edición del dominio
+
 * **Webmaster**: A cada dominio o subdominio que actives en MaadiX puedes asignarle un (Webmaster) (Administrador Web).  
   
 El Webmaster tendrá permisos para crear, borrar o modificar archivos dentro de la carpeta `/var/www/html/example.com/`, donde podrá crear la aplicación web. Este usuario tendrá acceso por SFTP a esta carpeta y a su home, pero no podrá acceder ni ver el resto archivos y carpetas en tu servidor.
 
 Si no asignas ningún usuario como Webmaster, se establecerá por defecto como Webmaster el SuperUsuario del sistema.
 
-Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta `/var/www/html/example.com/`, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son .
+Recomendamos encarecidamente que crees un usuario Webmaster, sobretodo si quieres compartir con alguien el acceso para que trabaje sobre la web, aplicación o contenidos de la carpeta `/var/www/html/example.com/`, y que nunca compartas el acceso como SuperUsuario, cuyos privilegios son ilimitados.
 
 
-![Screenshot](img/activar-dominio.png) 
+![Screenshot](img/add-domain.png) 
 
 
 
