@@ -80,8 +80,8 @@ Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web
 
 ## Empieza a usar tu servidor de correo
 
-Ahora que ya tienes activado y configurado un dominio propio (con su Registros MX correctamente configurados para apuntar a tu servidor), ya puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo *usuario@ejemplo.com*.
-
+Si has activado la casilla 'Activar servidor de correo para este dominio',  puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo *usuario@ejemplo.com*.  
+Recuerda que los registros MX tienen que estar correctamente configurados para que apuntien a tu servidor
 
 Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email)
 
