@@ -1,12 +1,17 @@
 site_name: MaadiX Documetnación
 site_description: Tutoriales y Gúias 
+repo_url: https://github.com/MaadixNet/docs
+edit_uri: edit/master/docs/
+copyright: CC BY-SA 3.0 ES
 pages:
     - Home: index.md
+    - Panel&nbsp;de&nbsp;Control: panel-de-control.md
     - Usuarios: users.md
     - Dominios: dominios.md
     - Email: email.md
     - VPN: vpn.md
     - Mysql: mysql.md
     - Etherpad: etherpad.md
+    - Mailman: mailman.md
     - Crear&nbsp;Web: create-web.md
 theme: readthedocs
