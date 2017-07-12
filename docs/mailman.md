@@ -1,4 +1,4 @@
-# Introduciión  
+# Introdución  
 
 Mailman es un software que permete crear y administrar listas de correo electrónico y boletines (newsleeter).
 Comprende tres diferentes interfaces web.

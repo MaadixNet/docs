@@ -56,7 +56,9 @@ Espera unos segundos hasta que se establezca la conexión. Para comprobar que la
 
 Por consola:  
 
-    sudo apt-get install netwotk-manager-openvpn
+    sudo apt-get install network-manager-openvpn  
+    sudo apt-get install network-manager-openvpn-gnome  
+
     sudo restart network-manager
 
 Con Synaptic:
