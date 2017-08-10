@@ -52,7 +52,7 @@ Haciendo click en "Ver" en la columna DNS de tu dominio (ver captura de pantalla
 
 ![Screenshot](img/configuracion-requerida-dominio.png) 
 
-Debes introducir estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* , *Editar registros DNS* o *Editar zona DNS*.
+Debes introducir estos datos en la sección correspondiente a la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (este paso es fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* , *Editar registros DNS* o *Editar zona DNS*. Puedes consultar la sección [DNS](dns) para instrucciones detalladas sobre los diferentes tipos de registros necesarios para un correcto funcionamiento de todos los servicios. 
 
 Una vez hechos los cambios, vuelve a consultar la ṕagina de configuración de DNS en el Panel de Control de tu servidor Maadix (Haciendo click en "Ver" en la columna DNS).  
 Recuerda que el proceso de propagación de los nuevos DNS puede tardar hasta 48 horas , por lo que es normal que durante un tiempo la configuración siga resultando incorrecta.  

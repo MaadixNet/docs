@@ -8,6 +8,7 @@ pages:
     - Panel&nbsp;de&nbsp;Control: panel-de-control.md
     - Usuarios: users.md
     - Dominios: dominios.md
+    - DNS: dns.md
     - Email: email.md
     - VPN: vpn.md
     - Mysql: mysql.md
