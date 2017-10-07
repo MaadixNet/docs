@@ -101,7 +101,8 @@ En unos segundos se crea la conexión. Para comprobar que la conexión se ha efe
 
 2- Descarga la App **OpenVpn Connect** para Android. 
 
-[Descargar OpenVpn Connect](https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=es)
+[Descargar OpenVpn Connect desde GooglePlay](https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=es)
+[Descargar OpenVpn Connect desde F-Droid](https://f-droid.org/app/de.blinkt.openvpn)
 
 3- Lanza la aplicación. En el menú el menú escoge la opción 'Import'.  
 
