@@ -37,14 +37,14 @@ Tendrás que rellenar los tres campos:
 * **Web Host**: La dirección web en la que será posible acceder a las opciones para las listas de este subdominio. Puedes dejar el valor por defecto miservidor.maadix.org o bien añadir otro dominio/subdominio, siempre que esté activado en al panel de control y funcionando correctamente.  Esta esrá la dirección web que se enviará a los suscriptores para acciones tales como confirmar suscripción, login etc.  
 
 
-En el caso de este ejemplo podría ser el dominio example.com o incluso el mismo subdominio listas.example.com que deberá tener los DNS correctamente configurados para que apunten a tu servidor y tendrá que estar activado en el panel de control. Si decides utilizar el mismo dominio/subdominio de las listas como dirección para la interfaz gráfica es muy importante que no actives el servidor mail para él. Deberás entonces activar el subdominio listas.example.com en el Panel de Control en la sección 'Añadir Dominios' sin marcar la casilla 'Activar servidor de correo para este dominio'.  
+En el caso de este ejemplo el **Web Host** podría ser el dominio example.com o incluso el mismo subdominio listas.example.com que deberá tener los DNS correctamente configurados para que apunten a tu servidor y tendrá que estar activado en el panel de control. Si decides utilizar el mismo dominio/subdominio de las listas como dirección para la interfaz gráfica es muy importante que no actives el servidor mail para él. Deberás entonces activar el subdominio listas.example.com en el Panel de Control en la sección 'Añadir Dominios' sin marcar la casilla 'Activar servidor de correo para este dominio'.  
 De esta forma  se creará la configuración necesaria para que el subdominio listas.example.com se pueda visitar desde el navegador, sin que se active el servidor de correo. Si activaras el servidor de correo para un dominio que quieras utilizar para listas podrías experimentar problemas en la entrega de los mails.  
 
 ![Add domain cpanel](img/mailman/add-domain-cpanel.png)
 
 # Crear listas de correo o boletines  
 
-Una vez añadido un dominio a la aplicación Mailman puedes crear una o más listas de correo o boletines bajo el mismo dominio. 
+Una vez añadido un dominio a la aplicación Mailman, puedes crear una o más listas de correo o boletines bajo el mismo dominio. 
 Para ello visita la pestaña Lists en el menú de arriba y luego haz click en 'Add new List'.  
 
 ![Add_list](img/mailman/add-list.png)  
@@ -54,12 +54,13 @@ Tendrás que rellenar los siguientes campos:
 * **List Name**: El nombre de la lista. En el ejemplo estampos creando la lista info  
 * **Mail Host**:  El dominio para la listas. En el desplegable escojemos el subdominio recién credo lists.example.com.  
 * **Initial list owner address**:  Asignamos una cuenta email como propietario/administrador de esta lista.  
-* **Advertise this list?**:  Esta opciones establecen si la lista será visible publicamente en el listado de listas creadas o no. Elejimos 'Advertise this list in list index' para que se muestre. Si activamos la casilla 'Hide this list in list index ' solo el administrado verá la lista en el listado.  
+* **Advertise this list?**:  Esta opción establece si la lista será visible publicamente en el listado de listas creadas o no. Elejimos 'Advertise this list in list index' para que se muestre. Si activamos la casilla 'Hide this list in list index ' solo el administrado verá la lista en el listado.  
 * **Description**:  Una descripción de la lista (opcional).  
 
 Ya está creada la lista. Ahora tendrás que establecer tus preferencias de configuración.  
 
-# Crear DNS para el dominio o subdominio  
+
+# Configurar DNS para el dominio o subdominio  
 
 Para que las listas creadas funcionen correctamente es necesario configurar los DNS para el dominio/subdominio añadido.  
 
