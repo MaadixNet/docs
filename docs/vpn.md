@@ -110,19 +110,19 @@ En unos segundos se crea la conexión. Para comprobar que la conexión se ha efe
 
 4- Selecciona 'Import profile from SD card'.  
 
-![Screenshot](img/android-vpn/02-profile.jpeg)
+![Screenshot](img/android-vpn/02-profile.png)
 
 4- Localiza y selecciona en tu tarjeta SD el archivo de configuración descargado anteriormente y con ruta `/VPN-(direcciónIP)/android/android-client.ovpn`. En esta carpeta encontrarás también un archivo ca.crt que debe estar ahí para que se configure correctamente el cliente VPN.
 
-![Screenshot](img/android-vpn/03-choosefile.jpeg)
+![Screenshot](img/android-vpn/03-choosefile.png)
 
 5- Introduce el usuario y contraseña para tu conexión que el administrador debe haberte comunicado por un canal seguro. Por razones de seguridad la contraseña no se envía junto al mail de instrucciones
 
-![Screenshot](img/android-vpn/04-user-password.jpeg)
+![Screenshot](img/android-vpn/04-user-password.png)
 
 6- Espera unos segundos hasta que se establezca la conexión.
 
-![Screenshot](img/android-vpn/05-connect.jpeg)
+![Screenshot](img/android-vpn/05-connect.png)
 
 la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN.  El resultado que te ofrece como 'Tu IP real' debería ser distinto.
 
