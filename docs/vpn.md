@@ -46,11 +46,11 @@ Nota: La ubicación por defecto es `C:\Program Files\OpenVPN`, así que tendrás
 
 ![Screenshot](img/windows-vpn/03-insert-user.png)
 
-Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN. El resultado que te ofrece como 'Tu IP real' debería ser distinto.
+Espera unos segundos hasta que se establezca la conexión. Para comprobar que la conexión se ha efectuado con éxito, visita la web [http://cualesmiip.com/](http://cualesmiip.com/) activando y desactivando la VPN. El resultado que te ofrece como 'Tu IP real' debería ser distinto.
 
 ## Linux
 
-1- Instala el cliente OpenVPN si no lo tienes instalado todavía (muchas distribuciones de Linux lo incluyen por defecto).   
+1. Instala el cliente OpenVPN si no lo tienes instalado todavía (muchas distribuciones de Linux lo incluyen por defecto).   
 
 Por consola:  
 
@@ -67,7 +67,7 @@ Busca y selecciona network-manager-openvpn y network-manager-openvpn-gnome e ins
 
 ![Screenshot](img/linux-vpn/01-install.png)
 
-2. Haz click en 'Configuración de Red' desde el panel del Network Manager (el nombre puede ser también 'Preferencias de Red', 'Conexiones de Red' u otro, dependiendo de tu distribución de Linux).
+2. Haz clic en 'Configuración de Red' desde el panel del Network Manager (el nombre puede ser también 'Preferencias de Red', 'Conexiones de Red' u otro, dependiendo de tu distribución de Linux).
 
 ![Screenshot](img/linux-vpn/ubuntu-edit.conn.png)
 
