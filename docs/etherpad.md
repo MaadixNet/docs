@@ -1,31 +1,30 @@
 # Etherpad   
 
-Etherpad-lite es una aplicación externa al Panel de Control que permite la edición colaborativa de documentos online (Pads) en tiempo real y entre múltiples usuarios. 
-Los servidores creados con MaadiX incluyen por defecto, junto con esta aplicación, una extensión que permite habilitar áreas de trabajo privadas. De esta manera se puede elegir si los documentos creados son accesibles al público en general o solo a los usuarios que tengan una cuenta activada.  
+Etherpad Lite es una aplicación externa al panel de control que permite la edición colaborativa de documentos online (Pads) en tiempo real y entre múltiples usuarios. 
+Además, los servidores creados con MaadiX incluyen por defecto, junto con esta aplicación, una extensión que permite habilitar áreas de trabajo privadas. De esta manera, se puede elegir si los documentos creados son accesibles al público en general o solamente a los usuarios que tengan una cuenta activada.  
 
 
 # Etherpad admin
 
-La aplicación Etherpad-lite incluye un panel propio de administración que permite:
+La aplicación Etherpad Lite incluye un panel propio de administración que permite:
 
-* Editar preferencias  
-* Instalar/desinstalar plugins  
-* Reiniciar la aplicación  
+* Editar preferencias.
+* Instalar o desinstalar plugins.
+* Reiniciar la aplicación.
 
-El área de administración de la aplicación está disponible en la dirección:  
-https://*minombreenmaddix*.maadix.org/etherpad/admin/
+El área de administración de esta aplicación está disponible en la dirección:  
+https://*minombreenmaadix*.maadix.org/etherpad/admin/
 
-o si tienes un dominio propio activado en el servidor:  
-https//*midominio*.com/etherpad/admin/  
+En caso de que tengas un dominio propio activado en el servidor:  
+https://*midominio*.com/etherpad/admin/  
 
-Para poder acceder a esta área tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el mail de activación del servidor, junto con las otras contraseñas). 
-
-El usuario admin solo puede acceder a esta área en la que tiene acceso a todos los grupos y usuarios creados en el sistema.  Su contraseña no es válida para operar desde el front-end.
+Para poder acceder a esta área, tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el correo que recibes automáticamente, una vez activada la herramienta). 
+Solamente el usuario admin puede acceder a esta área, en la que tiene acceso a todos los grupos y usuarios creados en el sistema. Su contraseña no es válida para operar desde el front-end.
 
 ## Cambiar contraseña de administrador  
 
-Una vez dentro del área de administrador, es recomendable que cambies la contraseña.  Para ello, haz click en la pestaña 'Settings' del menú de la izquierda.  
-Se abrirá un archivo en texto plano que contiene todos los parámetros de tu instalación.  
+Una vez dentro del área de administrador, es recomendable que cambies la contraseña.  Para hacerlo, haz clic en la pestaña 'Settings' del menú de la izquierda.  
+Cuando lo hagas, se abrirá un archivo en texto plano que contiene todos los parámetros de tu instalación.  
 Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parecidas a las siguientes:
 
       "users": {
@@ -35,68 +34,68 @@ Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parec
         }
       }
 
-1 - Cambia el valor del password por tu nueva contraseña, teniendo cuidado de ponerlo entre las comillas    
-2 - Haz click en 'Save Settings'  
-3 - Haz Click en 'Restart Etherpad'  
+1. Cambia el valor del password por tu nueva contraseña, teniendo cuidado de ponerlo entre las comillas.    
+2. Haz clic en 'Save Settings'.  
+3. Haz clic en 'Restart Etherpad'.  
  
 ![Change etherpad password](img/ch-paswd.png)  
 
 
-# Etherpad Área Privada 
+# Área Privada de Etherpad
 
-MaadiX ha desarrollado un plugin de etherpad-lite que permite crear espacios privados de trabajo, y que por defecto se instala junto con la aplicación.  
+MaadiX ha desarrollado un plugin de Etherpad Lite, (ep_maadix)[https://github.com/MaadixNet/ep_maadix], que permite crear espacios privados de trabajo, y que se instala por defecto junto con la aplicación.  
 Desde el área de administración de etherpad-lite se pueden establecer preferencias de configuración para la instalación.  
-Haciendo click en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
+Haciendo clic en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
 
 
-* Allow users to recover lost password - Activar esta opción permitirá a los usuarios recuperar su contraseña. En general es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por email u otro canal.   
+* Allow users to recover lost password - Activar esta opción permitirá a los usuarios recuperar su contraseña. De forma general general es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por correo u otro canal.   
 
-* Allow users to register - Si esta opción está activada cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario solo los usuarios con una invitación válida podrán acceder a la aplicación.  
+* Allow users to register - Si esta opción está activada cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario solo los usuarios con una invitación válida podrán acceder a la aplicación. Si un usuario se registra, no podrá acceder a los grupos ya creados hasta que no reciba una invitación. Solamente podrá crear nuevos grupos, nuevos pads e invitar usuarios a su grupo.
   
-* Allow public pads - Pemite crear pads públicos sin necesidad de tener un usuario activado, ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads en la instalación se puede desactivar.    
+* Allow public pads - Pemite crear pads públicos sin necesidad de tener un usuario activado ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads, en la instalación se puede desactivar.    
 
 
 
 ## Crear usuarios  
  
-Desde el área de administrador puedes crear grupos e invitar usuarios. Si has elegido no permitir que los usuarios se registren sin invitación tendrás que crear al menos una cuenta. El usuario así creado podrá empezar a administrar grupos desde el front-end de la aplicación.  Recuerda que las credenciales del usuario administrador no son válidas para operar desde el front-end.   
+Desde el área de administrador puedes crear grupos e invitar usuarios. Si has elegido no permitir que los usuarios se registren sin invitación, tendrás que crear al menos una cuenta. El usuario así creado podrá empezar a administrar grupos desde el front-end de la aplicación. Recuerda que las credenciales del usuario administrador no son válidas para operar desde el front-end.   
 
-Para crear grupos e invitar usuarios desde el área de administrador haz click en las pestañas 'Manage Groups' o 'Manage User' que encuentras en la cabecera de la sección 'Users and groups' de la columna izquierda (página principal del plugin).
+Para crear grupos e invitar usuarios desde el área de administrador haz clic en las pestañas 'Manage Groups' o 'Manage User', que encuentras en la cabecera de la sección 'Users and groups' de la columna izquierda (página principal del plugin).
 
 ## Etherpad front-end
 
-Los usuarios que tengan una cuenta activada pueden administrar grupos, invitar otros usuarios, crear y editar documentos (pads) desde el front-end. 
+Los usuarios que tengan una cuenta activada pueden administrar grupos, invitar otros usuarios, crear y editar documentos (Pads) desde el front-end. 
 
 El área de administración de la aplicación está disponible en la dirección:  
-https://*minombreenmaddix*.maadix.org/etherpad/
+https://*minombreenmaadix*.maadix.org/etherpad/
 
 o si tienes un dominio propio activado en el servidor:  
-https//*midominio*.com/etherpad/
+https://*midominio*.com/etherpad/
 
 
-Para acceder a el área privada hay que indentificarse haciendo click en 'Login' En la parte superior derecha de la página.
+Para acceder al área privada, hay que identificarse haciendo clic en 'Login', en la parte superior derecha de la página.
 
 ### Grupos  
 
 Los pads privados y los usuarios deben estar asociados a un grupo.  
-Un mismo usuario puede pertenecer a uno o más grupos además de poder crear uno propio.  
-Si un usuario no pertenece a ningún grupo tendrá que crear uno antes de poder crear documentos o invitar nuevos usuarios.   
+Un mismo usuario puede pertenecer a uno o más grupos, además de poder crear uno propio.  
+Si un usuario no pertenece a ningún grupo, tendrá que crear uno antes de poder crear documentos o invitar nuevos usuarios.   
 
- Se pueden consultar los grupos a los que se tiene acceso o crear nuevos haciendo click en 'My groups', una vez entrados en la aplicación (Login).  
+ Se pueden consultar los grupos a los que se tiene acceso o crear nuevos haciendo clic en 'My groups', una vez dentro de la aplicación (Login).  
 
 #### ¿Cómo crear un grupo privado?  
 
-En "Create a new Private Group" (Crear un nuevo grupo privado) inserta un nombre de grupo (este nombre no debe existir aún en el sistema) y haz clic en el botón "Create" (Crear). El nuevo grupo aparecerá en la misma página. Hecho esto, podrás empezar a invitar otros usuarios o crear nuevos documentos.  
+En "Create a new private group" (Crear un nuevo grupo privado) inserta un nombre de grupo (este nombre no debe existir aún en el sistema) y haz clic en el botón "Create" (Crear). El nuevo grupo aparecerá en la misma página. Una vez hecho esto, podrás empezar a invitar otros usuarios o crear nuevos documentos.  
 
 ### Invitar Usuarios  
 
-Para agregar / invitar  usuarios a un grupo, haz clic en "View / Add Users" (Ver / Agregar usuarios) desde la tabla de la página "My groups". En el campo "Invite user to this group" (Invitar usuario a este grupo) inserta una dirección de correo electrónico válida del usuario que quieras crear. Si  la dirección insertada no está registrada todavía en el sistema, se enviará un correo electrónico de confirmación al nuevo usuario con las instrucciones para activar la cuenta. También deberás elegir el rol que deseas asignar al nuevo usuario para este grupo.  
+Para añadir usuarios a un grupo, haz clic en "View / Add Users" (Ver / Agregar usuarios) desde la tabla de la página "My groups". En el campo "Invite user to this group" (Invitar usuario a este grupo) inserta una dirección de correo electrónico válida del usuario que quieras crear. Si la dirección insertada no está registrada todavía en el sistema, se enviará un correo electrónico de confirmación al nuevo usuario con las instrucciones para activar la cuenta. También deberás elegir el rol que deseas asignar al nuevo usuario para este grupo.  
 
 ### Roles
 
-El rol asignado a un usuario solo se aplica al grupo actual. Un usuario puede tener acceso a varios grupos con diferentes roles en cada uno de ellos. Si un usuario crea un nuevo grupo, su rol para dicho grupo será 'Admin'.
+El rol asignado a un usuario solamente se aplica a un determinado grupo. Un usuario puede tener acceso a varios grupos con diferentes roles en cada uno de ellos. Si un usuario crea un nuevo grupo, su rol para dicho grupo será siempre 'Admin'.
 
-Un usuario nunca puede asignar un rol más alto que su propio rol dentro del grupo actual.
+Un usuario nunca puede asignar un rol más alto que su propio rol dentro de un grupo.
 
 Los roles disponibles son:
 
@@ -110,15 +109,13 @@ El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al us
 
 ### ¿Cómo crear un pad privado?  
 
-Los Pads se deben crear desde la página de la lista de Pads de un grupo específico, ya que cada pad solo puede pertenecer a un grupo determinado. Para crear un nuevo pad haz click en "View/Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups".  En la nueva página que se abre inserta el nombre del pad que quieres crear en el campo "Add a Private Pad to this Group" (Crear Pad Privado para este grupo) y haz clic en el botón "Create" (Crear). El nuevo pad aparecerá en la tabla de abajo.  
+Los Pads se deben crear desde la página de la lista de Pads de un grupo específico, ya que cada Pad sólo puede pertenecer a un grupo determinado. Para crear un nuevo Pad, haz clic en "View / Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups". En la nueva página que se abre, inserta el nombre del pad que quieres crear en el campo "Add a Private Pad to this Group" (Crear Pad Privado para este grupo) y haz clic en el botón "Create" (Crear). El nuevo pad aparecerá en la tabla de abajo.  
 
-El nombre del pad debe ser único para cada grupo.  
+El nombre del Pad debe ser único para cada grupo.  
 
 ### Visitar Pads existentes  
 
-Para abrir un pad ya creado haz click en "View/Add Pads" (Ver / Agregar Pads)  en la tabla de la página "My groups" en la línea correspondiente al grupo en el que el documento fue creado. Encontrarás un listado de todos los pads ordenados por fecha de última edición del grupo seleccionado.  
+Para abrir un Pad ya creado, haz clic en "View / Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups", en la línea correspondiente al grupo en el que el documento fue creado. Encontrarás un listado de todos los Pads ordenados por fecha de última edición del grupo seleccionado.  
 Puedes invertir este orden para que se muestren las ediciones más antiguas primero, o reordenar el listado por orden alfabético utilizando las flechas de las columnas correspondientes.  
 
-Puedes encontrar aquí la documentación oficial de la aplicación Etherpad-Lite 
-
-[https://github.com/ether/etherpad-lite/wiki](https://github.com/ether/etherpad-lite/wiki)
+Si te quedara alguna duda, puedes encontrar [en este enlace](https://github.com/ether/etherpad-lite/wiki) la documentación oficial de la aplicación Etherpad Lite.
