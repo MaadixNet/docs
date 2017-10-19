@@ -17,7 +17,7 @@ Como para todas las demás aplicaciones que instales en el servidor, lo primero 
 
 # Configurar dominio
 
-Las listas de correo funcionan bajo un dominio o subdominio propio. Esto significa que no puedes crear listas de correo utilizando el mismo dominio que estás utilizando para cuentas de email. En el caso que estés utilizando el dominio example.com para cuentas de de correo electrónico (admin@example.com, info@example.com....) no podrás utilizar el mismo para crear listas de correo. Lo que tendrás que hacer es crear un subdominio de example.com y configurar los DNS antes de empezar a crear listas.  
+Las listas de correo funcionan bajo un dominio o subdominio propio. Esto significa que no puedes crear listas de correo utilizando el mismo dominio que estás utilizando para cuentas de email. En el caso que estés utilizando el dominio example.com para cuentas de de correo electrónico (admin@example.com, info@example.com....), no podrás utilizar el mismo para crear listas de correo. Lo que tendrás que hacer es crear un subdominio de example.com y configurar los DNS antes de empezar a crear listas.  
 
 # Activar dominio o subdominio en Mailman
 
@@ -33,10 +33,10 @@ Tendrás que rellenar los tres campos siguientes:
 
 * **Mail Host**: El nombre del dominio o subdominio bajo el cual se podrán crear listas (en nuestro caso listas.example.com, por el que tendremos que crear luego las entradas DNS correspondientes).  
 * **Description**: Una descripción para el dominio o subdominio (opcional).  
-* **Web Host**: La dirección web en la que será posible acceder a las opciones para las listas de este subdominio. Puedes dejar el valor por defecto minombrenmaadix.maadix.org o bien añadir otro dominio o subdominio, siempre que esté activado en el panel de control y funcionando correctamente. Esta será la dirección web que se enviará a los suscriptores para acciones tales como confirmar suscripción, consultar listas públicas u otras.  
+* **Web Host**: La dirección web en la que será posible acceder a las opciones para las listas de este subdominio. Puedes dejar el valor por defecto minombrenmaadix.maadix.org o bien añadir otro dominio o subdominio, siempre que esté activado en el panel de control y funcione correctamente. Esta será la dirección web que se enviará a los suscriptores para acciones tales como confirmar suscripción, consultar listas públicas u otras.  
 
 
-En el caso de este ejemplo, el **Web Host** podría ser el dominio example.com o incluso el mismo subdominio listas.example.com, que deberá tener los DNS correctamente configurados para que apunten a tu servidor, y tendrá que estar activado en el panel de control. Si decides utilizar el mismo dominio o subdominio de las listas como dirección para la interfaz gráfica, es muy importante que no actives el servidor mail para él. Deberás entonces activar el subdominio listas.example.com en el panel de control, dentro de la sección 'Añadir Dominios', sin marcar la casilla 'Activar servidor de correo para este dominio'.  
+En el caso de este ejemplo, el **Web Host** podría ser el dominio example.com o incluso el mismo subdominio listas.example.com, que deberá tener los DNS correctamente configurados para que apunten a tu servidor, y tendrá que estar activado en el panel de control. Si decides utilizar el mismo dominio o subdominio de las listas como dirección para la interfaz gráfica, es muy importante que no actives el servidor de correo para él. Deberás entonces activar el subdominio listas.example.com en el panel de control, dentro de la sección 'Añadir Dominios', sin marcar la casilla 'Activar servidor de correo para este dominio'.  
 De esta forma, se creará la configuración necesaria para que el subdominio listas.example.com se pueda visitar desde el navegador, sin que se active el servidor de correo. Si activaras el servidor de correo para un dominio que quisieras utilizar para las listas, podrías experimentar problemas en la entrega de los mensajes.  
 
 ![Add domain cpanel](img/mailman/add-domain-cpanel.png)
@@ -44,7 +44,7 @@ De esta forma, se creará la configuración necesaria para que el subdominio lis
 # Crear listas de correo o boletines  
 
 Una vez añadido un dominio a la aplicación Mailman, puedes crear una o más listas de correo o boletines bajo el mismo dominio. 
-Para ello visita la pestaña Lists en el menú de arriba y luego haz clic en 'Add new List'.  
+Para hacerlo, visita la pestaña 'Lists' en el menú de arriba y luego haz clic en 'Add new List'.  
 
 ![Add_list](img/mailman/add-list.png)  
 
@@ -61,7 +61,7 @@ Una vez completada esta fase, ya habremos creado la lista. A continuación, tend
 
 # Configurar DNS para el dominio o subdominio  
 
-Para que las listas creadas funcionen correctamente es necesario configurar los DNS para el dominio o subdominio añadido.  
+Para que las listas creadas funcionen correctamente, es necesario configurar los DNS para el dominio o subdominio añadido.  
 
 Como primer paso, necesitas acceder a través del panel de control a los valores requeridos para los registros DNS.  
 El panel de control detectará automáticamente los dominios o subdominios activados desde Mailman y te devolverá los valores correctos para las entradas DNS, que tendrás que configurar en el panel que te proporciona tu proveedor de dominio (operación externa a MaadiX).
@@ -73,7 +73,7 @@ Accede al panel de control y consulta la pestaña Mis Aplicaciones > Mailman > D
 
 Haz clic en el enlace 'Ver' de la columna DNS del dominio o subdominio que quieras configurar.  
 
-Aquí encontrarás los valores DNS necesarios para una correcta configuración. Si solamente quieres usar este dominio o subdominio para listas de correo, será suficiente que configures los DNS para los valores MX, TXT e idealmente DKM que encontrarás en la tabla 'Servidor de Correo'. 
+Aquí encontrarás los valores DNS necesarios para una correcta configuración. Si solamente quieres usar este dominio o subdominio para listas de correo, será suficiente que configures los DNS para los valores MX y TXT, e idealmente DKIM, que encontrarás en la tabla 'Servidor de Correo'. 
 
 ![Listado dominios mailman](img/mailman/dns-instruccions.png)
 
