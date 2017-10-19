@@ -21,7 +21,7 @@ A continuación, se explican paso a paso ambas operaciones, sin las cuales no po
 ![Screenshot](img/activar-cuenta-vpn.png)
 
 
-# Instalar y configurar cliente OpenVPN 
+# Instalar y configurar el cliente OpenVPN 
 
 Para establecer una conexión VPN con el servidor necesitas una aplicación cliente, que en el caso de MaadiX es OpenVPN, siendo esta la solución de código abierto que puedes instalar en el servidor. A continuación, puedes encontrar un tutorial detallado para ordenadores con los sistemas operativos Windows o Linux, así como para móviles Android.
 
@@ -106,7 +106,7 @@ Espera unos segundos hasta que se establezca la conexión. Para comprobar que la
 
 ![Screenshot](img/android-vpn/01-import.png)
 
-4. Selecciona la opción 'Import profile from SD card' (Esta opción es válida aunque no tengas SD. En este caso, búscalo en el almacenamiento interno de tu teléfono).
+4. Selecciona la opción 'Import profile from SD card' (Esta opción es válida aunque no tengas una tarjeta SD. En este caso, búscalo en el almacenamiento interno de tu teléfono).
 
 ![Screenshot](img/android-vpn/02-profile.png)
 
