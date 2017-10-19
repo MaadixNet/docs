@@ -3,7 +3,7 @@
 En MaadiX existen diferentes categorías de usuarios que puedes activar o administrar en tu sistema. Cada uno de ellos cuenta con distintos privilegios y funciones, que en esta página te ayudaremos a entender para saber mejor cómo utilizarlos.
 
 
-* **Administrador del panel de control**: Se trata del único usuario con privilegios ilimitados para la administración de los datos a través del panel de control. Este usuario se crea automáticamente en el mismo momento en el que se crea el servidor y no se puede eliminar.
+* **Administrador del panel de control**: Se trata del único usuario con privilegios ilimitados para la administración de los datos a través del panel de control. Este usuario se crea automáticamente en el mismo momento en el que se crea el servidor, y no se puede eliminar.
 * **Superusuario**: Aunque este usuario no tenga acceso a través del panel de control, es jerárquicamente más importante que el anterior, dado que tiene unos privilegios ilimitados sobre la totalidad del sistema ("usuario root" de Linux). No se puede eliminar, de modo que no llegues a perder nunca el acceso root al sistema.
 * **Usuarios ordinarios**: Usuarios que el administrador puede crear a través del panel de control, a los cuales puede otorgar permisos para utilizar o acceder a los distintos servicios.    
 * **Usuario postmaster**: Por cada dominio activado en el panel de control, se crea una cuenta postmaster. Este tipo de usuario tendrá la posibilidad de crear y administrar cuentas de correo electrónico asociadas al mismo dominio. 
@@ -14,7 +14,7 @@ En MaadiX existen diferentes categorías de usuarios que puedes activar o admini
 El administrador del panel de control es probablemente el usuario que más utilizarás, ya que es el que tiene todos los privilegios dentro del panel de control. Esto significa que este usuario puede crear, configurar y eliminar a todos los demás usuarios, los dominios, las cuentas de correo electrónico y cualquier otro dato administrable desde el panel de control.
 
 Este usuario se crea automáticamente y no es posible eliminarlo. De lo contrario, perderías el acceso al panel de control.  
-Cuando desde MaadiX construimos el servidor, también creamos este usuario asignándole, una contraseña aleatoria que por razones de seguridad estás obligado a cambiar la primera vez que accedes al panel de control.
+Cuando desde MaadiX construimos el servidor, también creamos este usuario, asignándole una contraseña aleatoria que por razones de seguridad estás obligado a cambiar la primera vez que accedes al panel de control.
 
 Todos los parámetros, excepto el nombre de usuario, se pueden editar en cualquier momento desde la página de 'Perfil' del panel de control. Puedes acceder a ella a través del menú que se despliega en la esquina superior derecha.  
 
@@ -26,7 +26,7 @@ Es muy importante que la cuenta de correo electrónico asociada a este usuario s
   
 ## Superusuario
 
-Este usuario no puede operar desde el panel de control (de hecho, ni siquiera tiene un acceso válido al mismo). Aún así, es el usuario más poderoso del sistema. Técnicamente hablando, es el usuario ´root´.  
+Este usuario no puede operar desde el panel de control (de hecho, ni siquiera tiene un acceso válido al mismo). Aún así, es el usuario más poderoso del sistema. Técnicamente hablando, es el usuario 'root'.  
 Tener acceso ´root´ a un sistema significa tener el control total sobre el mismo, poder implementar cualquier tipo de cambio, acceder a cualquier carpeta e instalar cualquier aplicación.  
 
  
@@ -65,7 +65,7 @@ Para operar desde el panel de control, el postmaster tendrá que identificarse u
 ![Postmaster log in](../img/usuarios/postmaster-login.png)
 
   
-Una vez dentro del panel de control, este usuario tendrá una interfaz ligeramente distinta a la del administrador, en la que sólo tendrá habilitado el acceso a las funcionalidades que tiene permitidas.
+Una vez dentro del panel de control, este usuario tendrá una interfaz ligeramente distinta a la del administrador, en la que sólo tendrá habilitado el acceso a las funcionalidades que se le han habilitado.
 
 ![Postmaster logged in](../img/usuarios/postmaster-logged.png)
 
@@ -77,7 +77,7 @@ El usuario que tenga un correo electrónico activado, podrá entrar en el panel 
 
 ![Email log in](../img/usuarios/email-login.png)  
 
-Sus privilegios de edición están limitados a su propia cuenta de correo electrónico. Podrá cambiar la contraseña, su nombre y apellido, aparte de establecer o desactivar el reenvío automático.
+Sus privilegios de edición están limitados a su propia cuenta de correo electrónico. Podrá cambiar la contraseña y su nombre y apellido, además de establecer o desactivar el reenvío automático.
 También puede acceder para consultar los datos para la configuración de su cuenta en un cliente de correo electrónico en su dispositivo (Thunderbird, Outlook...).   
 
 ![Email logged in](../img/usuarios/email-logged.png)  
