@@ -5,20 +5,20 @@ Antes de añadir cuentas de correo electrónico, es importante que te asegures d
 
 # Crear cuenta
 
-En la sección 'Email', haz clic en el botón 'Añadir cuenta' y rellena los diferentes campos del formulario que se despliega. Tendrás que elegir un dominio del listado de dominios disponibles, el cual habrás activado previamente en la sección 'Domminios'.
+En la sección 'Email', haz clic en el botón 'Añadir cuenta' y rellena los diferentes campos del formulario que se despliega. Tendrás que elegir un dominio del listado de dominios disponibles, el cual habrás activado previamente en la sección 'Dominios'.
 
 ![Screenshot](img/add-email.png)
 
 # Editar cuenta 
 
-Puedes cambiar los parámetros de las cuentas de correos electrónico que tengas activadas visitado la sección **'Email'** y haciendo clic luego en el botón Ver | Editar de la cuenta que desees modificar.
+Puedes cambiar los parámetros de las cuentas de correo electrónico que tengas activadas visitado la sección **'Email'** y haciendo luego clic en el botón Ver | Editar de la cuenta que desees modificar.
 
 
 ![Edit email](img/edit-email.png)
 
 # Reenvío automático
 
-En la misma página de edición de cada cuenta de correo electrónico puedes activar el renvío automático de todo el correo entrante a cualquier otra dirección de correo.  
+En la misma página de edición de cada cuenta de correo electrónico puedes activar el reenvío automático de todo el correo entrante a cualquier otra dirección de correo.  
 
 Para hacerlo, tienes que activar la casilla **Activar reenvío automático a otra cuenta**, insertando una dirección válida en el nuevo campo que se despliega. En caso de que quieras que se reenve a múltiples cuentas, debes separar cada una con coma (user1@example.com,user2@example.com). Si quieres seguir recibiendo una copia de los correos entrantes en tu cuenta actual, tendrás que incluirla en el listado.
 
