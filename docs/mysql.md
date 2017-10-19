@@ -1,7 +1,9 @@
 # Servidor MySQL
 
-Cada máquina virtual dispone de un servidor MySQL propio.     
-En el correo electrónico de activación del servicio se envían las credenciales para el usuario root de MySQL. Por razones de seguridad, se recomienda cambiarlas cuando se accede al servidor.  
+Cada máquina virtual dispone de un servidor MySQL propio.
+
+En el correo electrónico de activación del servicio se envían las credenciales para el usuario root de MySQL. Por razones de seguridad, se recomienda cambiarlas cuando se accede por primera vez al servidor.  
+
 Si se ha elegido no instalar la aplicación phpMyAdmin, solamente se podrán administrar las bases de datos y sus usuarios a través de la consola de comandos (terminal). En caso contrario, se puede utilizar esta aplicación para la gestión de las bases de datos y de sus usuarios.  
 
 
@@ -33,6 +35,6 @@ Por razones de seguridad, es muy recomendable cambiar la contraseña del usuario
 Es buena práctica crear un usuario MySQL diferente por cada base de datos, y otorgarle de este modo permisos solamente sobre una y no sobre todas las bases de datos que tengas creadas.
 
 Tanto las bases de datos como los usuarios MySQL y sus contraseñas se pueden crear y administrar desde phpMyadmin.  
-Por defecto, sólo el usuario 'root' de MySQL tiene los privilegios necesarios para crear nuevas bases de datos, nuevos usuarios, y otorgar permisos a cada uno de ellos.  
+Por defecto, sólo el usuario 'root' de MySQL tiene los privilegios necesarios para crear nuevas bases de datos, nuevos usuarios y otorgar permisos a cada uno de ellos.  
 
 En caso de que te quedaran dudas, siempre puedes consultar la documentación oficial para el uso de phpMyAdmin en el [siguiente enlace](https://www.phpmyadmin.net/docs/)
