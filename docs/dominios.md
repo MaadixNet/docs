@@ -4,7 +4,7 @@
 
 Toda web o aplicación necesita un buen dominio. Si ya dispones de un dominio propio, MaadiX te permite activarlo fácilmente y configurarlo para usarlo en tus aplicaciones.
 
-Si aún no dispones de dominio propio, aquí te dejamos un par de proveedores de ejemplo donde puedes registrarlo de manera sencilla(hay muchísimos más [1]):
+Si todavía no dispones de dominio propio, aquí te dejamos algunos proveedores de ejemplo donde puedes registrarlo de manera sencilla (¡pero hay muchísimos más [1]!):
 
 * [gandi.net](https://www.gandi.net/)
 * [namecheap.com](https://www.namecheap.com/domains/registration.aspx)
@@ -17,7 +17,7 @@ Si ya dispones de este dominio propio, sigue las instrucciones de a continuació
 
 ## Activa tu dominio
 
-Desde tu panel de control entra en la pestaña '**Dominios**' y haz clic en '**Añadir dominios**'. 
+Desde tu panel de control, entra en la pestaña '**Dominios**' y haz clic en '**Añadir dominios**'. 
 
 Se desplegará un formulario con los siguientes campos:
 
@@ -52,14 +52,14 @@ Haciendo clic en "Ver" en la columna DNS de tu dominio (ver captura de pantalla 
 
 ![Screenshot](img/configuracion-requerida-dominio.png) 
 
-Debes introducir estos datos en la sección correspondiente de la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (esta fase tienes que completarla fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS* , *Editar registros DNS* o *Editar zona DNS*. Puedes consultar la sección [DNS](dns) para obtener instrucciones detalladas sobre los diferentes tipos de registros necesarios para un correcto funcionamiento de todos los servicios. 
+Debes introducir estos datos en la sección correspondiente de la configuración de DNS dentro del **área de cliente de tu proveedor de dominio** (esta fase tienes que completarla fuera de tu servidor MaadiX). Seguramente habrá un enlace o pestaña, quizás en el menú, que diga algo como *DNS*, *Editar registros DNS* o *Editar zona DNS*. Puedes consultar la sección [DNS](dns) para obtener instrucciones detalladas sobre los diferentes tipos de registros necesarios para un correcto funcionamiento de todos los servicios. 
 
 Una vez hechos los cambios, vuelve a consultar la página de configuración de DNS en el panel de control de tu servidor MaadiX, haciendo clic en "Ver" en la columna DNS.  
 Recuerda que el proceso de propagación de los nuevos DNS puede tardar hasta 48 horas, de modo que es normal que durante un tiempo la configuración siga resultando incorrecta aunque la hayas cambiado.
 
 ## HTTPS
 
-Todos los dominios que actives a través del panel de control tendrán siempre activado un certificado SSL y serán accesibles a través de la dirección  
+Todos los dominios que actives a través del panel de control tendrán siempre activado un certificado SSL y serán accesibles a través de la dirección:  
 
 https://tudominio.com
 
@@ -71,19 +71,19 @@ No  necesitas llevar a cabo ninguna configuración adicional para activar HTTPS 
 
 ## Subir tu web o aplicación al dominio propio
 
-Una vez aparezca el check verde en la columna "Activado", ya puedes subir los archivos de tu aplicación web a la recién creada carpeta `/var/www/html/example.com/`. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
+Una vez aparezca el check verde en la columna "Activado", ya puedes subir los archivos de tu aplicación web a la recién creada carpeta `/var/www/html/example.com/`. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo, [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
-Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web)
+Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web).
 
 
 ## Empieza a usar tu servidor de correo
 
-Si has activado la casilla 'Activar servidor de correo para este dominio', también puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email -> Cuentas mail* para abrir nuevas cuentas de correo.  
-Recuerda que los registros MX y SPF tienen que estar correctamente configurados para que apuntien a tu servidor.
+Si has activado la casilla 'Activar servidor de correo para este dominio', también puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email > Cuentas mail* para abrir nuevas cuentas de correo.  
+Recuerda que los registros MX y SPF tienen que estar correctamente configurados para que apunten a tu servidor.
 
-Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email)
+Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email).
 
 
 ----
 
-[1] Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
+(1): Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
