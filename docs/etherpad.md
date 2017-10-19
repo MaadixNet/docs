@@ -15,7 +15,7 @@ La aplicación Etherpad Lite incluye un panel propio de administración que perm
 El área de administración de esta aplicación está disponible en la dirección:  
 https://*minombreenmaadix*.maadix.org/etherpad/admin/
 
-En caso de que tengas un dominio propio activado en el servidor:  
+En caso de que tuvieras un dominio propio activado en el servidor:  
 https://*midominio*.com/etherpad/admin/  
 
 Para poder acceder a esta área, tendrás que insertar el nombre de administrador y la contraseña de la aplicación (estos datos están incluidos en el correo que recibes automáticamente, una vez activada la herramienta). 
@@ -23,7 +23,7 @@ Solamente el usuario admin puede acceder a esta área, en la que tiene acceso a 
 
 ## Cambiar contraseña de administrador  
 
-Una vez dentro del área de administrador, es recomendable que cambies la contraseña.  Para hacerlo, haz clic en la pestaña 'Settings' del menú de la izquierda.  
+Una vez dentro del área de administrador, es recomendable que cambies la contraseña. Para hacerlo, haz clic en la pestaña 'Settings' del menú de la izquierda.  
 Cuando lo hagas, se abrirá un archivo en texto plano que contiene todos los parámetros de tu instalación.  
 Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parecidas a las siguientes:
 
@@ -43,16 +43,16 @@ Haz scroll hasta el final de este archivo, donde encontrarás unas líneas parec
 
 # Área Privada de Etherpad
 
-MaadiX ha desarrollado un plugin de Etherpad Lite, (ep_maadix)[https://github.com/MaadixNet/ep_maadix], que permite crear espacios privados de trabajo, y que se instala por defecto junto con la aplicación.  
-Desde el área de administración de etherpad-lite se pueden establecer preferencias de configuración para la instalación.  
+MaadiX ha desarrollado un plugin de Etherpad Lite, [ep_maadix](https://github.com/MaadixNet/ep_maadix), que permite crear espacios privados de trabajo, y que se instala por defecto junto con la aplicación.  
+Desde el área de administración de Etherpad Lite se pueden establecer preferencias de configuración para la instalación.  
 Haciendo clic en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
 
 
-* Allow users to recover lost password - Activar esta opción permitirá a los usuarios recuperar su contraseña. De forma general general es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por correo u otro canal.   
+* Allow users to recover lost password: Activar esta opción permitirá a los usuarios recuperar su contraseña. De forma general, es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por correo u otro canal.   
 
-* Allow users to register - Si esta opción está activada cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario solo los usuarios con una invitación válida podrán acceder a la aplicación. Si un usuario se registra, no podrá acceder a los grupos ya creados hasta que no reciba una invitación. Solamente podrá crear nuevos grupos, nuevos pads e invitar usuarios a su grupo.
+* Allow users to register: Si esta opción está activada, cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario, sólo los usuarios con una invitación válida podrán acceder a la aplicación. Si un usuario se registra, no podrá acceder a los grupos ya creados hasta que no reciba una invitación. Solamente podrá crear nuevos grupos, nuevos pads e invitar usuarios a su grupo.
   
-* Allow public pads - Pemite crear pads públicos sin necesidad de tener un usuario activado ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads, en la instalación se puede desactivar.    
+* Allow public pads: Pemite crear pads públicos sin necesidad de tener un usuario activado ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads, en la instalación se puede desactivar.    
 
 
 
@@ -77,7 +77,7 @@ Para acceder al área privada, hay que identificarse haciendo clic en 'Login', e
 
 ### Grupos  
 
-Los pads privados y los usuarios deben estar asociados a un grupo.  
+Los Pads privados y los usuarios deben estar asociados a un grupo.  
 Un mismo usuario puede pertenecer a uno o más grupos, además de poder crear uno propio.  
 Si un usuario no pertenece a ningún grupo, tendrá que crear uno antes de poder crear documentos o invitar nuevos usuarios.   
 
@@ -107,9 +107,9 @@ Los roles disponibles son:
  
 El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al usuario se puede modificar y editar más tarde.  
 
-### ¿Cómo crear un pad privado?  
+### ¿Cómo crear un Pad privado?  
 
-Los Pads se deben crear desde la página de la lista de Pads de un grupo específico, ya que cada Pad sólo puede pertenecer a un grupo determinado. Para crear un nuevo Pad, haz clic en "View / Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups". En la nueva página que se abre, inserta el nombre del pad que quieres crear en el campo "Add a Private Pad to this Group" (Crear Pad Privado para este grupo) y haz clic en el botón "Create" (Crear). El nuevo pad aparecerá en la tabla de abajo.  
+Los Pads se deben crear desde la página de la lista de Pads de un grupo específico, ya que cada Pad sólo puede pertenecer a un grupo determinado. Para crear un nuevo Pad, haz clic en "View / Add Pads" (Ver / Agregar Pads) en la tabla de la página "My groups". En la nueva página que se abre, inserta el nombre del Pad que quieres crear en el campo "Add a Private Pad to this Group" (Crear Pad privado para este grupo) y haz clic en el botón "Create" (Crear). El nuevo pad aparecerá en la tabla de abajo.  
 
 El nombre del Pad debe ser único para cada grupo.  
 
