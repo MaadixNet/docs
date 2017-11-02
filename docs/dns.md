@@ -15,7 +15,7 @@ En la primera línea de la tabla, dentro de la columna 'Name', se ha utilizado e
 
 En la segunda línea estamos especificando en la columna 'Name' el nombre del subdominio. Como puedes ver, no es necesario especificar el valor del dominio, por lo que usaremos 'subdomain' en lugar de 'subdomain.example.com'. 
 
-La columna 'Value' se refiere a la IP. Tendrás que sustituir este valor de ejemplo  con la IP de tu servidor. Puedes encontrar este valor en el panel de control: Entra en la pestaña '**Dominios**' y haz clic en el enlace '**Ver**' de la columna DNS correspondiente al dominio que quieres configurar.
+La columna 'Value' se refiere a la IP. Tendrás que sustituir este valor de ejemplo  con la IP de tu servidor. Puedes encontrar este valor en el panel de control: entra en la pestaña '**Dominios**' y haz clic en el enlace '**Ver**' de la columna DNS correspondiente al dominio que quieres configurar.
 
 
 
@@ -91,10 +91,10 @@ Ej.nº  | Type    | Name                                     | Value
 3 | TXT     | default._domainkey.subdomain.example.com | "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZTroWVFpkfXklFulqg8pdg/cWS+ORgoi1x97l5NyqlqL7R1qazoIVQ63TYUS8yjxU87z4FAr/zb/+p2ayk+wVqXA7twWLuHPhEHdiBQM5cEbaPX/Q3fMYULTPkmuVLA/aAcNUr3xagyNfpOzUmUAvJfOfozaSik9/ZmHRFFvzdwIDAQAB"
 4 | TXT     | default._domainkey.subdomain             | "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZTroWVFpkfXklFulqg8pdg/cWS+ORgoi1x97l5NyqlqL7R1qazoIVQ63TYUS8yjxU87z4FAr/zb/+p2ayk+wVqXA7twWLuHPhEHdiBQM5cEbaPX/Q3fMYULTPkmuVLA/aAcNUr3xagyNfpOzUmUAvJfOfozaSik9/ZmHRFFvzdwIDAQAB"
 
-* Ejemplo 1: Este registro se refiere a un dominio de primer nivel (example.com en nuestro ejemplo). Algunos proveedores no requieren que especifiques el nombre de dominio, por lo que 'default._domainkey' es el valor que tendrás que insertar en el campo 'Name'.  
-* Ejemplo 2: Este registro se refiere a un dominio de primer nivel (example.com en nuestro ejemplo). Algunos proveedores requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.example.com' es el valor que tendrás que insertar en el campo 'Name'.  
-* Ejemplo 3: Este registro se refiere a un dominio de segundo nivel o subdominio (subdomain.example.com en nuestro ejemplo). Algunos proveedores requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.subdomain.example.com' es el valor que tendrás que insertar en el campo 'Name'.  
-* Ejemplo 4: Este registro se refiere a un dominio de segundo nivel o subdominio (subdomain.example.com en nuestro ejemplo). Algunos proveedores no requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.subdomain' es el valor que tendrás que insertar en el campo 'Name'. 
+* Ejemplo 1: este registro se refiere a un dominio de primer nivel (example.com en nuestro ejemplo). Algunos proveedores no requieren que especifiques el nombre de dominio, por lo que 'default._domainkey' es el valor que tendrás que insertar en el campo 'Name'.  
+* Ejemplo 2: este registro se refiere a un dominio de primer nivel (example.com en nuestro ejemplo). Algunos proveedores requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.example.com' es el valor que tendrás que insertar en el campo 'Name'.  
+* Ejemplo 3: este registro se refiere a un dominio de segundo nivel o subdominio (subdomain.example.com en nuestro ejemplo). Algunos proveedores requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.subdomain.example.com' es el valor que tendrás que insertar en el campo 'Name'.  
+* Ejemplo 4: este registro se refiere a un dominio de segundo nivel o subdominio (subdomain.example.com en nuestro ejemplo). Algunos proveedores no requieren que especifiques el nombre de dominio, por lo que 'default._domainkey.subdomain' es el valor que tendrás que insertar en el campo 'Name'. 
 
 Ejemplos de registros DKIM para example.com y subdomain.example.com en formato texto (para aquellos proveedores que no proporcionan formulario):  
 
