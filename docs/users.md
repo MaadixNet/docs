@@ -3,11 +3,11 @@
 En MaadiX existen diferentes categorías de usuarios que puedes activar o administrar en tu sistema. Cada uno de ellos cuenta con distintos privilegios y funciones, que en esta página te ayudaremos a entender para saber mejor cómo utilizarlos.
 
 
-* **Administrador del panel de control**: Se trata del único usuario con privilegios ilimitados para la administración de los datos a través del panel de control. Este usuario se crea automáticamente en el mismo momento en el que se crea el servidor, y no se puede eliminar.
-* **Superusuario**: Aunque este usuario no tenga acceso a través del panel de control, es jerárquicamente más importante que el anterior, dado que tiene unos privilegios ilimitados sobre la totalidad del sistema ("usuario root" de Linux). No se puede eliminar, de modo que no llegues a perder nunca el acceso root al sistema.
-* **Usuarios ordinarios**: Usuarios que el administrador puede crear a través del panel de control, a los cuales puede otorgar permisos para utilizar o acceder a los distintos servicios.    
-* **Usuario postmaster**: Por cada dominio activado en el panel de control, se crea una cuenta postmaster. Este tipo de usuario tendrá la posibilidad de crear y administrar cuentas de correo electrónico asociadas al mismo dominio. 
-* **Cuentas de correo**: Los titulares de una cuenta de correo electrónico tendrán acceso al panel de control con el único privilegio de ver o editar sus propios datos (contraseña, nombre, reenvío autómatico...).  
+* **Administrador del panel de control**: se trata del único usuario con privilegios ilimitados para la administración de los datos a través del panel de control. Este usuario se crea automáticamente en el mismo momento en el que se crea el servidor, y no se puede eliminar.
+* **Superusuario**: aunque este usuario no tenga acceso a través del panel de control, es jerárquicamente más importante que el anterior, dado que tiene unos privilegios ilimitados sobre la totalidad del sistema ("usuario root" de Linux). No se puede eliminar, de modo que no llegues a perder nunca el acceso root al sistema.
+* **Usuarios ordinarios**: usuarios que el administrador puede crear a través del panel de control, a los cuales puede otorgar permisos para utilizar o acceder a los distintos servicios.    
+* **Usuario postmaster**: por cada dominio activado en el panel de control, se crea una cuenta postmaster. Este tipo de usuario tendrá la posibilidad de crear y administrar cuentas de correo electrónico asociadas al mismo dominio. 
+* **Cuentas de correo**: los titulares de una cuenta de correo electrónico tendrán acceso al panel de control con el único privilegio de ver o editar sus propios datos (contraseña, nombre, reenvío autómatico...).  
 
 ## Administrador
 
@@ -48,10 +48,10 @@ Una vez activado, este usuario podrá acceder al servidor a través de una conex
 
 Son usuarios creados por el administrador y a los que se pueden asignar diferentes grados de permisos y accesos.
 
-* Acceso SFTP: Podrán acceder al servidor por SFTP y estarán confinados en su propia carpeta personal. No pueden acceder al resto del sistema ni tienen acceso SSH.
-* Webmaster: Pueden ser nombrados webmasters de una determinada aplicación web. En este caso, se crea un acceso directo en su carpeta personal a la carpeta de la aplicación web. Se convierte en el propietario de dicha carpeta y de todos los archivos que pueda contener, adquiriendo así todos los privilegios sobre estos archivos. Ten presente que los usuarios tipo webmaster necesitarán tener activado el acceso SFTP para poder editar los archivos.   
-* Cuenta VPN: Se les puede activar una cuenta VPN para que su conexión con el servidor sea directa y segura. Asimismo, el usuario también podrá utilizar esta conexión para conectarse a cualquier otra dirección de Internet.
-* Acceso aplicación phpMyAdmin: Se les puede activar el permiso para acceder a esta aplicación, en caso de que estuviera instalada. Por razones de seguridad, esta aplicación está protegida por una doble contraseña y es necesario tener habilitado el acceso a la interfaz con tal de poder acceder.
+* **Acceso SFTP**: podrán acceder al servidor por SFTP y estarán confinados en su propia carpeta personal. No pueden acceder al resto del sistema ni tienen acceso SSH.
+* **Webmaster**: pueden ser nombrados webmasters de una determinada aplicación web. En este caso, se crea un acceso directo en su carpeta personal a la carpeta de la aplicación web. Se convierte en el propietario de dicha carpeta y de todos los archivos que pueda contener, adquiriendo así todos los privilegios sobre estos archivos. Ten presente que los usuarios tipo webmaster necesitarán tener activado el acceso SFTP para poder editar los archivos.   
+* **Cuenta VPN**: se les puede activar una cuenta VPN para que su conexión con el servidor sea directa y segura. Asimismo, el usuario también podrá utilizar esta conexión para conectarse a cualquier otra dirección de Internet.
+* **Acceso aplicación phpMyAdmin**: se les puede activar el permiso para acceder a esta aplicación, en caso de que estuviera instalada. Por razones de seguridad, esta aplicación está protegida por una doble contraseña y es necesario tener habilitado el acceso a la interfaz con tal de poder acceder.
 
 ## Usuarios postmaster
 
