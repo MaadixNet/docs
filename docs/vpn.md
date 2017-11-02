@@ -1,4 +1,4 @@
-# VPN: Activar cuentas y configurar el cliente
+# VPN: activar cuentas y configurar el cliente
 
 Una red privada virtual o VPN ([Virtual Private Network - Wikipedia](https://es.wikipedia.org/wiki/Red_privada_virtual)) es una forma de proteger todo tu tráfico a través de una conexión cifrada, segura y directa a tu servidor, garantizando la confidencialidad de tu navegación incluso en las circunstancias más adversas (redes públicas o poco fiables).
 
@@ -27,7 +27,7 @@ Para establecer una conexión VPN con el servidor necesitas una aplicación clie
 
 ## Windows
 
-1. Descarga e instala la aplicación OpenVPN desde [este enlace](https://openvpn.net/index.php/open-source/downloads.html)
+1. Descarga e instala la aplicación OpenVPN desde [este enlace](https://openvpn.net/index.php/open-source/downloads.html).
 
 ![Screenshot](img/windows-vpn/01-vpn-download.png)
 
@@ -38,7 +38,7 @@ b) `ca.crt`
 
 ![Screenshot](img/windows-vpn/02-vpn-location.png)
 
-Nota: La ubicación por defecto es `C:\Program Files\OpenVPN`, así que tendrás que copiar ambos archivos en `C:\Program Files\OpenVPN\config\`, a menos que durante la instalación hayas ubicado la aplicación en otra carpeta.
+Nota: la ubicación por defecto es `C:\Program Files\OpenVPN`, así que tendrás que copiar ambos archivos en `C:\Program Files\OpenVPN\config\`, a menos que durante la instalación hayas ubicado la aplicación en otra carpeta.
 
 3. Abre la aplicación OpenVPN GUI. Es probable que se haya creado un acceso directo en el escritorio.
 
