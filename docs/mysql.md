@@ -18,7 +18,7 @@ Puedes activar este acceso en el momento de crear nuevos usuarios, o editando el
 
 ## Primera contraseña  
 
-Cuando se accede a la aplicación phpMyAdmin, se muestra la primera autenticación con una ventana emergente. En este primer formulario se tienen que insertar las credenciales de usuario y contraseña de un usuario que tenga activado el servicio 'Acceso aplicación phpMyAdmin' (Advertencia: No se trata del usuario y contraseña de un usuario MySQL para una base datos o el usuario root de MySQL -- ese es el siguiente paso).  
+Cuando se accede a la aplicación phpMyAdmin, se muestra la primera autenticación con una ventana emergente. En este primer formulario se tienen que insertar las credenciales de usuario y contraseña de un usuario que tenga activado el servicio 'Acceso aplicación phpMyAdmin' (Advertencia: no se trata del usuario y contraseña de un usuario MySQL para una base datos o el usuario root de MySQL -- ese es el siguiente paso).  
 
 ![Phpmyadmin private area](img/private-area-phpmyadmin.png)
 
