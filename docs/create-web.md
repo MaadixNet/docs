@@ -24,11 +24,11 @@ Si al activar tu dominio le has asignado un usuario Webmaster específico (lo cu
 
 Las credenciales para la conexión con el usuario Webmaster son:
 
-* **Servidor**: tu *subdomino.maadix.org*
-* **Protocolo**: SFTP  
-* **Modo de acceso**: Normal  
-* **Usuario**: El nombre del usuario Webmaster (Advertencia: Sensible a mayúsculas y minúsculas)
-* **Contraseña**: La contraseña que has establecido para este usuario
+* **Servidor**: tu *subdomino.maadix.org*.
+* **Protocolo**: SFTP.
+* **Modo de acceso**: normal.
+* **Usuario**: el nombre del usuario Webmaster (Advertencia: sensible a mayúsculas y minúsculas).
+* **Contraseña**: la contraseña que has establecido para este usuario.
 
 ![Screenshot](img/sftp-user.png)
 
@@ -39,7 +39,7 @@ También puede tener ahí otros archivos propios que haya subido o creado anteri
 <a id="domain-folder"></a>
 #### Dentro de la carpeta `/var/www/html/midominio.com` 
 
-Dentro de la carpeta `/var/www/html/midominio.com` hay dos elementos: Una carpeta con nombre .well-known y un archivo index.html.  
+Dentro de la carpeta `/var/www/html/midominio.com` hay dos elementos: una carpeta con nombre .well-known y un archivo index.html.  
 
 La carpeta .well-known es necesaria para efectuar una conexión segura a la web (HTTPS) y no debes tocarla (*si no puedes ver la carpeta .well-known, no te preocupes. El punto delante del nombre significa que es un archivo oculto, está ahí pero Filezilla, o tu cliente SFTP están configurados para no mostrar los archivos ocultos*).  
 
@@ -57,11 +57,11 @@ Si no has creado ningún usuario webmaster para tu nuevo dominio, el propietario
 
 Puedes establecer connexión por SFTP como tu Superusuario con las credenciales:
 
-* **Servidor**: tu *subdomino.maadix.org*
-* **Protocolo**: SFTP 
-* **Modo de acceso**: Normal  
-* **Usuario**: El nombre del Superusuario (Advertencia: Sensible a mayúsculas y minúsculas)
-* **Contraseña**: La contraseña del Superusuario
+* **Servidor**: tu *subdomino.maadix.org*.
+* **Protocolo**: SFTP.
+* **Modo de acceso**: normal.
+* **Usuario**: el nombre del Superusuario (Advertencia: sensible a mayúsculas y minúsculas).
+* **Contraseña**: la contraseña del Superusuario.
 
 Si no recuerdas tus datos de Superusuario, puedes consultarlos en la pestaña **'Usuarios'** de tu panel de control -- es el primero que aparece en la lista. También puedes restablecer allí su contraseña en caso de que la hubieras olvidado.
 
