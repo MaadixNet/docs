@@ -48,11 +48,11 @@ Desde el área de administración de Etherpad Lite se pueden establecer preferen
 Haciendo clic en la pestaña 'Users and groups' de la columna izquierda aparecerán las siguientes opciones:  
 
 
-* Allow users to recover lost password: Activar esta opción permitirá a los usuarios recuperar su contraseña. De forma general, es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por correo u otro canal.   
+* **Allow users to recover lost password**: activar esta opción permitirá a los usuarios recuperar su contraseña. De forma general, es aconsejable dejarla activada, ya que esto permite a los usuarios restablecer por sí mismos su contraseña si la pierden, evitando tener que enviarla por correo u otro canal.   
 
-* Allow users to register: Si esta opción está activada, cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario, sólo los usuarios con una invitación válida podrán acceder a la aplicación. Si un usuario se registra, no podrá acceder a los grupos ya creados hasta que no reciba una invitación. Solamente podrá crear nuevos grupos, nuevos pads e invitar usuarios a su grupo.
+* **Allow users to register**: si esta opción está activada, cualquier persona podrá crearse una cuenta sin necesidad de recibir una invitación. De lo contrario, sólo los usuarios con una invitación válida podrán acceder a la aplicación. Si un usuario se registra, no podrá acceder a los grupos ya creados hasta que no reciba una invitación. Solamente podrá crear nuevos grupos, nuevos pads e invitar usuarios a su grupo.
   
-* Allow public pads: Pemite crear pads públicos sin necesidad de tener un usuario activado ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads, en la instalación se puede desactivar.    
+* **Allow public pads**: permite crear pads públicos sin necesidad de tener un usuario activado ni pertenecer a ningún grupo. Los grupos y pads privados siguen estando disponibles aunque esta opción esté activada. Si se quiere evitar que cualquier persona pueda crear nuevos pads, en la instalación se puede desactivar.    
 
 
 
@@ -99,11 +99,11 @@ Un usuario nunca puede asignar un rol más alto que su propio rol dentro de un g
 
 Los roles disponibles son:
 
-   **Group Author**: Puede crear y editar Pads
+   **Group Author**: puede crear y editar Pads
    
-   **Group Manager**: Puede crear / editar / borrar Pads e invitar / quitar Usuarios
+   **Group Manager**: puede crear / editar / borrar Pads e invitar / quitar Usuarios
    
-   **Group Admin**: Puede crear / editar / borrar Pads, invitar / eliminar Usuarios y borrar todo el grupo
+   **Group Admin**: puede crear / editar / borrar Pads, invitar / eliminar Usuarios y borrar todo el grupo
  
 El nuevo usuario invitado aparecerá en la tabla de abajo. El rol asignado al usuario se puede modificar y editar más tarde.  
 
