@@ -31,9 +31,9 @@ Como ejemplo utilizaremos listas.example.com, pero puedes asignar el nombre que 
 
 Tendrás que rellenar los tres campos siguientes:
 
-* **Mail Host**: El nombre del dominio o subdominio bajo el cual se podrán crear listas (en nuestro caso listas.example.com, por el que tendremos que crear luego las entradas DNS correspondientes).  
-* **Description**: Una descripción para el dominio o subdominio (opcional).  
-* **Web Host**: La dirección web en la que será posible acceder a las opciones para las listas de este subdominio. Puedes dejar el valor por defecto minombrenmaadix.maadix.org o bien añadir otro dominio o subdominio, siempre que esté activado en el panel de control y funcione correctamente. Esta será la dirección web que se enviará a los suscriptores para acciones tales como confirmar suscripción, consultar listas públicas u otras.  
+* **Mail Host**: el nombre del dominio o subdominio bajo el cual se podrán crear listas (en nuestro caso listas.example.com, por el que tendremos que crear luego las entradas DNS correspondientes).  
+* **Description**: una descripción para el dominio o subdominio (opcional).  
+* **Web Host**: la dirección web en la que será posible acceder a las opciones para las listas de este subdominio. Puedes dejar el valor por defecto minombrenmaadix.maadix.org o bien añadir otro dominio o subdominio, siempre que esté activado en el panel de control y funcione correctamente. Esta será la dirección web que se enviará a los suscriptores para acciones tales como confirmar suscripción, consultar listas públicas u otras.  
 
 
 En el caso de este ejemplo, el **Web Host** podría ser el dominio example.com o incluso el mismo subdominio listas.example.com, que deberá tener los DNS correctamente configurados para que apunten a tu servidor, y tendrá que estar activado en el panel de control. Si decides utilizar el mismo dominio o subdominio de las listas como dirección para la interfaz gráfica, es muy importante que no actives el servidor de correo para él. Deberás entonces activar el subdominio listas.example.com en el panel de control, dentro de la sección 'Añadir Dominios', sin marcar la casilla 'Activar servidor de correo para este dominio'.  
@@ -50,13 +50,104 @@ Para hacerlo, visita la pestaña 'Lists' en el menú de arriba y luego haz clic 
 
 Tendrás que rellenar los siguientes campos:  
 
-* **List Name**: El nombre de la lista. En el ejemplo, crearemos la lista 'info'.  
-* **Mail Host**: El dominio para la listas. En el desplegable escogemos el subdominio recién creado lists.example.com.  
-* **Initial list owner address**: Asignamos una cuenta de correo como propietaria / administradora de la lista.  
-* **Advertise this list?**: Esta opción establece si la lista será visible publicamente en el listado de listas creadas o no. Para que se muestre, elegiremos 'Advertise this list in list index', mientras que si elegimos 'Hide this list in list index' solamente la verá el administrador.
-* **Description**: Una descripción informativa de la lista (opcional).  
+* **List Name**: el nombre de la lista. En el ejemplo, crearemos la lista 'info'.  
+* **Mail Host**: el dominio para la listas. En el desplegable escogemos el subdominio recién creado lists.example.com.  
+* **Initial list owner address**: asignamos una cuenta de correo como propietaria / administradora de la lista.  
+* **Advertise this list?**: esta opción establece si la lista será visible publicamente en el listado de listas creadas o no. Para que se muestre, elegiremos 'Advertise this list in list index', mientras que si elegimos 'Hide this list in list index' solamente la verá el administrador.
+* **Description**: una descripción informativa de la lista (opcional).  
 
 Una vez completada esta fase, ya habremos creado la lista. A continuación, tendremos que establecer nuestras preferencias de configuración.
+
+**Establecer parámetros del archivo de la lista**
+
+Puedes elegir si los mensajes enviados a los suscriptores se conservan y almacenan y, en tal caso, si serán visibles por cualquier persona a través de un enlace público o solamente serán accesibles a personas autorizadas.
+
+En Settings > Archiving > Archive policy:
+
+* **Public archive**: cualquiera puede consultarlos a través del interfaz web de tu instalación de la aplicación.
+* **Private archives**: el historial se guarda, pero solamente los administradores pueden acceder a él.
+* **Do not archive this list**: no se guarda el historial de mensajes enviados.
+
+![Archive_policy](img/mailman/mailman-archive.png)
+
+**Notificación de cambios en la suscripción**
+
+En Settings > Automatic Responses > Notify admin of membership changes, marca la casilla si quieres que se notifique al administrador de las altas y las bajas del boletín.
+
+![List_changes](img/mailman/list-changes.png)
+
+# Crear un boletín (Newsletter) 
+
+Una vez creada la lista, debes seguir un proceso de configuración específico para convertirla en un boletín. Recuerda que el boletín se caracteriza por su unidireccionalidad: solamente el administrador de la lista o las cuentas expresamente autorizadas pueden enviar mensajes (en oposición a las listas de correo, en las que todo el mundo puede participar).
+
+**Establecer parámetros de suscripción**
+
+En Settings > Subscription Policy, elige una de las siguientes opciones del desplegable:
+
+* **Open**: cualquiera puede ser añadido al boletín sin precisar su confirmación.
+* **Confirm**: las suscripciones tienen que ser confirmadas desde un correo válido al solicitar el alta.
+* **Moderate**: un moderador tiene que autorizar manualmente cada alta.
+* **Confirm then Moderate**: enviar primero un correo de confirmación al usuario para que luego un moderador autorice el alta.
+
+Aconsejamos la opción 'Confirm' para que no se puedan añadir direcciones de correo sin consentimiento.
+
+![Sub_policy](img/mailman/sub-policy.png)
+
+**Establecer parámetros para los mensajes entrantes**
+
+Determina cómo se tratan los mensajes dirigidos a la lista por parte de los usuarios miembros y no miembros. Puesto que se trata de un boletín, se denegará la entrega de cualquier mensaje entrante cuyo remitente no esté autorizado.
+
+En Settings > Message Acceptance, define los siguientes parámetros:
+
+* **Default action to take when a member posts to the list: Discard** (se descartarán todos los mensajes provenientes de usuarios suscritos).
+* **Default action to take when a non-member posts to the list: Discard** (se descartarán todos los mensajes provenientes de usuarios no suscritos).
+
+Con esta configuración, cualquier mensaje dirigido a la lista por parte de un remitente no autorizado será automáticamente rechazado sin notificar a la persona. Si prefieres que reciban una notificación, sustituye la opción Discard por Reject (with notification).
+
+![Inbox_messages](img/mailman/inbox-messages.png)
+
+**Configuración de los envíos de boletines**
+
+En Members > Suscribers > Member Options > Administrator options > Accept immediately para que la cuenta seleccionada pueda enviar los boletines. Recuerda que debes autorizar una cuenta como mínimo para poderlos enviar.
+
+![Newslettering](img/mailman/send-newsletter.png)
+
+# Crear una lista de correo
+
+Una vez creada la lista, debes seguir un proceso de configuración específico para convertirla en una lista de correo ('Mailing list'). Recuerda que la lista de correo se caracteriza por ofrecer a todos los usuarios la posibilidad de participar (no es unidireccional como el boletín).
+
+**Establecer parámetros de suscripción**
+
+En Settings > Subscription Policy, elige una de las siguientes opciones del desplegable:
+
+* **Open**: cualquiera puede ser añadido a la lista sin precisar su confirmación.
+* **Confirm**: las suscripciones tienen que ser confirmadas desde un correo válido al solicitar el alta.
+* **Moderate**: un moderador tiene que autorizar manualmente cada alta.
+* **Confirm then Moderate**: enviar primero un correo de confirmación al usuario para que luego un moderador autorice el alta.
+
+Aconsejamos la opción 'Confirm' para que no se puedan añadir direcciones de correo sin consentimiento.
+
+![List_settings](img/mailman/sub-policy.png)
+
+**Establecer parámetros para los mensajes entrantes**
+
+Para las listas de correo, en las que los miembros pueden mantener conversaciones entre ellos, puedes determinar cómo se tratan los mensajes dirigidos a la lista, tanto por parte de los usuarios suscritos como por parte de los que no lo están.
+
+En Settings > Message Acceptance:
+
+Para usuarios suscritos, elige entre una de estas dos opciones dentro de 'Default action to take when a member posts to the list':
+
+* **Hold for moderation**: un moderador tiene que autorizar cualquier mensaje para que sea entregado al resto de suscriptores.
+* **Accept immediately**: los mensajes de los suscriptores se entregarán automáticamente a todos los demás suscriptores, sin necesidad de moderación. Esta es la opción estándar para las listas de correo.
+
+Para usuarios no suscritos, elige la opción que prefieras dentro de 'Default action to take when a non-member posts to the list':
+
+* **Hold for moderation**: un moderador tiene que dar su autorización para que el mensaje sea entregado a los suscriptores de la lista.
+* **Reject**: se rechazarán automáticamente todos los mensajes, notificando al remitente.
+* **Discard**: se rechazarán automáticamente todos los mensajes, sin notificar al remitente.
+* **Accept immediately**: se aceptarán automáticamente todos los mensajes, sin necesidad de moderación.
+
+![Lists_policy](img/mailman/lists-policy.png)
 
 
 # Configurar DNS para el dominio o subdominio  
