@@ -1,6 +1,6 @@
 # Configuración de dominios en MaadiX
 
-## Primer paso: Consigue tu dominio
+## Primer paso: consigue tu dominio
 
 Toda web o aplicación necesita un buen dominio. Si ya dispones de un dominio propio, MaadiX te permite activarlo fácilmente y configurarlo para usarlo en tus aplicaciones.
 
@@ -21,14 +21,14 @@ Desde tu panel de control, entra en la pestaña '**Dominios**' y haz clic en '**
 
 Se desplegará un formulario con los siguientes campos:
 
-* **Nombre del dominio**:  Introduce el nombre completo de tu dominio o subdominio (por ejemplo: example.com o docs.example.com).
+* **Nombre del dominio**:  introduce el nombre completo de tu dominio o subdominio (por ejemplo: example.com o docs.example.com).
 
 Por cada dominio o subdominio que actives, se creará una carpeta en tu servidor cuya ubicación será `/var/www/html/example.com/`. Debes subir tu web o aplicación a esta carpeta para que sea accesible desde el navegador visitando *example.com*
 
-* **Activar servidor de correo para este dominio**: Si quieres usar el servidor de correo interno para el dominio que estás creando, esta opción tiene que estar activada. Si de lo contrario quieres que el correo electrónico sea gestionado por otro servidor externo, déjala desactivada. 
+* **Activar servidor de correo para este dominio**: si quieres usar el servidor de correo interno para el dominio que estás creando, esta opción tiene que estar activada. Si de lo contrario quieres que el correo electrónico sea gestionado por otro servidor externo, déjala desactivada. 
 Podrás cambiar esta opción en cualquier momento desde la página de edición del dominio.
 
-* **Webmaster**: Puedes asignar un webmaster (administrador web) en cada dominio o subdominio que actives en MaadiX.  
+* **Webmaster**: puedes asignar un webmaster (administrador web) en cada dominio o subdominio que actives en MaadiX.  
   
 El webmaster tendrá permisos para crear, borrar o modificar los archivos dentro de la carpeta `/var/www/html/example.com/`, donde podrá crear la aplicación web. Este usuario tendrá acceso mediante SFTP a esta carpeta y a su home, pero no podrá acceder ni ver el resto de archivos o carpetas en tu servidor.
 
@@ -65,7 +65,7 @@ https://tudominio.com
 
 La creación y configuración de los certificados está automatizada y se completa junto con todo el proceso de activación y configuración de dominios en tu sistema utilizando [Let's Encrypt](https://letsencrypt.org).  
 
-No  necesitas llevar a cabo ninguna configuración adicional para activar HTTPS para tu dominio: La seguridad en MaadiX es siempre por defecto.  
+No  necesitas llevar a cabo ninguna configuración adicional para activar HTTPS para tu dominio: la seguridad en MaadiX es siempre por defecto.  
 
 
 
@@ -73,7 +73,7 @@ No  necesitas llevar a cabo ninguna configuración adicional para activar HTTPS 
 
 Una vez aparezca el check verde en la columna "Activado", ya puedes subir los archivos de tu aplicación web a la recién creada carpeta `/var/www/html/example.com/`. Puedes hacerlo muy fácilmente con un cliente SFTP (por ejemplo, [Filezilla](https://filezilla-project.org/)). Una vez estén ahí, podrás visitarlos desde el navegador en tu dominio *example.com*.
 
-Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web).
+Puedes encontrar más indicaciones aquí: [crea tu web o aplicación](create-web).
 
 
 ## Empieza a usar tu servidor de correo
@@ -81,9 +81,9 @@ Puedes encontrar más indicaciones aquí: [Crea tu web o aplicación](create-web
 Si has activado la casilla 'Activar servidor de correo para este dominio', también puedes empezar a usar tu servidor de correo electrónico. Entra en el apartado *Email > Cuentas mail* para abrir nuevas cuentas de correo.  
 Recuerda que los registros MX y SPF tienen que estar correctamente configurados para que apunten a tu servidor.
 
-Puedes encontrar más indicaciones aquí: [Crea y gestiona cuentas de correo](email).
+Puedes encontrar más indicaciones aquí: [crea y gestiona cuentas de correo](email).
 
 
 ----
 
-(1): Listado completo de las empresas registradoras de dominios acreditadas por el ICANN: [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html)
+[1]: Listado completo de las empresas registradoras de dominios acreditadas por el ICANN. [Ver listado](https://www.icann.org/registrar-reports/accredited-list.html).
