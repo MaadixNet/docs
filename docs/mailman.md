@@ -167,7 +167,7 @@ Accede al panel de control y consulta la pestaña Mis Aplicaciones > Mailman > D
 
 Haz clic en el enlace 'Ver' de la columna DNS del dominio o subdominio que quieras configurar.  
 
-Aquí encontrarás los valores DNS necesarios para una correcta configuración. Si solamente quieres usar este dominio o subdominio para listas de correo, será suficiente que configures los DNS para los valores MX y TXT, e idealmente DKIM, que encontrarás en la tabla 'Servidor de Correo'. 
+Aquí encontrarás los valores DNS necesarios para una correcta configuración. Si solamente quieres usar este dominio o subdominio para listas de correo, será suficiente que configures los DNS para los valores MX, TXT y DKIM, que encontrarás en la tabla 'Servidor de Correo'. 
 
 ![Listado dominios mailman](img/mailman/dns-instruccions.png)
 
