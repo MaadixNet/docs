@@ -64,7 +64,7 @@ Puedes elegir si los mensajes enviados a los suscriptores se conservan y almacen
 
 En Settings > Archiving > Archive policy:
 
-* **Public archive**: cualquiera puede consultarlos a través del interfaz web de tu instalación de la aplicación.
+* **Public archives**: cualquiera puede consultarlos a través del interfaz web de tu instalación de la aplicación.
 * **Private archives**: el historial se guarda, pero solamente los administradores pueden acceder a él.
 * **Do not archive this list**: no se guarda el historial de mensajes enviados.
 
@@ -76,9 +76,12 @@ En Settings > Automatic Responses > Notify admin of membership changes, marca la
 
 ![List_changes](img/mailman/list-changes.png)
 
-# Crear un boletín (Newsletter) 
 
-Una vez creada la lista, debes seguir un proceso de configuración específico para convertirla en un boletín. Recuerda que el boletín se caracteriza por su unidireccionalidad: solamente el administrador de la lista o las cuentas expresamente autorizadas pueden enviar mensajes (en oposición a las listas de correo, en las que todo el mundo puede participar).
+Una vez creada la lista, debes seguir un proceso de configuración específico para convertirla en un boletín (newsletter) o una lista de correo.  
+
+# Configurar un boletín (Newsletter) 
+
+Recuerda que el boletín se caracteriza por su unidireccionalidad: solamente el administrador de la lista o las cuentas expresamente autorizadas pueden enviar mensajes (en oposición a las listas de correo, en las que todo el mundo puede participar).
 
 **Establecer parámetros de suscripción**
 
@@ -112,7 +115,7 @@ En Members > Suscribers > Member Options > Administrator options > Accept immedi
 
 ![Newslettering](img/mailman/send-newsletter.png)
 
-# Crear una lista de correo
+# Configurar una lista de correo
 
 Una vez creada la lista, debes seguir un proceso de configuración específico para convertirla en una lista de correo ('Mailing list'). Recuerda que la lista de correo se caracteriza por ofrecer a todos los usuarios la posibilidad de participar (no es unidireccional como el boletín).
 
