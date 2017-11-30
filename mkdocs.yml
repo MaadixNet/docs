@@ -15,4 +15,5 @@ pages:
     - Etherpad: etherpad.md
     - Mailman: mailman.md
     - Crear&nbsp;Web: create-web.md
+    - Wordpress: wordpress.md
 theme: readthedocs

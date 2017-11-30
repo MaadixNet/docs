@@ -2,7 +2,7 @@
 
 1. Descarga la aplicación desde la [página oficial](https://wordpress.org/download/).
 
-![Screenshot](img/download-wordpress.png)
+![Screenshot](img/wpimages/download-wordpress.png)
 
 Descomprime la carpeta.
 
@@ -22,13 +22,13 @@ En caso de que ya tengas una base de datos MySQL de tu WordPress (por ejemplo, e
 Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
 Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
 
-![Screenshot](img/importar-bdd.png)
+![Screenshot](img/wpimages/importar-bdd.png)
 
 ## Crear una nueva base de datos
 
 Si se trata de una nueva instalación y todavía no tenemos creada una base de datos MySQL, es preciso crear una. Dentro de phpMyAdmin, tenemos que ir a "Bases de datos" > "Crear base de datos". Una vez creada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
 
-![Screenshot](img/crear-bdd.png)
+![Screenshot](img/wpimages/crear-bdd.png)
 
 Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
 Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
@@ -37,7 +37,7 @@ Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de cre
 
 Cuando tengamos creada la base de datos, tenemos que visitar el dominio con el navegador. Aparecerá un formulario para finalizar el proceso de instalación de WordPress, en el que se solicitarán las credenciales del usuario MySQL que hemos creado.
 
-![Screenshot](img/formulario-wp.png)
+![Screenshot](img/wpimages/formulario-wp.png)
 
 # Errores frecuentes en la integración con WordPress
 
