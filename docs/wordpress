@@ -17,33 +17,59 @@ Para crear una base de datos, puedes utilizar la aplicación phpMyAdmin.
 
 ## Importar una base de datos existente
 
-En caso de que ya tengas una base de datos MySQL de tu WordPress (por ejemplo, en casos de migración desde otro servidor), es necesario importarla. Desde phpMyAdmin, tienes que seleccionar el apartado "Importar"  y subir el archivo que corresponda (.sql o .gzip, .bzip2 o .zip en el caso esté comprimida). Una vez importada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
-
-Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
-Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
+En caso de que ya tengas una base de datos MySQL de tu WordPress (por ejemplo, en casos de migración desde otro servidor), es necesario importarla. Desde phpMyAdmin, tienes que seleccionar el apartado "Importar"  y subir el archivo que corresponda (.sql o .gzip, .bzip2 o .zip en el caso esté comprimida).
 
 ![Screenshot](img/importar-bdd.png)
 
-## Crear una nueva base de datos
-
-Si se trata de una nueva instalación y todavía no tenemos creada una base de datos MySQL, es preciso crear una. Dentro de phpMyAdmin, tenemos que ir a "Bases de datos" > "Crear base de datos". Una vez creada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
-
-![Screenshot](img/crear-bdd.png)
+Una vez importada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
 
 Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
 Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
+
+![Screenshot](img/otorgar-privilegios.png)
+
+## Crear una nueva base de datos
+
+Si se trata de una nueva instalación y todavía no tenemos creada una base de datos MySQL, es preciso crear una. Dentro de phpMyAdmin, tenemos que ir a "Bases de datos" > "Crear base de datos".
+
+![Screenshot](img/crear-bdd.png)
+
+Una vez creada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
+
+Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
+Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
+
+![Screenshot](img/otorgar-privilegios.png)
 
 ## Configurar WordPress
 
 Cuando tengamos creada la base de datos, tenemos que visitar el dominio con el navegador. Aparecerá un formulario para finalizar el proceso de instalación de WordPress, en el que se solicitarán las credenciales del usuario MySQL que hemos creado.
 
-![Screenshot](img/formulario-wp.png)
+![Screenshot](img/formulario-wordpress2.png)
 
-# Errores frecuentes en la integración con WordPress
+Recuerda que cambiar el prefijo wp_ por otro en el apartado "Table Prefix" añade una capa de seguridad adicional a tu instalación.
+
+# Problemas frecuentes en la instalación de WordPress
 
 ## No puedo instalar plugins ni introducir imágenes
 
-A pesar de que los permisos de las carpetas del WordPress sean los correctos, podrías tener problemas a la hora de instalar plugins o subir imágenes. Para solucionarlo, añade la siguiente línea al final del archivo wp-config.php: `define( 'FS_METHOD', 'direct' );`.
+Asegúrate de que los permisos de los archivos que has subido por SFTP sean los correctos. Para que WordPress pueda subir imágenes y plugins desde el panel de administración, la carpeta /var/www/html/example.com/wp-content tiene que tener los siguientes permisos:
+
+`drwxrwsr-x`
+
+Para comprobar que los permisos sean correctos, desde FileZilla debes hacer clic con el botón derecho encima de la carpeta wp-content y seleccionar la opción "Permisos de archivo" o "Atributos de archivo", según tu versión.
+
+![Screenshot](img/herramientas-seleccion.png)
+
+Los permisos tienen que quedar de esta manera, siendo el valor numérico 775. También tienes que marcar la opción "Activar a todos los ficheros y directorios".
+
+![Screenshot](img/permisos.png)
+
+--
+
+A pesar de que los permisos de las carpetas del WordPress sean los correctos, podrías tener problemas a la hora de instalar plugins o subir imágenes. Para solucionarlo, añade la siguiente línea al final del archivo wp-config.php:
+
+  `define( 'FS_METHOD', 'direct' );`.
 
 Cuando subes imágenes o plugins desde WordPress, en lugar que desde un cliente SFTP, quién ejecuta la operación no es tu propio usuario, sino el usuario de Apache (www-data).
 A pesar de que este usuario tenga permisos de escritura sobre los archivos, no es el propietario.
