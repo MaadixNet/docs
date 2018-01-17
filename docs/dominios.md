@@ -8,7 +8,6 @@ Si todavía no dispones de dominio propio, aquí te dejamos algunos proveedores 
 
 * [gandi.net](https://www.gandi.net/)
 * [namecheap.com](https://www.namecheap.com/domains/registration.aspx)
-* [Dinahosting](https://dinahosting.com/dominios)
 * [Njal.la](https://njal.la/)
 
 Sabemos que elegir un buen nombre no siempre es fácil. Por eso, mientras decides cual va a ser tu dominio, puedes seguir usando MaadiX y la mayoría de sus aplicaciones usando https://minombreenmaadix.maadix.org, donde 'minombreenmaadix' coincide con el nombre que elegiste al adquirir tu servidor MaadiX (*no obstante, sólo podrás configurar y usar el servidor de correo electrónico y las listas de correo si dispones de un dominio propio activado*).
