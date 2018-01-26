@@ -2,7 +2,7 @@
 
 1. Descarga la aplicación desde la [página oficial](https://wordpress.org/download/).
 
-![Screenshot](img/download-wordpress.png)
+![Screenshot](img/wpimages/download-wordpress.png)
 
 Descomprime la carpeta.
 
@@ -19,33 +19,33 @@ Para crear una base de datos, puedes utilizar la aplicación phpMyAdmin.
 
 En caso de que ya tengas una base de datos MySQL de tu WordPress (por ejemplo, en casos de migración desde otro servidor), es necesario importarla. Desde phpMyAdmin, tienes que seleccionar el apartado "Importar"  y subir el archivo que corresponda (.sql o .gzip, .bzip2 o .zip en el caso esté comprimida).
 
-![Screenshot](img/importar-bdd.png)
+![Screenshot](img/wpimages/importar-bdd.png)
 
 Una vez importada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
 
 Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
 Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
 
-![Screenshot](img/otorgar-privilegios.png)
+![Screenshot](img/wpimages/otorgar-privilegios.png)
 
 ## Crear una nueva base de datos
 
 Si se trata de una nueva instalación y todavía no tenemos creada una base de datos MySQL, es preciso crear una. Dentro de phpMyAdmin, tenemos que ir a "Bases de datos" > "Crear base de datos".
 
-![Screenshot](img/crear-bdd.png)
+![Screenshot](img/wpimages/crear-bdd.png)
 
 Una vez creada, tenemos que seleccionar el apartado "Privilegios" para crear un nuevo usuario que que pueda acceder a la base de datos, leer y escribir en ella (se desaconseja usar el mismo usuario root por razones de seguridad).
 
 Elige un nombre y una contraseña y haz clic en "Otorgar todos los privilegios para la base de datos".
 Apunta el nombre de usuario y la contraseña del usuario MySQL que acabas de crear, puesto que serán necesarios durante el proceso de instalación de WordPress.
 
-![Screenshot](img/otorgar-privilegios.png)
+![Screenshot](img/wpimages/otorgar-privilegios.png)
 
 ## Configurar WordPress
 
 Cuando tengamos creada la base de datos, tenemos que visitar el dominio con el navegador. Aparecerá un formulario para finalizar el proceso de instalación de WordPress, en el que se solicitarán las credenciales del usuario MySQL que hemos creado.
 
-![Screenshot](img/formulario-wordpress2.png)
+![Screenshot](img/wpimages/formulario-wordpress2.png)
 
 Recuerda que cambiar el prefijo wp_ por otro en el apartado "Table Prefix" añade una capa de seguridad adicional a tu instalación.
 
@@ -63,7 +63,7 @@ Para comprobar que los permisos sean correctos, desde FileZilla debes hacer clic
 
 Los permisos tienen que quedar de esta manera, siendo el valor numérico 775. También tienes que marcar la opción "Activar a todos los ficheros y directorios".
 
-![Screenshot](img/permisos.png)
+![Screenshot](img/wpimages/permisos.png)
 
 --
 
