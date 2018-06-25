@@ -87,9 +87,9 @@ El registro DKIM es un registro de tipo TXT, cuyo nombre y valor necesarios pued
 ![Dns table no dkim](img/fqdn/dns-table-no-dkim.png)  
 
 
-La configuración del DKIM es la más complexa, y la sintaxis puede variar en función de cada proveedor. En este enlace encontrarás una explicación detallada sobre su funcionamiento y configuración, además de una herramienta para comprobar que la entrada DNS que ha insertado es correcta.  
+La configuración del DKIM es la más complexa, y la sintaxis puede variar en función de cada proveedor. En este enlace encontrarás una explicación detallada sobre su funcionamiento y configuración, además de una herramienta para comprobar que la entrada DNS que ha insertado es correcta:    
 
-https://docs.maadix.net/dns/#registro-dkim  
+[Cómo configurar registro DKIM](dns/#registro-dkim)
 
 
 Cuando hayas terminado, y una vez los DNS se hayan propagando, la misma tabla te devolverá  los valores encontrados para el registro DKIM. Si son correctos, en la primera columna el texto que anteriormente estaba en rojo, se habrá puesto en verde, marcando el éxito de la operación.  
