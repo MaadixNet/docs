@@ -13,7 +13,7 @@ En esta página explicamos como puedes cambiar el dominio principal asociado a t
 
 ## Antes de empezar  
 
-Utilicemos "myserver.maadix.org", como ejemplo de nombre actual, asoicado a tu servidor.   
+Utilicemos "myserver.maadix.org", como ejemplo de nombre actual, asocado a tu servidor.   
 Este valor es el FQDN de tu máquina y está compuesto por dos partes: "myserver" [Nombre del equipo] , y "maadix.org" [Dominio asociado].  
 Antes de proceder con el cambio, ten en cuenta que el valor "Nombre del equipo" (myserver) no puede ser cambiado. Solo podrás cambiar el valor "Dominio Asociado". Así, por ejemplo, si el dominio que quieres usar a partir de ahora fuera "example.com", tu nuevo FQDN será "myserver.example.com".  
 
@@ -37,7 +37,7 @@ Los registros necesarios y sus valores son los siguientes:
 
 Tendrás que sustituir myserver.example.com por el nuevo subdominio ( nombre de equipo + dominio que quieras utilizar),y el valor IP.DE.TU.SERVIDOR por el valor real de la IP de tu servidor. 
 
-Una vez aplicados los cambios hay que esperar que la nueva configuración sea propagada por la red. Este proceso puede tardar entre pocos minutos y varias horas, dependiendo de tu proveedor de dominio. El panel de control integra un sistema de comprobación, por lo que no arrancará el proceso de cambio hasta que los dns estén propagados.  
+Una vez aplicados los cambios hay que esperar que la nueva configuración sea propagada por la red. Este proceso puede tardar entre pocos minutos y varias horas, dependiendo de tu proveedor de dominio. El panel de control integra un sistema de comprobación, por lo que no arrancará el proceso de cambio hasta que los DNS estén propagados.  
 
 Hay otro registro DNS que tendrás de activar, y cuyas instrucciones encontrarás más abajo. Se trata del registro DKIM, que consiste en el valor de una clave que se genera durante el proceso, por lo que solo podrás activarlo una vez terminados los pasos que se describen a continuación.  
 
@@ -50,21 +50,21 @@ Terminada la operación anterior, accede al panel de control y en la página pri
 
 Se abrirá la página para poder proceder con el cambio, y que incluye instrucciones para la configuración de los DNS y otras advertencias a tener en cuenta. Aconsejamos que leas detenidamente todas las indicaciones.  
 
-El proceso es extremadamente sencillo. Solo tendrás que insertar el dominio que quieras utilizar en el fomrulario que se muestra al hacer clic en 'continuar'.  
+El proceso es extremadamente sencillo. Solo tendrás que insertar el dominio que quieras utilizar en el formulario que se muestra al hacer clic en 'continuar'.  
 
 ![Change fqdn form](img/fqdn/change-form.png)  
 
 Adicionalmente, puedes activar la casilla 'Recibir Logs'.  
-Esto te permitirá recibir a tu cuenta de correo, informes diarios sobre el estado del sitema, fallos en los servicios, errores o actualizaciones. 
+Esto te permitirá recibir a tu cuenta de correo, informes diarios sobre el estado del sistema, fallos en los servicios, errores o actualizaciones. 
 Si no la activas, estos informes se enviarán a una cuenta a la que tiene acceso el equipo técnico de MaadiX, para que se puedan consultar en el caso que se produzcan errores.  
 
 Podrás cambiar esta configuración en cualquier momento desde la página de Notificaciones.  
 
 Antes de empezar el proceso, el sistema comprobará que las entradas DNS necesarias estén creadas correctamente y en caso afirmativo, procederá con el cambio.  
 
-Esta opración es un poco más larga que otras tareas administrativas, ya que se tienen que reconfigurar varios servicios y paquetes presentes en el sistema. Ten paciencia.  
+Esta operación es un poco más larga que otras tareas administrativas, ya que se tienen que reconfigurar varios servicios y paquetes presentes en el sistema. Ten paciencia.  
 
-Un avez completado el proceso, tendrás que acceder al panel de control utilizando tu nueva dirección:  
+Una vez completado el proceso, tendrás que acceder al panel de control utilizando tu nueva dirección:  
 
     https://myserver.example.com/cpanel  
 
@@ -87,7 +87,7 @@ El registro DKIM es un registro de tipo TXT, cuyo nombre y valor necesarios pued
 ![Dns table no dkim](img/fqdn/dns-table-no-dkim.png)  
 
 
-La configuración del DKIM es la más complexa, y la sintáxis puede variar en funcion de cada proveedor. En este enlace encontrarás una explicación detallada sobre su funcionamiento y configuración, además de una herramienta para comprobar que la entrada DNS que ha insertado es correcta.  
+La configuración del DKIM es la más complexa, y la sintaxis puede variar en función de cada proveedor. En este enlace encontrarás una explicación detallada sobre su funcionamiento y configuración, además de una herramienta para comprobar que la entrada DNS que ha insertado es correcta.  
 
 https://docs.maadix.net/dns/#registro-dkim  
 
