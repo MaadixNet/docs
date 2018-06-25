@@ -17,4 +17,5 @@ pages:
     - Libre&nbsp;Office&nbsp;Online: lool.md
     - Crear&nbsp;Web: create-web.md
     - Wordpress: wordpress.md
+    - Cambio&nbsp;de&nbsp;Nombre&nbsp;del&nbsp;Servidor: fqdn.md
 theme: readthedocs
