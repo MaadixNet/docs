@@ -9,7 +9,7 @@ Con Libre Office Online, los documentos almacenados en Nextcloud, se abrirán en
 
 ## Requisitos del sistema  
 
-Antes de proceder con la instalación, es aconsejable averiguar que el servidor tenga los recursos disponibles necesarios para un buen funcionamiento.  Estos requisitos dependerán de la cantidad de documentos/usuarios simultáneos. Cada vez que se abre un documento para su edición, éste se carga en memoria. La cantidad de memoria necesaria dependerá así de cuántos documentos se planifica poder editar de forma simultánea. De todas formas, en línea general, y para una mejor expieriencia, es ideal disponer de almenos 300 MB de RAM libre.  
+Antes de proceder con la instalación, es aconsejable averiguar que el servidor tenga los recursos disponibles necesarios para un buen funcionamiento.  Estos requisitos dependerán de la cantidad de documentos/usuarios simultáneos. Cada vez que se abre un documento para su edición, éste se carga en memoria. La cantidad de memoria necesaria dependerá así de cuántos documentos se planifica poder editar de forma simultánea. De todas formas, en línea general, y para una mejor experiencia, es ideal disponer de al menos 300 MB de RAM libre.  
 
 En el panel de control, en la sección Detalles -> System Status puedes consultar este dato. 
 
@@ -23,7 +23,7 @@ Tendremos que crear una entrada DNS de tipo A, que apunte a la IP del servidor.
 
  `libreoffice.example.com A IP.DE.TU.SERVIDOR`  
 
-Según el provedor de dominio que tengas, la propagación de los DNS puede tardar entré pocos minutos y unas horas. Una vez los DNS estén propagados podrás proceder a la instalación desde el panel de control.  
+Según el proveedor de dominio que tengas, la propagación de los DNS puede tardar entré pocos minutos y unas horas. Una vez los DNS estén propagados podrás proceder a la instalación desde el panel de control.  
 
 Al hacer clic en Libre Office Online, desde la página 'Instalar aplicaciones', se abrirá una ventana emergente, en la que tendrás que insertar dos valores:  
 1- El nombre del dominio/subdominio que quieres utilizar para instalar la aplicación. En el caso de nuestro ejemplo será libreoffice.example.com  
@@ -34,13 +34,14 @@ Al hacer clic en Libre Office Online, desde la página 'Instalar aplicaciones', 
 
 ## Conectar Nextcloud
 
-Una vez terminado el proceso de instalación de Libre Office Online, es necesario instalar y configurar la extensión Colabora Online desde Nextcloud. Para activarla, visita la sección Apps -> Office & Text, como administradoir de Nextcloud.
+Una vez terminado el proceso de instalación de Libre Office Online, es necesario instalar y configurar la extensión Colabora Online desde Nextcloud. Para activarla, visita la sección Apps -> Office & Text, como administrador de Nextcloud.
 
 ![Screenshot](img/lool/collabora-install.png)
 
-Una  vez activada tendrás que ir a Configración -> Collabora Online e insertar la url de instalación de la aplicación con 'https://'. En el caso de nuestro ejemplo 'https://libreoffice.example.com'.  
+Una  vez activada tendrás que ir a Configuración -> Collabora Online e insertar la url de instalación de la aplicación con 'https://'. En el caso de nuestro ejemplo 'https://libreoffice.example.com'.  
+
 
 ![Screenshot](img/lool/collabora-configure.png)
 
-A partir de hora, cada vez que accedas a un documento desde la sección Files/Archivos, se abrirá en el navegador para su edición.
+A partir de ahora, cada vez que accedas a un documento desde la sección Files/Archivos, se abrirá en el navegador para su edición.
 
