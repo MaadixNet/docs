@@ -9,7 +9,7 @@ Con Libre Office Online, los documentos almacenados en Nextcloud, se abrirán en
 
 ## Requisitos del sistema  
 
-Antes de proceder con la instalación, es aconsejable averiguar que el servidor tenga los recursos disponibles necesarios para un buen funcionamiento.  Estos requisitos dependerán de la cantidad de documentos/usuarios simultáneos. Cada vez que se abre un documento para su edición, éste se carga en memoria. La cantidad de memoria necesaria dependerá así de cuántos documentos se planifica poder editar de forma simultánea. De todas formas, en línea general, y para una mejor expieriencia, es ideal disponer de almenos 1GB de RAM libre.  
+Antes de proceder con la instalación, es aconsejable averiguar que el servidor tenga los recursos disponibles necesarios para un buen funcionamiento.  Estos requisitos dependerán de la cantidad de documentos/usuarios simultáneos. Cada vez que se abre un documento para su edición, éste se carga en memoria. La cantidad de memoria necesaria dependerá así de cuántos documentos se planifica poder editar de forma simultánea. De todas formas, en línea general, y para una mejor expieriencia, es ideal disponer de almenos 300 MB de RAM libre.  
 
 En el panel de control, en la sección Detalles -> System Status puedes consultar este dato. 
 
