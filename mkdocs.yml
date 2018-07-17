@@ -17,5 +17,6 @@ pages:
     - Libre&nbsp;Office&nbsp;Online: lool.md
     - Crear&nbsp;Web: create-web.md
     - Wordpress: wordpress.md
+    - Servidor&nbsp;TURN: coturn.md
     - Cambio&nbsp;de&nbsp;Nombre&nbsp;del&nbsp;Servidor: fqdn.md
 theme: readthedocs
