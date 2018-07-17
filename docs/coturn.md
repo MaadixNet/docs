@@ -2,9 +2,9 @@
 
 Los servidores TURN se utilizan para retransmitir el tráfico si falla la conexión directa entre dos dispositivos (peer to peer).  
 
-Gracias a [WebRTC](https://webrtc.org/) los navegadores son capaces de efectuar conexiones directas entre dispositivos, compartiendo recursos como audio, vídeo o pantalla. De esta forma podemos llevar a cabo vídeo llamadas simplemente compartiendo un enlace y accediendo a él desde el navegador, sin necesidad de software adicional. Este tipo de conexión establece una comunicación directa entre las personas que se unen a la llamada.  
+Gracias a [WebRTC](https://webrtc.org/) los navegadores son capaces de efectuar conexiones directas entre dispositivos, compartiendo recursos como audio, vídeo o pantalla. De esta forma podemos llevar a cabo vídeo llamadas simplemente compartiendo un enlace y accediendo a él desde el navegador, sin necesidad de software adicional. Para establecer este tipo de comunicación, es necesario un protocolo que permita a los clientes detrás de NAT descubrir su dirección IP pública y puerto, para activar la conexión. El protocolo STUN cumple con estos requisitos y está configurado y activado por defecto en la aplicación Talk de Nextcloud. 
 
-Sin embargo, en algunos casos, dependiendo de la configuración de red desde la que se conectan los dispositivos, puede ser imposible para los navegadores establecer la conexión directa con los otros pares.  
+ En la mayoría de los casos, un servidor STUN es suficiente para poder activar la conexión. Sin embargo, en algunos casos, dependiendo de la configuración de red desde la que se conectan los dispositivos, puede ser imposible para los navegadores establecer la conexión directa con los otros pares solo utilizando STUN.  
 
 Para solucionar estos problemas se puede activar un servidor TURN, capaz de resolver las posibles incompatibilidades y permitir que cualquier dispositivo pueda unirse a las llamadas desde el navegador.  
 Activar un servidor TURN tiene como consecuencia un consumo más alto del ancho de banda y un aumento de la latencia. Sin embargo, en algunos casos, se convierte en la única solución eficaz para garantizar conexiones exitosas con todos los dispositivos.  
