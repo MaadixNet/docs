@@ -27,9 +27,9 @@ Según el proveedor de dominio que tengas, la propagación de los DNS puede tard
 
 Al hacer clic en Libre Office Online, desde la página 'Instalar aplicaciones', se abrirá una ventana emergente, en la que tendrás que insertar dos valores:  
 1- El nombre del dominio/subdominio que quieres utilizar para instalar la aplicación. En el caso de nuestro ejemplo será libreoffice.example.com  
-2- El dominio de la instalación de Nextcloud, que quieres conectar al Libre Office Online, es decir la url que utilizas para acceder a Nextcloud con el navegador, por ejemplo myserver.example.com/nextcloud  
+2- El dominio de la instalación de Nextcloud, que quieres conectar al Libre Office Online, es decir la url que utilizas para acceder a Nextcloud con el navegador, por ejemplo myserver.maadix.org  
 
-![Screenshot](img/lool/install.png)
+![Screenshot](img/lool/install-lool.png)
 
 
 ## Conectar Nextcloud
