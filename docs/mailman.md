@@ -110,8 +110,10 @@ Con esta configuración, cualquier mensaje dirigido a la lista por parte de un r
 ![Inbox_messages](img/mailman/inbox-messages.png)
 
 **Configuración de los envíos de boletines**
-
-En Members > Suscribers > Member Options > Administrator options > Accept immediately para que la cuenta seleccionada pueda enviar los boletines. Recuerda que debes autorizar una cuenta como mínimo para poderlos enviar.
+En este momento, ninguna persona está autorizada a enviar correos, así que es necesario conceder este permiso a almeno una cuenta de correo, para poder hacer los envíos.  
+En Members > Suscribers > encuentrass el listado de suscriptores.
+Escoge la cuenta de correo que quieres utilizar para enviar las newsletter, y haz clic en 'Member Options'. Si la cuenta no está presente en el listado, tendrás primero que añadirla (Mass operations > Mass suscribe). 
+Al fondo de la página Member options seleciona 'Accept immediately' como parámetro de moderación, para que la cuenta seleccionada pueda enviar los boletines. Recuerda que debes autorizar una cuenta como mínimo para poderlos enviar, y que puedes autorizar más de una cuenta para la misma lista.  
 
 ![Newslettering](img/mailman/send-newsletter.png)
 
