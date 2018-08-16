@@ -81,7 +81,7 @@ Una vez creada la lista, debes seguir un proceso de configuración específico p
 
 # Configurar un boletín (Newsletter) 
 
-Recuerda que el boletín se caracteriza por su unidireccionalidad: solamente el administrador de la lista o las cuentas expresamente autorizadas pueden enviar mensajes (en oposición a las listas de correo, en las que todo el mundo puede participar).
+Recuerda que el boletín se caracteriza por su unidireccionalidad: solamente las cuentas expresamente autorizadas pueden enviar mensajes (en oposición a las listas de correo, en las que todo el mundo puede participar).
 
 **Establecer parámetros de suscripción**
 
