@@ -14,6 +14,7 @@ pages:
     - Mysql: mysql.md
     - Etherpad: etherpad.md
     - Mailman: mailman.md
+    - Mailtrain: mailtrain.md
     - Libre&nbsp;Office&nbsp;Online: lool.md
     - Crear&nbsp;Web: create-web.md
     - Wordpress: wordpress.md
