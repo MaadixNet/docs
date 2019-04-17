@@ -51,7 +51,7 @@ Recuerda que cambiar el prefijo wp_ por otro en el apartado "Table Prefix" añad
 
 # Problemas frecuentes en la instalación de WordPress
 
-## No puedo instalar plugins ni introducir imágenes
+## No puedo instalar plugins ni subir imágenes
 
 Asegúrate de que los permisos de los archivos que has subido por SFTP sean los correctos. Para que WordPress pueda subir imágenes y plugins desde el panel de administración, la carpeta /var/www/html/example.com/wp-content tiene que tener los siguientes permisos:
 

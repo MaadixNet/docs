@@ -38,7 +38,7 @@ Una  vez activada tendrás que ir a Configuración -> Only Office e insertar dos
 
 En esta misma página podrás también establecer otras preferencias, como habilitar otros formatos para la edición de documentos.
 
-![Screenshot](img/lool/onlyoffice-configure.png)
+![Screenshot](img/onlyoffice/onlyoffice-configure.png)
 
 A partir de ahora, cada vez que accedas a un documento desde la sección Files/Archivos, se abrirá en el navegador para su edición.
 

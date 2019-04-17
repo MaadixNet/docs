@@ -13,7 +13,7 @@ pages:
     - VPN: vpn.md
     - Mysql: mysql.md
     - Etherpad: etherpad.md
-    - Mailman: mailman.md
+    - Mailman: mail-man.md
     - Mailtrain: mailtrain.md
     - Libre&nbsp;Office&nbsp;Online: lool.md
     - OnlyOffice: onlyoffice.md
