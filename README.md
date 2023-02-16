@@ -1,3 +1,2 @@
 # docs
-
-Instruccion and documentation for Maadix interface 
+Repo is now at https://gitlab.com/MaadiX/maadix-docs
